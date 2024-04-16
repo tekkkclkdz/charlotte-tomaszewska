@@ -2,8 +2,16 @@
 import React, { useEffect } from 'react';
 import { Element } from 'react-scroll'; // Poprawiono import
 
+type Project = {
+  id: number;
+  title: string;
+  content: JSX.Element;
+}
+
+type ProjectsArray = Project[];
+
 const ProjectContent = ({ projects }:{
-  projects: React.ReactNode
+  projects: ProjectsArray;
 }) => {
   useEffect(() => {
     // Dodatkowe efekty uboczne związane z ProjectContent

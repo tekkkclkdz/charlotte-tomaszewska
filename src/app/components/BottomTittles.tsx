@@ -2,8 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
-const BottomTitles = ({ projects, moving }:{
-  projects: React.ReactNode;
+type Project = {
+  id: number;
+  title: string;
+  content: JSX.Element;
+}
+
+type ProjectsArray = Project[];
+
+const BottomTitles = ({ projects, moving }: {
+  projects: ProjectsArray;
   moving: number;
 }) => {
   const [activeProject, setActiveProject] = useState(1);

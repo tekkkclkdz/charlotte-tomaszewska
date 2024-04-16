@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-const ContactBioBar = ({ intro }) => {
+const ContactBioBar = ({ intro }:{
+    intro: number;
+}) => {
   const [showBar, setShowBar] = useState(intro === 1);
 
   useEffect(() => {

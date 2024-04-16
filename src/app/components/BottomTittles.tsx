@@ -2,7 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
-const BottomTitles = ({ projects, moving }) => {
+const BottomTitles = ({ projects, moving }:{
+  projects: React.ReactNode;
+  moving: number;
+}) => {
   const [activeProject, setActiveProject] = useState(1);
   // Set the initial visibility of the component based on the moving prop
   const [showComponent, setShowComponent] = useState(false);

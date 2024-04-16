@@ -2,7 +2,9 @@
 import React, { useEffect } from 'react';
 import { Element } from 'react-scroll'; // Poprawiono import
 
-const ProjectContent = ({ projects }) => {
+const ProjectContent = ({ projects }:{
+  projects: React.ReactNode
+}) => {
   useEffect(() => {
     // Dodatkowe efekty uboczne związane z ProjectContent
   }, [projects]);

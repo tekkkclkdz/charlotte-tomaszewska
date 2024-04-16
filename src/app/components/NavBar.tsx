@@ -4,7 +4,10 @@ import Image from 'next/image';
 import handWritting from './../../../public/charlotte_handwritting.png';
 import Link from 'next/link';
 
-const NavBar = ({ stillOrMoving, intro }) => {
+const NavBar = ({ stillOrMoving, intro }:{
+  stillOrMoving: number;
+  intro: number;
+}) => {
   const stillStyle = stillOrMoving === 0 ? 'font-bold' : 'font-light';
   const movingStyle = stillOrMoving === 1 ? 'font-bold' : 'font-light';
 

@@ -59,7 +59,7 @@ const BottomTitles = ({ projects, moving }: {
           suppressHydrationWarning={true}
         >
           <span
-            className={`bottom-0 text-2xl sm:text-6xl mix-blend-difference text-white left-1/2 transform -translate-x-1/2 text-center transition-opacity duration-300 absolute ${activeProject === project.id ? 'opacity-100' : 'opacity-0'}`}
+            className={`bottom-0 text-2xl sm:text-6xl py-1 sm:py-2 mix-blend-difference text-white left-1/2 transform -translate-x-1/2 text-center transition-opacity duration-300 absolute ${activeProject === project.id ? 'opacity-100' : 'opacity-0'}`}
             style={{ whiteSpace: 'nowrap' }}
           >
             {project.title}

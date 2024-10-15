@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import handWritting from './../../../public/charlotte_handwritting.png';
+import logo from "./../../../public/char 05 black.jpg"
 import Link from 'next/link';
 
 const NavBar = ({ stillOrMoving, intro }:{
@@ -16,7 +16,7 @@ const NavBar = ({ stillOrMoving, intro }:{
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 200;
+      const threshold = 500;
 
       setShowText(scrollPosition < threshold);
     };
@@ -30,18 +30,21 @@ const NavBar = ({ stillOrMoving, intro }:{
   return (
     <>
       {intro !== 1 && (
-        <div className={`relative top-0 w-full h-3/4 h-[calc(100svh)] flex items-center justify-center text-center text-1xl text-8xl font-light bg-white text-black transition-opacity duration-300 ${showText ? 'opacity-100' : 'opacity-0'}`}>
-          {intro !== 1 && (
-            <div className="absolute h-1/2 py-28"> 
-              <Image src={handWritting} alt="hndwrt" 
-                className='transition-opacity opacity-0 duration-[2s]'
-                onLoadingComplete={(image) => image.classList.remove("opacity-0")}
-              />
-            </div>
-          )}
+        <div className={`relative top-0 w-full h-[calc(100svh)] flex flex-col items-center justify-center bg-white text-black transition-opacity duration-300 ${showText ? 'opacity-100' : 'opacity-0'}`}>
+          {/* Centered logo */}
+          <div className="flex items-center justify-center">
+            <Image
+              src={logo}
+              alt="Logo"
+              className="transition-opacity opacity-0 duration-[2s] w-1/2 mb-40"
+              onLoadingComplete={(image) => image.classList.remove("opacity-0")}
+            />
+          </div>
         </div>
       )}
-      <div className="sticky top-0 py-0 h-full w-full mix-blend-difference text-3xl bg-transparent text-white flex items-center justify-center transition-opacity duration-300 z-50" suppressHydrationWarning={true}>
+
+      {/* Keep the "still | moving" section unchanged */}
+      <div className="sticky top-0 py-2 w-full mix-blend-difference text-3xl bg-transparent transition-opacity duration-300 z-50" suppressHydrationWarning={true}>
         <div className="flex items-center justify-center">
           <Link href="/" passHref>
             <h1 className={stillStyle}>still</h1>

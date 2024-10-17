@@ -36,7 +36,7 @@ const NavBar = ({ stillOrMoving, intro }:{
             <Image
               src={logo}
               alt="Logo"
-              className="transition-opacity opacity-0 duration-[2s] w-1/2 mb-40"
+              className="transition-opacity opacity-0 duration-[2s] sm:w-1/2 mb-40"
               onLoadingComplete={(image) => image.classList.remove("opacity-0")}
             />
           </div>

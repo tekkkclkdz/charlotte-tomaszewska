@@ -1,76 +1,74 @@
-"use client"
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import NavBar from './../components/NavBar';
 import BottomTitles from './../components/BottomTittles';
 import ProjectContent from './../components/ProjectContent';
 import ContactBioBar from '../components/ContactBioBar';
 
+
+
 const projects = [
     {
         id: 1,
         title: 'BRODKA & IGO',
-        videoUrl: 'https://player.vimeo.com/video/932867048?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/932867048?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for BRODKA & IGO</p>
     },
     {
         id: 2,
         title: 'ADIDAS',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for ADIDAS</p>
     },
     {
         id: 3,
         title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/647758815?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/647758815?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for JESTEM KOBIETA</p>
     },
     {
         id: 4,
         title: 'STONE - QUEEN',
-        videoUrl: 'https://player.vimeo.com/video/990654176?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/990654176?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for STONE - QUEEN</p>
     },
     {
         id: 5,
         title: 'BARBARKA - MARIA PESZEK FT OSKAR83',
-        videoUrl: 'https://player.vimeo.com/video/610083622?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/610083622?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for BARBARKA - MARIA PESZEK FT OSKAR83</p>
     },
     {
         id: 6,
         title: 'SUPERPOWERS',
-        videoUrl: 'https://player.vimeo.com/video/828107491?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/828107491?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for SUPERPOWERS</p>
     },
     {
         id: 7,
         title: 'DARK EROS',
-        videoUrl: 'https://player.vimeo.com/video/450786928?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/450786928?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for DARK EROS</p>
     },
     {
         id: 8,
         title: 'HOME',
-        videoUrl: 'https://player.vimeo.com/video/669378253?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/669378253?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for HOME</p>
     },
     {
         id: 9,
         title: 'WINDOWSEN',
-        videoUrl: 'https://player.vimeo.com/video/1016725466?background=1&autoplay=1&loop=1&muted=1',
+        videoUrl: 'https://player.vimeo.com/video/1016725466?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for WINDOWSEN</p>
     },
     {
         id: 10,
         title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1',
-    },
-    {
-        id: 11,
-        title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1',
-    },
-    {
-        id: 12,
-        title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1',
-    },
-    {
-        id: 13,
-        title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1',
-    },
+        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1#t=5,10',
+        content: <p>Some content for JESTEM KOBIETA</p>
+    }
 ];
 
 const ProjectVideo = ({ videoUrl }: { videoUrl: string }) => {

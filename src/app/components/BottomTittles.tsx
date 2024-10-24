@@ -27,7 +27,7 @@ const BottomTitles = ({ projects, moving }: {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
-      const triggerPoint = windowHeight * 0.25; // Adjust the trigger point as needed
+      const triggerPoint = windowHeight * 0.5; // Adjust the trigger point as needed
 
       // Show component based on scroll position or if moving is 1
       setShowComponent(scrollPosition > triggerPoint || moving === 1);

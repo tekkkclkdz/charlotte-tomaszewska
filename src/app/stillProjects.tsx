@@ -77,232 +77,222 @@ import LEB2 from "./../../public/LEBRAND/8.jpeg"
 export const projects = [
   {
     id: 1, title: 'KMAG OBLIVIUM', content: (
-        <div className="flex">
-          <div className="w-screen sm:w-1/2  sm:py-6">
-            <a href='lol'>
-              <Image src={kmagobl02} className="w-100%" alt="pic1" loading="lazy"/>
-            </a>
-          </div>
-          <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-          <Image src={kmagobl4} className="w-full" alt="pic2" loading="lazy"/>
+      <div className="flex">
+        <div className="w-screen sm:w-1/2 sm:py-6">
+          <a href='lol'>
+            <Image src={kmagobl02} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+          </a>
+        </div>
+        <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
+          <Image src={kmagobl4} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
         </div>
       </div>
-      
     ),
   },
   { id: 2, title: 'LOVE MAGAZINE', content: (
     <div>
-    <div className="w-screen">
-      <Image src={JAN} className="w-full" alt="pic1" loading="lazy"/>
-    </div>
-  </div>
-)},
-{ id: 3, title: 'DOCUMENT JOURNAL', content: (
-  <div className="flex flex-wrap lg:flex-nowrap">
-<div className="w-1/3 px-8 hidden sm:block">
-  <Image src={DJ1} className="w-full" alt="pic1" loading="lazy"/>
-</div>
-<div className="w-1/3 px-8 hidden sm:block">
-  <Image src={DJ2} className="w-full" alt="pic2" loading="lazy"/>
-</div>
-<div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-  <Image src={DJ3} className="w-full" alt="pic3" loading="lazy"/>
-</div>
-</div>
-), },
-{
-  id: 4, title: 'LEBRAND', content: (
-      <div className="flex">
-        <div className="w-screen sm:w-1/2 ml-40 sm:px-0 sm:py-6">
-          <a href='lol'>
-            <Image src={LEB1} className="w-100%" alt="pic1" loading="lazy"/>
-          </a>
-        </div>
-        <div className="sm:flex hidden w-100% sm:py-6">
-        <Image src={LEB2} className="w-full" alt="pic2" loading="lazy"/>
-      </div>
-    </div>
-    
-  ),
-},
-    { id: 5, title: 'ARCHIVES FUTURE', content: (
-      <div className="flex">
-            <div className="w-screen sm:w-1/2  sm:py-6">
-              <a href='lol'>
-                <Image src={MAT} className="w-100%" alt="pic1" loading="lazy"/>
-              </a>
-            </div>
-            <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-            <Image src={MAT17} className="w-full" alt="pic2" loading="lazy"/>
-          </div>
-        </div>
-    ), },
-    { id: 6, title: '303AVENUE', content: (
-      <div className="flex">
-            <div className="w-screen sm:w-1/2  sm:py-6">
-              <a href='lol'>
-                <Image src={AVE1} className="w-100%" alt="pic1" loading="lazy"/>
-              </a>
-            </div>
-            <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-            <Image src={AVE2} className="w-full" alt="pic2" loading="lazy"/>
-          </div>
-        </div>
-    ), },
-    { id: 7, title: 'NEWONCE', content: (
-  <div>
-    <div className="w-screen">
-      <Image src={NO7} className="w-full" alt="pic1" loading="lazy"/>
-    </div>
-    <div className="sm:grid grid-rows-3 justify-center lg:hidden">
-      <div className="w-screen hidden"> {/* This div is hidden to avoid duplicating NO1 */}
-        <Image src={NO7} className="w-full" alt="pic1" loading="lazy"/>
-      </div>
       <div className="w-screen">
-        <Image src={NO8} className="w-full" alt="pic2" loading="lazy"/>
-      </div>
-      <div className="w-screen">
-        <Image src={NO9} className="w-full" alt="pic3" loading="lazy"/>
-      </div>
-    </div>
-  </div>
-      
-    ), },
-    { id: 8, title: 'MOON SHADOW', content: (
-      <div className="flex flex-wrap lg:flex-nowrap">
-    <div className="w-1/3 px-8 hidden sm:block">
-      <Image src={MS1} className="w-full" alt="pic1" loading="lazy"/>
-    </div>
-    <div className="w-1/3 px-8 hidden sm:block">
-      <Image src={MS2} className="w-full" alt="pic2" loading="lazy"/>
-    </div>
-    <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-      <Image src={MS3} className="w-full" alt="pic3" loading="lazy"/>
-    </div>
-  </div>
-    ), },
-    { id: 9, title: 'JAN_F_CHODOROWICZ 2', content: (
-      <div>
-      <div className="w-screen">
-        <Image src={JAN22} className="w-full" alt="pic1" loading="lazy"/>
+        <Image src={JAN} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
   )},
-    { id: 10, title: 'ENORA', content: (
-      <div className="flex flex-wrap lg:flex-nowrap">
-  <div className="w-1/3 px-8 hidden sm:block">
-    <Image src={EN1} className="w-full" alt="pic1" loading="lazy"/>
-  </div>
-  <div className="w-1/3 px-8 hidden sm:block">
-    <Image src={EN2} className="w-full" alt="pic2" loading="lazy"/>
-  </div>
-  <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-    <Image src={EN3} className="w-full" alt="pic3" loading="lazy"/>
-  </div>
-</div>
-    )},
-    {
-      id: 11, title: 'CAP PLANETA', content: (
-          <div className="flex">
-            <div className="w-screen sm:w-1/2  sm:py-6">
-              <a href='lol'>
-                <Image src={PLA} className="w-100%" alt="pic1" loading="lazy"/>
-              </a>
-            </div>
-            <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-            <Image src={PLA11} className="w-full" alt="pic2" loading="lazy"/>
-          </div>
+  { id: 3, title: 'DOCUMENT JOURNAL', content: (
+    <div className="flex flex-wrap lg:flex-nowrap">
+      <div className="w-1/3 px-8 hidden sm:block">
+        <Image src={DJ1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+      <div className="w-1/3 px-8 hidden sm:block">
+        <Image src={DJ2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+      </div>
+      <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
+        <Image src={DJ3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  {
+    id: 4, title: 'LEBRAND', content: (
+      <div className="flex">
+        <div className="w-screen sm:w-1/2 ml-40 sm:px-0 sm:py-6">
+          <a href='lol'>
+            <Image src={LEB1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+          </a>
         </div>
-        
-      ),
-    },
-    { id: 12, title: 'JAN_F_CHODOROWICZ', content: (
-        <div>
-        <div className="w-screen">
-          <Image src={JAN1} className="w-full" alt="pic1" loading="lazy"/>
-        </div>
-        <div className="sm:grid grid-rows-3 justify-center lg:hidden">
-          <div className="w-screen hidden"> {/* This div is hidden to avoid duplicating NO1 */}
-            <Image src={JAN1} className="w-full" alt="pic1" loading="lazy"/>
-          </div>
-          <div className="w-screen">
-            <Image src={JAN2} className="w-full" alt="pic2" loading="lazy"/>
-          </div>
-          <div className="w-screen">
-            <Image src={JAN3} className="w-full" alt="pic3" loading="lazy"/>
-          </div>
+        <div className="sm:flex hidden w-full sm:py-6">
+          <Image src={LEB2} className="w-1/2 h-auto object-cover object-center" alt="pic2" loading="lazy"/>
         </div>
       </div>
-    )},
-    { id: 13, title: 'DOUBLEDARE', content: (
+    ),
+  },
+  { id: 5, title: 'ARCHIVES FUTURE', content: (
+    <div className="flex">
+      <div className="w-screen sm:w-1/2 sm:py-6">
+        <a href='lol'>
+          <Image src={MAT} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+        </a>
+      </div>
+      <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
+        <Image src={MAT17} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 6, title: '303AVENUE', content: (
+    <div className="flex">
+      <div className="w-screen sm:w-1/2 sm:py-6">
+        <a href='lol'>
+          <Image src={AVE1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+        </a>
+      </div>
+      <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
+        <Image src={AVE2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 7, title: 'NEWONCE', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={NO8} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+      <div className="sm:grid grid-rows-3 justify-center lg:hidden">
+        <div className="w-screen hidden">
+          <Image src={NO7} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+        </div>
+        <div className="w-screen">
+          <Image src={NO8} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+        </div>
+        <div className="w-screen">
+          <Image src={NO9} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  )},
+  { id: 8, title: 'MOON SHADOW', content: (
+    <div className="flex">
+      <div className="w-screen sm:w-1/2 sm:py-6">
+        <a href='lol'>
+          <Image src={Moo1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+        </a>
+      </div>
+      <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
+        <Image src={Moo2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 9, title: 'JAN_F_CHODOROWICZ 2', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={JAN22} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 10, title: 'ENORA', content: (
+    <div className="flex flex-wrap lg:flex-nowrap">
+      <div className="w-1/3 px-8 hidden sm:block">
+        <Image src={EN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+      <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
+        <Image src={EN2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+      </div>
+      <div className="w-1/3 px-8 hidden sm:block">
+        <Image src={EN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  {
+    id: 11, title: 'CAP PLANETA', content: (
       <div>
       <div className="w-screen">
-        <Image src={DUB} className="w-full" alt="pic1" loading="lazy"/>
+        <Image src={PLA11} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+    ),
+  },
+  { id: 12, title: 'JAN_F_CHODOROWICZ', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={JAN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+      <div className="sm:grid grid-rows-3 justify-center lg:hidden">
+        <div className="w-screen hidden">
+          <Image src={JAN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+        </div>
+        <div className="w-screen">
+          <Image src={JAN2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+        </div>
+        <div className="w-screen">
+          <Image src={JAN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  )},
+  { id: 13, title: 'DOUBLEDARE', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={DUB} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
   )},
   { id: 14, title: 'ALSO JOURNAL PARISIAN THAW', content: (
     <div className="flex flex-wrap lg:flex-nowrap">
-  <div className="w-1/3 px-8 hidden sm:block">
-    <Image src={PAR11} className="w-full" alt="pic1" loading="lazy"/>
-  </div>
-  <div className="w-1/3 px-8 hidden sm:block">
-    <Image src={PAR12} className="w-full" alt="pic2" loading="lazy"/>
-  </div>
-  <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-    <Image src={PAR13} className="w-full" alt="pic3" loading="lazy" />
-  </div>
-</div>
-  ), },
+      <div className="w-1/3 px-8 hidden sm:block">
+        <Image src={PAR12} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+      <div className="w-1/3 px-8 hidden sm:block">
+        <Image src={PAR11} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+      </div>
+      <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
+        <Image src={PAR13} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+      </div>
+    </div>
+  )},
   { id: 15, title: 'ANASTAZJA', content: (
     <div>
-    <div className="w-screen">
-      <Image src={ANA} className="w-full" alt="pic1" loading="lazy"/>
-    </div>
-  </div>
-)},
-{ id: 16, title: 'REST IS RUST', content: (
-  <div className='flex flex-wrap'>
-    <div className='w-full lg:w-1/2 sm:px-8 sm:hidden lg:block'>
-      <Image src={REST2} className='w-full' alt='en1' loading="lazy"/>
-    </div>
-    <div className='hidden sm:block sm:w-1/2 sm:px-20'>
-      <Image src={REST3} className='w-full' alt='en2' loading="lazy"/>
-    </div>
-</div>
-)},
-{ id: 17, title: 'GRAJPER', content: (
-  <div>
-  <div className="w-screen">
-    <Image src={GRAJP} className="w-full" alt="pic1" loading="lazy"/>
-  </div>
-</div>
-)},
-    { id: 18, title: 'NEWONCE MAANAM', content: (
-      <div className='flex flex-wrap'>
-        <div className='w-full lg:w-1/2 sm:px-8 sm:hidden lg:block'>
-          <Image src={WAW1} className='w-full' alt='en1' loading="lazy"/>
-        </div>
-        <div className='hidden sm:block sm:w-1/2 sm:px-20'>
-          <Image src={WAW2} className='w-full' alt='en2'loading="lazy" />
-        </div>
-  </div>
-    )},
-    { id: 19, title: 'SZCZYL X TATIANA I KAROL', content: (
-      <div className='flex flex-wrap '>
-        <div className='w-full sm:w-1/2 h-[calc(100svh)] sm:px-12'>
-          <Image src={SZ1} className='w-full' alt='en1' loading="lazy"/>
-        </div>
-        <div className='hidden sm:block sm:w-1/2 px-12 sm:px-20'>
-          <Image src={SZ2} className='w-full' alt='en2' loading="lazy"/>
-          <div className='h-24 bg-white'></div>
-        </div>
-  </div>
-    )},
-    { id: 20, title: 'NEWONCE WARSZAWA TURCZI', content: (
-      <div>
       <div className="w-screen">
-        <Image src={NEWWAW} className="w-full" alt="pic1" loading="lazy"/>
+        <Image src={ANA} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 16, title: 'REST IS RUST', content: (
+    <div className='flex flex-wrap'>
+      <div className='w-full lg:w-1/2 sm:px-8 sm:hidden lg:block'>
+        <Image src={REST2} className='w-full h-auto object-cover object-center' alt='en1' loading="lazy"/>
+      </div>
+      <div className='hidden sm:block sm:w-1/2 sm:px-20'>
+        <Image src={REST3} className='w-full h-auto object-cover object-center' alt='en2' loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 17, title: 'GRAJPER', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={GRAJP} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 18, title: 'NEWONCE MAANAM', content: (
+    <div className='flex flex-wrap'>
+      <div className='w-full lg:w-1/2 sm:px-8 sm:hidden lg:block'>
+        <Image src={WAW1} className='w-full h-auto object-cover object-center' alt='en1' loading="lazy"/>
+      </div>
+      <div className='hidden sm:block sm:w-1/2 sm:px-20'>
+        <Image src={WAW2} className='w-full h-auto object-cover object-center' alt='en2' loading="lazy"/>
+      </div>
+    </div>
+  )},
+  { id: 19, title: 'SZCZYL X TATIANA I KAROL', content: (
+    <div className='flex flex-wrap'>
+      <div className='w-full sm:w-1/2 h-[calc(100svh)] sm:px-12'>
+        <Image src={SZ1} className='w-full h-auto object-cover object-center' alt='en1' loading="lazy"/>
+      </div>
+      <div className='hidden sm:block sm:w-1/2 px-12 sm:px-20'>
+        <Image src={SZ2} className='w-full h-auto object-cover object-center' alt='en2' loading="lazy"/>
+        <div className='h-24 bg-white'></div>
+      </div>
+    </div>
+  )},
+  { id: 20, title: 'NEWONCE WARSZAWA TURCZI', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={NEWWAW} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
   )},

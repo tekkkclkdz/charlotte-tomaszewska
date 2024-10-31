@@ -42,7 +42,7 @@ export default function ProjectDetail({ params }: { params: Params }) {
   const lightboxRef = useRef<LightGallery | null>(null);
   const { id } = params;
 
-  const project = projects.find((project) => project.id === parseInt(id, 10));
+  const project = stillProjects.find((project) => project.id === parseInt(id, 10));
 
   // Sprawdzanie, czy plik jest GIF-em
   const isGif = (pic: ImageType) => {

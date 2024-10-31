@@ -8,8 +8,8 @@ const NavBar = ({ stillOrMoving, intro }:{
   stillOrMoving: number;
   intro: number;
 }) => {
-  const stillStyle = stillOrMoving === 0 ? 'font-bold' : 'font-light';
-  const movingStyle = stillOrMoving === 1 ? 'font-bold' : 'font-light';
+  const stillStyle = stillOrMoving === 0 ? 'font-bold' : 'font-light hover:underline';
+  const movingStyle = stillOrMoving === 1 ? 'font-bold' : 'font-light hover:underline';
 
   const [showText, setShowText] = useState(true);
 
@@ -45,7 +45,7 @@ const NavBar = ({ stillOrMoving, intro }:{
 
       {/* Keep the "still | moving" section unchanged */}
       <div className="sticky top-0 py-2 w-full mix-blend-difference text-3xl bg-transparent transition-opacity duration-300 z-50" suppressHydrationWarning={true}>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center text-white ">
           <Link href="/" passHref>
             <h1 className={stillStyle}>still</h1>
           </Link>

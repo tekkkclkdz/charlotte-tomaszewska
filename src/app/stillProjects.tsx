@@ -74,20 +74,344 @@ import LEB1 from "./../../public/LEBRAND/3.jpeg"
 import LEB2 from "./../../public/LEBRAND/8.jpeg"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import a01 from "./../../public/testxnconv/01_con.webp";
+import a02 from "./../../public/testxnconv/02_con.webp";
+import a02_1 from "./../../public/testxnconv/02 2_con.webp"; // Zmieniona na a02_1 z powodu tego samego prefiksu
+import a03 from "./../../public/testxnconv/03_con.webp";
+import a04 from "./../../public/testxnconv/04_con.webp";
+import a08_1 from "./../../public/testxnconv/08 2_con.webp"; // Zmieniona na a08_1 z powodu tego samego prefiksu
+import ParisianThaw1 from "./../../public/testxnconv/11 ParisianThaw print (1) copy_con.webp";
+import ParisianThaw2 from "./../../public/testxnconv/12 ParisianThaw print (6)_con.webp";
+import ParisianThaw3 from "./../../public/testxnconv/13 ParisianThaw print (7)_con.webp";
+import CHT from "./../../public/testxnconv/230106_CHT_0403_con.webp";
+import _2_0013 from "./../../public/testxnconv/2_0013_con.webp";
+import b2 from "./../../public/testxnconv/2b_con.webp";
+import b8 from "./../../public/testxnconv/8b_con.webp";
+import ANASTAZJA from "./../../public/testxnconv/ANASTAZJA_con.webp";
+import Alberto303 from "./../../public/testxnconv/Alberto303_0824_120 (2)_con.webp";
+import MATIGRZELAK_ARCHIVESFUTURES1 from "./../../public/testxnconv/MATIGRZELAK_ARCHIVESFUTURES (17)_con.webp";
+import MATIGRZELAK_ARCHIVESFUTURES2 from "./../../public/testxnconv/MATIGRZELAK_ARCHIVESFUTURES (4)_con.webp";
+import MATIGRZELAK_ARCHIVESFUTURES from "./../../public/testxnconv/MATIGRZELAK_ARCHIVESFUTURES_con.webp";
+import MIKOLAJZUREK from "./../../public/testxnconv/MIKOLAJZUREKunnamed-6_con.webp";
+import MoonShadow1 from "./../../public/testxnconv/Moon Shadow0351 2_con.webp";
+import MoonShadow2 from "./../../public/testxnconv/Moon Shadow0553 2_con.webp";
+import PLANETA1 from "./../../public/testxnconv/PLANETA (11)_con.webp";
+import PLANETA2 from "./../../public/testxnconv/PLANETA (4)_con.webp";
+import SZCZYL1 from "./../../public/testxnconv/SZCZYL 2023 fot Tatiana + Karol  dodatkowe8 copy_con.webp";
+import SZCZYL2 from "./../../public/testxnconv/SZCZYL 2023 fot Tatiana + Karol 18_con.webp";
+import _P3A9212 from "./../../public/testxnconv/_P3A9212_con.webp";
+import _P3A9242 from "./../../public/testxnconv/_P3A9242_con.webp";
+import _P3A9446 from "./../../public/testxnconv/_P3A9446_con.webp";
+import portfolio_charlotte_tomaszewska_compressed from "./../../public/testxnconv/portfolio_charlotte_tomaszewska_compressed_con.webp";
+import warszawa01 from "./../../public/testxnconv/warszawa01_con.webp";
+import warszawa02 from "./../../public/testxnconv/warszawa_w_budowie_01 copyasasa_con.webp";
+import warszawa03 from "./../../public/testxnconv/warszawa_w_budowie_02 copyasasas_con.webp";
+import warszawa08 from "./../../public/testxnconv/warszawa_w_budowie_08 copydsdsds_con.webp";
+
+import dc02 from "./../../public/testxnconv/dc02_con.webp"
+import dc03 from "./../../public/testxnconv/dc03_con.webp"
+
+import ave3032 from "./../../public/testxnconv/2_0013_con.webp"
+
+
+
+
+import ave1 from "./../../public/StillProjects/303ave_webp/01_con.webp";
+import ave2 from "./../../public/StillProjects/303ave_webp/02_con.webp";
+import ave3 from "./../../public/StillProjects/303ave_webp/03_con.webp";
+import ave4 from "./../../public/StillProjects/303ave_webp/04_con.webp";
+import ave5 from "./../../public/StillProjects/303ave_webp/05_con.webp";
+import ave6 from "./../../public/StillProjects/303ave_webp/06_con.webp";
+import ave7 from "./../../public/StillProjects/303ave_webp/07_con.webp";
+import ave8 from "./../../public/StillProjects/303ave_webp/08_con.webp";
+import ave9 from "./../../public/StillProjects/303ave_webp/09_con.webp";
+import ave10 from "./../../public/StillProjects/303ave_webp/10_con.webp";
+import ave11 from "./../../public/StillProjects/303ave_webp/11_con.webp";
+import ave12 from "./../../public/StillProjects/303ave_webp/12_con.webp";
+import ave13 from "./../../public/StillProjects/303ave_webp/13_con.webp";
+import ave14 from "./../../public/StillProjects/303ave_webp/14_con.webp";
+
+import arch1 from "./../../public/StillProjects/archives_future_webp/01_con.webp";
+import arch2 from "./../../public/StillProjects/archives_future_webp/02_con.webp";
+import arch3 from "./../../public/StillProjects/archives_future_webp/03_con.webp";
+import arch4 from "./../../public/StillProjects/archives_future_webp/04_con.webp";
+import arch5 from "./../../public/StillProjects/archives_future_webp/05_con.webp";
+import arch6 from "./../../public/StillProjects/archives_future_webp/06_con.webp";
+import arch7 from "./../../public/StillProjects/archives_future_webp/07_con.webp";
+import arch8 from "./../../public/StillProjects/archives_future_webp/08_con.webp";
+import arch9 from "./../../public/StillProjects/archives_future_webp/09_con.webp";
+import arch10 from "./../../public/StillProjects/archives_future_webp/10_con.webp";
+import arch11 from "./../../public/StillProjects/archives_future_webp/11_con.webp";
+import arch12 from "./../../public/StillProjects/archives_future_webp/12_con.webp";
+import arch13 from "./../../public/StillProjects/archives_future_webp/13_con.webp";
+import arch14 from "./../../public/StillProjects/archives_future_webp/14_con.webp";
+
+import cap1 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (1)_con.webp";
+import cap2 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (2)_con.webp";
+import cap3 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (3)_con.webp";
+import cap4 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (4)_con.webp";
+import cap5 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (5)_con.webp";
+import cap6 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (6)_con.webp";
+import cap7 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (7)_con.webp";
+import cap8 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (8)_con.webp";
+import cap9 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (9)_con.webp";
+import cap10 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (10)_con.webp";
+
+
+
+import dc1 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01Zrzut ekranu 2024-03-25 o 11.29.13_con.webp";
+import dc2 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01Zrzut ekranu 2024-03-25 o 11.31.02_con.webp";
+import dc3 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01Zrzut ekranu 2024-03-25 o 11.31.13_con.webp";
+import dc4 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01_con.webp";
+import dc5 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02Zrzut ekranu 2024-03-25 o 11.31.42_con.webp";
+import dc6 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02Zrzut ekranu 2024-03-25 o 11.32.05_con.webp";
+import dc7 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02Zrzut ekranu 2024-03-25 o 11.32.15_con.webp";
+import dc8 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02_con.webp";
+import dc9 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/03Zrzut ekranu 2024-03-25 o 11.35.24_con.webp";
+import dc10 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/03Zrzut ekranu 2024-03-_con.webp";
+import dc11 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/03_con.webp";
+import dc12 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04Zrzut ekranu 2024-03-25 o 11.36.04_con.webp";
+import dc13 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04Zrzut ekranu 2024-03-25 o 11.36.48_con.webp";
+import dc14 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04Zrzut ekranu 2024-03-25 o 11.36.59_con.webp";
+import dc15 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04_con.webp";
+import dc16 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05Zrzut ekranu 2024-03-25 o 11.39.32_con.webp";
+import dc17 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05Zrzut ekranu 2024-03-25 o 11.40.30_con.webp";
+import dc18 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05_con.webp";
+import dc19 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05żrzut ekranu 2024-03-25 o 11.41.28_con.webp";
+import dc20 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/06Zrzut ekranu 2024-03-25 o 11.38.35_con.webp";
+import dc21 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/06Zrzut ekranu 2024-03-25 o 11.38.54_con.webp";
+import dc22 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/06_con.webp";
+import dc23 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.07_con.webp";
+import dc24 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.27_con.webp";
+import dc25 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.39_con.webp";
+import dc26 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07_con.webp";
+import dc27 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.18_con.webp";
+import dc28 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.29_con.webp";
+import dc29 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.39_con.webp";
+import dc30 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08_con.webp";
+import dc31 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/09Zrzut ekranu 2024-03-25 o 11.42.00_con.webp";
+import dc32 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/09Zrzut ekranu 2024-03-25 o 11.42.39_con.webp";
+
+import double1 from "./../../public/StillProjects/doubledare_webp/230106_CHT_0403_con.webp";
+
+import enora1 from "./../../public/StillProjects/enora_webp/_P3A9212_con.webp"
+import enora2 from "./../../public/StillProjects/enora_webp/_P3A9242_con.webp"
+import enora3 from "./../../public/StillProjects/enora_webp/_P3A9446_con.webp"
+
+
+import jan1 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/01_con.webp";
+import jan2 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/02_con.webp";
+import jan3 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/03_con.webp";
+import jan4 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/04_con.webp";
+import jan5 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/05_con.webp";
+import jan6 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/06_con.webp";
+import jan7 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/07_con.webp";
+import jan8 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_1_webp/08_con.webp";
+
+
+import cho1 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/01_con.webp";
+import cho2 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/02_con.webp";
+import cho3 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/03_con.webp";
+import cho4 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/04_con.webp";
+import cho5 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/05_con.webp";
+import cho6 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/06_con.webp";
+import cho7 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/07_con.webp";
+import cho8 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/08_con.webp";
+import cho9 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/09_con.webp";
+import cho10 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/10_con.webp";
+import cho11 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/11_con.webp";
+import cho12 from "./../../public/StillProjects/JAN_F_CHODOROWICZ_2_webp/portfolio_charlotte_tomaszewska_compressed_con.webp"
+
+
+import kmag1 from "./../../public/StillProjects/kmag_webp/02 2_con.webp"
+import kmag2 from "./../../public/StillProjects/kmag_webp/04_con.webp"
+import kmag3 from "./../../public/StillProjects/kmag_webp/07 2_con.webp"
+import kmag4 from "./../../public/StillProjects/kmag_webp/08 2_con.webp"
+
+
+
+import lebrand1 from "./../../public/StillProjects/LEBRAND_webp/01_con.webp";
+import lebrand2 from "./../../public/StillProjects/LEBRAND_webp/02_con.webp";
+import lebrand3 from "./../../public/StillProjects/LEBRAND_webp/03_con.webp";
+import lebrand4 from "./../../public/StillProjects/LEBRAND_webp/04_con.webp";
+import lebrand5 from "./../../public/StillProjects/LEBRAND_webp/05_con.webp";
+import lebrand6 from "./../../public/StillProjects/LEBRAND_webp/06_con.webp";
+import lebrand7 from "./../../public/StillProjects/LEBRAND_webp/07_con.webp";
+import lebrand8 from "./../../public/StillProjects/LEBRAND_webp/08_con.webp";
+import lebrand9 from "./../../public/StillProjects/LEBRAND_webp/09_con.webp";
+import lebrand10 from "./../../public/StillProjects/LEBRAND_webp/10_con.webp";
+import lebrand11 from "./../../public/StillProjects/LEBRAND_webp/11_con.webp";
+import lebrand12 from "./../../public/StillProjects/LEBRAND_webp/12_con.webp";
+import lebrand13 from "./../../public/StillProjects/LEBRAND_webp/13_con.webp";
+
+import love1 from "./../../public/StillProjects/love_magazine_webp/01_con.webp";
+import love2 from "./../../public/StillProjects/love_magazine_webp/02_con.webp";
+import love3 from "./../../public/StillProjects/love_magazine_webp/03_con.webp";
+import love4 from "./../../public/StillProjects/love_magazine_webp/04_con.webp";
+import love5 from "./../../public/StillProjects/love_magazine_webp/05_con.webp";
+import love6 from "./../../public/StillProjects/love_magazine_webp/06_con.webp";
+import love7 from "./../../public/StillProjects/love_magazine_webp/07_con.webp";
+
+
+import moon1 from "./../../public/StillProjects/moon_shadow_webp/01_con.webp";
+import moon2 from "./../../public/StillProjects/moon_shadow_webp/02_con.webp";
+import moon3 from "./../../public/StillProjects/moon_shadow_webp/03_con.webp";
+import moon4 from "./../../public/StillProjects/moon_shadow_webp/04_con.webp";
+import moon5 from "./../../public/StillProjects/moon_shadow_webp/05_con.webp";
+import moon6 from "./../../public/StillProjects/moon_shadow_webp/06_con.webp";
+import moon7 from "./../../public/StillProjects/moon_shadow_webp/07_con.webp";
+import moon8 from "./../../public/StillProjects/moon_shadow_webp/08_con.webp";
+
+
+import new_human_1 from "./../../public/StillProjects/newonce_human_webp/human_01_con.webp";
+import new_human_2 from "./../../public/StillProjects/newonce_human_webp/human_02_con.webp";
+import new_human_3 from "./../../public/StillProjects/newonce_human_webp/human_03_con.webp";
+import new_human_4 from "./../../public/StillProjects/newonce_human_webp/human_04_con.webp";
+import new_human_5 from "./../../public/StillProjects/newonce_human_webp/human_05_con.webp";
+import new_human_6 from "./../../public/StillProjects/newonce_human_webp/human_06_con.webp";
+import new_human_7 from "./../../public/StillProjects/newonce_human_webp/human_07_con.webp";
+import new_human_8 from "./../../public/StillProjects/newonce_human_webp/human_08_con.webp";
+import new_human_9 from "./../../public/StillProjects/newonce_human_webp/human_09_con.webp";
+import new_human_10 from "./../../public/StillProjects/newonce_human_webp/human_10_con.webp";
+import new_human_11 from "./../../public/StillProjects/newonce_human_webp/human_11_con.webp";
+import new_human_12 from "./../../public/StillProjects/newonce_human_webp/human_12_con.webp";
+import new_human_13 from "./../../public/StillProjects/newonce_human_webp/human_13_con.webp";
+import new_human_14 from "./../../public/StillProjects/newonce_human_webp/human_14_con.webp";
+
+
+import new_maanam1 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/01_con.webp";
+import new_maanam2 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/02_con.webp";
+
+import new_maanam4 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/04_con.webp";
+import new_maanam5 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/05_con.webp";
+import new_maanam6 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/06_con.webp";
+import new_maanam7 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/07_con.webp";
+import new_maanam8 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/08_con.webp";
+import new_maanam9 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/09_con.webp";
+import new_maanam10 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/10_con.webp";
+import new_maanam11 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/11_con.webp";
+import new_maanam12 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/12_con.webp";
+import new_maanam13 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/13_con.webp";
+import new_maanam14 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/14_con.webp";
+import new_maanam15 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/15_con.webp";
+import new_maanam16 from "./../../public/StillProjects/newonce_warszawa_maanam_webp/warszawa_w_budowie_12 copydsds_con.webp";
+
+
+import new_turczi1 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/okładka_con.webp";
+import new_turczi2 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa01-kopia_con.webp";
+import new_turczi3 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa02_con.webp";
+import new_turczi4 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa03_con.webp";
+import new_turczi5 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa04_con.webp";
+import new_turczi6 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa05_con.webp";
+import new_turczi7 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa06_con.webp";
+import new_turczi8 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa07_con.webp";
+import new_turczi9 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa08_con.webp";
+import new_turczi10 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa09_con.webp";
+import new_turczi11 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa10_con.webp";
+import new_turczi12 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa11_con.webp";
+import new_turczi13 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa12_con.webp";
+
+
+import parisian1 from "./../../public/StillProjects/parisian_webp/01_con.webp";
+import parisian2 from "./../../public/StillProjects/parisian_webp/02_con.webp";
+import parisian3 from "./../../public/StillProjects/parisian_webp/03_con.webp";
+import parisian4 from "./../../public/StillProjects/parisian_webp/04_con.webp";
+import parisian5 from "./../../public/StillProjects/parisian_webp/05_con.webp";
+import parisian6 from "./../../public/StillProjects/parisian_webp/06_con.webp";
+import parisian7 from "./../../public/StillProjects/parisian_webp/07_con.webp";
+import parisian8 from "./../../public/StillProjects/parisian_webp/08_con.webp";
+import parisian9 from "./../../public/StillProjects/parisian_webp/09_con.webp";
+
+
+import planetaXpoptown1 from "./../../public/StillProjects/planeta_x_poptown_webp/01_con.webp";
+import planetaXpoptown2 from "./../../public/StillProjects/planeta_x_poptown_webp/02.gif";
+import planetaXpoptown3 from "./../../public/StillProjects/planeta_x_poptown_webp/03.gif";
+import planetaXpoptown4 from "./../../public/StillProjects/planeta_x_poptown_webp/04.gif";
+import planetaXpoptown5 from "./../../public/StillProjects/planeta_x_poptown_webp/05_con.webp";
+import planetaXpoptown6 from "./../../public/StillProjects/planeta_x_poptown_webp/06.gif";
+import planetaXpoptown7 from "./../../public/StillProjects/planeta_x_poptown_webp/07_con.webp";
+import planetaXpoptown8 from "./../../public/StillProjects/planeta_x_poptown_webp/08_con.webp";
+
+
+import rest_is_dust1 from "./../../public/StillProjects/rest_is_dust_webp/01_con.webp";
+import rest_is_dust2 from "./../../public/StillProjects/rest_is_dust_webp/02_con.webp";
+import rest_is_dust3 from "./../../public/StillProjects/rest_is_dust_webp/03_con.webp";
+import rest_is_dust4 from "./../../public/StillProjects/rest_is_dust_webp/04_con.webp";
+import rest_is_dust5 from "./../../public/StillProjects/rest_is_dust_webp/05_con.webp";
+import rest_is_dust6 from "./../../public/StillProjects/rest_is_dust_webp/06_con.webp";
+import rest_is_dust7 from "./../../public/StillProjects/rest_is_dust_webp/07_con.webp";
+import rest_is_dust8 from "./../../public/StillProjects/rest_is_dust_webp/08_con.webp";
+import rest_is_dust9 from "./../../public/StillProjects/rest_is_dust_webp/09_con.webp";
+import rest_is_dust10 from "./../../public/StillProjects/rest_is_dust_webp/10_con.webp";
+import rest_is_dust11 from "./../../public/StillProjects/rest_is_dust_webp/11_con.webp";
+import rest_is_dust12 from "./../../public/StillProjects/rest_is_dust_webp/12_con.webp";
+
+import szczylXtatiana1 from "./../../public/StillProjects/szczyl_x_tatiana_webp/01_con.webp"; 
+import szczylXtatiana2 from "./../../public/StillProjects/szczyl_x_tatiana_webp/02_con.webp"; 
+import szczylXtatiana3 from "./../../public/StillProjects/szczyl_x_tatiana_webp/03_con.webp"; 
+import szczylXtatiana4 from "./../../public/StillProjects/szczyl_x_tatiana_webp/04_con.webp"; 
+import szczylXtatiana5 from "./../../public/StillProjects/szczyl_x_tatiana_webp/05_con.webp"; 
+import szczylXtatiana6 from "./../../public/StillProjects/szczyl_x_tatiana_webp/06_con.webp"; 
+import szczylXtatiana7 from "./../../public/StillProjects/szczyl_x_tatiana_webp/07_con.webp"; 
+import szczylXtatiana8 from "./../../public/StillProjects/szczyl_x_tatiana_webp/08_con.webp"; 
+import szczylXtatiana9 from "./../../public/StillProjects/szczyl_x_tatiana_webp/09_con.webp"; 
+import szczylXtatiana10 from "./../../public/StillProjects/szczyl_x_tatiana_webp/10_con.webp";
+
+import vatos1 from "./../../public/StillProjects/vatos_lanos_revs_webp/01_con.webp"; 
+import vatos2 from "./../../public/StillProjects/vatos_lanos_revs_webp/02_con.webp"; 
+import vatos3 from "./../../public/StillProjects/vatos_lanos_revs_webp/03_con.webp"; 
+import vatos4 from "./../../public/StillProjects/vatos_lanos_revs_webp/04_con.webp"; 
+import vatos5 from "./../../public/StillProjects/vatos_lanos_revs_webp/05_con.webp"; 
+import vatos6 from "./../../public/StillProjects/vatos_lanos_revs_webp/06_con.webp"; 
+import vatos7 from "./../../public/StillProjects/vatos_lanos_revs_webp/07_con.webp"; 
+import vatos8 from "./../../public/StillProjects/vatos_lanos_revs_webp/08_con.webp"; 
+import vatos10 from "./../../public/StillProjects/vatos_lanos_revs_webp/10_con.webp"; 
+import vatos11 from "./../../public/StillProjects/vatos_lanos_revs_webp/11_con.webp"; 
+
+
+import human_okl from "./../../public/StillProjects/newonce_human_webp/HUMAN.gif"
+
+
+
+import okl from "./../../public/StillProjects/planeta_x_poptown_webp/03.gif"
+
+
+
+
+import lebrand_okladka from "./../../public/StillProjects/LEBRAND_webp/02_con.webp"
+
+
 export const projects = [
   {
     id: 1, title: 'KMAG OBLIVIUM', content: (
       <div className="flex">
         <div className="w-screen sm:w-1/2 sm:py-6">
           <a href='lol'>
-            <Image src={kmagobl02} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+            <Image src={a02_1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
           </a>
         </div>
         <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-          <Image src={kmagobl4} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+          <Image src={a04} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
         </div>
       </div>
-    ),
+    ), additionalImages: [ kmag1, kmag2, kmag3, kmag4]
   },
   { id: 2, title: 'LOVE MAGAZINE', content: (
     <div>
@@ -95,64 +419,61 @@ export const projects = [
         <Image src={JAN} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [love1, love2, love3, love4, love5, love6, love7]
+},
   { id: 3, title: 'DOCUMENT JOURNAL', content: (
     <div className="flex flex-wrap lg:flex-nowrap">
       <div className="w-1/3 px-8 hidden sm:block">
-        <Image src={DJ1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+        <Image src={a01} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
       <div className="w-1/3 px-8 hidden sm:block">
-        <Image src={DJ2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+        <Image src={dc02} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
       </div>
       <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-        <Image src={DJ3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+        <Image src={dc03} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, dc28, dc29, dc30, dc31, dc32]},
   {
     id: 4, title: 'LEBRAND', content: (
-      <div className="flex">
-        <div className="w-screen sm:w-1/2 ml-40 sm:px-0 sm:py-6">
-          <a href='lol'>
-            <Image src={LEB1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
-          </a>
-        </div>
-        <div className="sm:flex hidden w-full sm:py-6">
-          <Image src={LEB2} className="w-1/2 h-auto object-cover object-center" alt="pic2" loading="lazy"/>
-        </div>
+      <div>
+      <div className="w-screen">
+        <Image src={lebrand_okladka} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
-    ),
+    </div>
+    ), additionalImages: [lebrand1, lebrand2, lebrand3, lebrand4, lebrand5, lebrand6, lebrand7, lebrand8, lebrand9, lebrand10, lebrand11, lebrand12, lebrand13]
   },
   { id: 5, title: 'ARCHIVES FUTURE', content: (
     <div className="flex">
       <div className="w-screen sm:w-1/2 sm:py-6">
         <a href='lol'>
-          <Image src={MAT} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+          <Image src={MATIGRZELAK_ARCHIVESFUTURES2} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
         </a>
       </div>
       <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-        <Image src={MAT17} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+        <Image src={MATIGRZELAK_ARCHIVESFUTURES1} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [ arch1, arch2, arch3, arch4, arch5, arch6, arch7, arch8, arch9, arch10, arch11, arch12, arch13, arch14]},
   { id: 6, title: '303AVENUE', content: (
     <div className="flex">
       <div className="w-screen sm:w-1/2 sm:py-6">
         <a href='lol'>
-          <Image src={AVE1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+          <Image src={ave3032} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
         </a>
       </div>
       <div className="sm:flex hidden w-1/2 px-8 sm:py-6">
-        <Image src={AVE2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+        <Image src={Alberto303} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave8, ave9, ave10, ave11, ave12, ave13, ave14]
+},
   { id: 7, title: 'NEWONCE', content: (
     <div>
       <div className="w-screen">
         <Image src={NO8} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
-      <div className="sm:grid grid-rows-3 justify-center lg:hidden">
+      {/* <div className="sm:grid grid-rows-3 justify-center lg:hidden">
         <div className="w-screen hidden">
           <Image src={NO7} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
         </div>
@@ -162,7 +483,7 @@ export const projects = [
         <div className="w-screen">
           <Image src={NO9} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
         </div>
-      </div>
+      </div> */}
     </div>
   )},
   { id: 8, title: 'MOON SHADOW', content: (
@@ -176,14 +497,14 @@ export const projects = [
         <Image src={Moo2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [moon1, moon2, moon3, moon4, moon5, moon6, moon7, moon8]},
   { id: 9, title: 'JAN_F_CHODOROWICZ 2', content: (
     <div>
       <div className="w-screen">
         <Image src={JAN22} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [cho1, cho2, cho3, cho4, cho5, cho6, cho7, cho8, cho9, cho10, cho11, cho12]},
   { id: 10, title: 'ENORA', content: (
     <div className="flex flex-wrap lg:flex-nowrap">
       <div className="w-1/3 px-8 hidden sm:block">
@@ -196,7 +517,7 @@ export const projects = [
         <Image src={EN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [ enora1, enora2, enora3]},
   {
     id: 11, title: 'CAP PLANETA', content: (
       <div>
@@ -204,33 +525,30 @@ export const projects = [
         <Image src={PLA11} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
-    ),
+    ), additionalImages: [ cap1, cap2, cap3, cap4, cap5, cap6, cap7, cap8, cap9, cap10]
   },
   { id: 12, title: 'JAN_F_CHODOROWICZ', content: (
     <div>
       <div className="w-screen">
         <Image src={JAN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
-      <div className="sm:grid grid-rows-3 justify-center lg:hidden">
+      <div className="sm:grid grid-rows-2 justify-center lg:hidden">
         <div className="w-screen hidden">
           <Image src={JAN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
-        </div>
-        <div className="w-screen">
-          <Image src={JAN2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
         </div>
         <div className="w-screen">
           <Image src={JAN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
         </div>
       </div>
     </div>
-  )},
+  ), additionalImages: [ jan1, jan2, jan3, jan4, jan5, jan6, jan7, jan8 ]},
   { id: 13, title: 'DOUBLEDARE', content: (
     <div>
       <div className="w-screen">
         <Image src={DUB} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [ double1]},
   { id: 14, title: 'ALSO JOURNAL PARISIAN THAW', content: (
     <div className="flex flex-wrap lg:flex-nowrap">
       <div className="w-1/3 px-8 hidden sm:block">
@@ -243,7 +561,8 @@ export const projects = [
         <Image src={PAR13} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [parisian1, parisian2, parisian3, parisian4, parisian5, parisian6, parisian7, parisian8, parisian9]
+},
   { id: 15, title: 'ANASTAZJA', content: (
     <div>
       <div className="w-screen">
@@ -260,7 +579,8 @@ export const projects = [
         <Image src={REST3} className='w-full h-auto object-cover object-center' alt='en2' loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [rest_is_dust1, rest_is_dust2, rest_is_dust3, rest_is_dust4, rest_is_dust5, rest_is_dust6, rest_is_dust7, rest_is_dust8, rest_is_dust9, rest_is_dust10, rest_is_dust11, rest_is_dust12]
+},
   { id: 17, title: 'GRAJPER', content: (
     <div>
       <div className="w-screen">
@@ -277,7 +597,8 @@ export const projects = [
         <Image src={WAW2} className='w-full h-auto object-cover object-center' alt='en2' loading="lazy"/>
       </div>
     </div>
-  )},
+  ), additionalImages: [new_maanam1, new_maanam2, new_maanam4, new_maanam5, new_maanam6, new_maanam7, new_maanam8, new_maanam9, new_maanam10, new_maanam11, new_maanam12, new_maanam13, new_maanam14, new_maanam15, new_maanam16]
+},
   { id: 19, title: 'SZCZYL X TATIANA I KAROL', content: (
     <div className='flex flex-wrap'>
       <div className='w-full sm:w-1/2 h-[calc(100svh)] sm:px-12'>
@@ -288,15 +609,42 @@ export const projects = [
         <div className='h-24 bg-white'></div>
       </div>
     </div>
-  )},
+  ), additionalImages: [szczylXtatiana1, szczylXtatiana2, szczylXtatiana3, szczylXtatiana4, szczylXtatiana5, szczylXtatiana6, szczylXtatiana7, szczylXtatiana8, szczylXtatiana9, szczylXtatiana10]
+},
   { id: 20, title: 'NEWONCE WARSZAWA TURCZI', content: (
     <div>
       <div className="w-screen">
         <Image src={NEWWAW} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
       </div>
     </div>
-  )},
-  { id: 21, title: 'NEWONCE WARSZAWA TURCZI', content: (
+  ), additionalImages: [new_turczi1, new_turczi2, new_turczi3, new_turczi4, new_turczi5, new_turczi6, new_turczi7, new_turczi8, new_turczi9, new_turczi10, new_turczi11, new_turczi12, new_turczi13]
+},
+  {
+    id: 21, title: 'CAP PLANETA X POPTOWN', content: (
+      <div>
+      <div className="w-screen">
+        <Image src={okl} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+    ), additionalImages: [planetaXpoptown1, planetaXpoptown2, planetaXpoptown3, planetaXpoptown4, planetaXpoptown5, planetaXpoptown6, planetaXpoptown7, planetaXpoptown8]
+  },
+  {
+    id: 22, title: 'NEWONCE HUMAN', content: (
+      <div>
+      <div className="w-screen">
+        <Image src={human_okl} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+    ), additionalImages: [new_human_1, new_human_2, new_human_3, new_human_4, new_human_5, new_human_6, new_human_7, new_human_8, new_human_9, new_human_10, new_human_11, new_human_12, new_human_13, new_human_14]
+  },
+  { id: 23, title: 'VATOS LANOS REVS', content: (
+    <div>
+      <div className="w-screen">
+        <Image src={vatos11} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+      </div>
+    </div>
+  ), additionalImages: [ vatos1, vatos2, vatos3, vatos4, vatos5, vatos6, vatos7, vatos8, vatos10, vatos11]},
+  { id: 24, title: 'VATOS LANOS REVS', content: (
     <div>
     <div className="w-screen h-1/4 bg-white">
       

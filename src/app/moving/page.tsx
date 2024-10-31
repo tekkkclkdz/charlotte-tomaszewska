@@ -3,86 +3,22 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from './../components/NavBar';
 import BottomTitles from './../components/BottomTittles';
-import ProjectContent from './../components/ProjectContent';
+import MovingContent from './../components/MovingContent';
 import ContactBioBar from '../components/ContactBioBar';
 
-
-
-const projects = [
-    {
-        id: 1,
-        title: 'BRODKA & IGO',
-        videoUrl: 'https://player.vimeo.com/video/932867048?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for BRODKA & IGO</p>
-    },
-    {
-        id: 2,
-        title: 'ADIDAS',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for ADIDAS</p>
-    },
-    {
-        id: 3,
-        title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/647758815?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for JESTEM KOBIETA</p>
-    },
-    {
-        id: 4,
-        title: 'STONE - QUEEN',
-        videoUrl: 'https://player.vimeo.com/video/990654176?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for STONE - QUEEN</p>
-    },
-    {
-        id: 5,
-        title: 'BARBARKA - MARIA PESZEK FT OSKAR83',
-        videoUrl: 'https://player.vimeo.com/video/610083622?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for BARBARKA - MARIA PESZEK FT OSKAR83</p>
-    },
-    {
-        id: 6,
-        title: 'SUPERPOWERS',
-        videoUrl: 'https://player.vimeo.com/video/828107491?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for SUPERPOWERS</p>
-    },
-    {
-        id: 7,
-        title: 'DARK EROS',
-        videoUrl: 'https://player.vimeo.com/video/450786928?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for DARK EROS</p>
-    },
-    {
-        id: 8,
-        title: 'HOME',
-        videoUrl: 'https://player.vimeo.com/video/669378253?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for HOME</p>
-    },
-    {
-        id: 9,
-        title: 'WINDOWSEN',
-        videoUrl: 'https://player.vimeo.com/video/1016725466?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for WINDOWSEN</p>
-    },
-    {
-        id: 10,
-        title: 'JESTEM KOBIETA',
-        videoUrl: 'https://player.vimeo.com/video/887736596?background=1&autoplay=1&loop=1&muted=1#t=5,10',
-        content: <p>Some content for JESTEM KOBIETA</p>
-    }
-];
+import { projects } from './../../app/movingProjects';
 
 const ProjectVideo = ({ videoUrl }: { videoUrl: string }) => {
     return (
-        <div className="w-full h-[100vh] flex justify-center items-center">
+        <div className="w-full flex justify-center items-center">
             <iframe
                 src={videoUrl}
-                width="100%"
-                height="100%"
+                className="w-full h-[calc(100vh-60px)] md:h-[80vh]" // Responsive height adjustments
                 frameBorder="0"
                 allow="autoplay; fullscreen"
                 allowFullScreen
-                className="w-full h-full"
                 loading="lazy"
+                style={{ aspectRatio: '16/9' }} // Maintain aspect ratio
             ></iframe>
         </div>
     );
@@ -116,25 +52,20 @@ const Page = () => {
     }, [showRotateScreen]);
 
     return (
-        <div className='bg-white'>
-            <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'} md:hidden`}>
-                <p className="text-4xl text-black font-light">rotate your phone</p>
-            </div>
-            <NavBar stillOrMoving={1} intro={1} />
-            
-            {/* Render Vimeo videos */}
-            <div>
-                {projects.map((project) => (
-                    <div key={project.id} className="mb-8">
-                        <h2 className="text-center text-2xl mb-4">{project.title}</h2>
-                        <ProjectVideo videoUrl={project.videoUrl} />
-                    </div>
-                ))}
-            </div>
+     
+             
+       
+             <div className='bg-white'>
+                 <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'} md:hidden`}>
+                     <p className="text-4xl text-black font-light">rotate your phone</p>
+                 </div>
+                 <NavBar stillOrMoving={1} intro={1} />
 
-            <BottomTitles projects={projects} moving={1}/>
-            <ContactBioBar intro={1}/>
-        </div>
+                 {/* Render Vimeo videos */}
+                 <MovingContent projects={projects} />
+                 <ContactBioBar intro={1}/>
+                 
+             </div>
     );
 };
 

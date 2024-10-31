@@ -1,10 +1,7 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+"use client";
+import React, { useState, useEffect } from "react";
 
-const ContactBioBar = ({ intro }:{
-    intro: number;
-}) => {
+const ContactBioBar = ({ intro }: { intro: number }) => {
   const [showBar, setShowBar] = useState(intro === 1);
 
   useEffect(() => {
@@ -15,23 +12,44 @@ const ContactBioBar = ({ intro }:{
       setShowBar(scrollPosition >= threshold || intro === 1);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [intro]);
 
   return (
-    <div className={`fixed   top-0 left-0 text-2xl sm:text-3xl w-full h-full z-40 flex mix-blend-difference justify-between items-center transition-opacity duration-200 ${showBar ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="sticky top-50vh transform -translate-y-50% text-black dark:text-white">
-  <a href="/biography" className="px-2">biography</a>
-</div>
-      <div className="sticky top-50vh transform -translate-y-50% text-white">
-        <a href="/contact" className="px-2">contact</a>
+    <div
+      className={`fixed inset-0 z-10 flex justify-between mix-blend-difference  items-center transition-opacity duration-200 pointer-events-none ${
+        showBar ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <div
+        style={{
+          position: "fixed",
+          top: "50vh",
+          left: "0%",
+        }}
+        className="text-white pointer-events-auto"
+      >
+        <a href="/biography" className="px-2 text-2xl font-light sm:text-3xl mix-blend-difference hover:underline">
+          biography
+        </a>
+      </div>
+      <div
+        style={{
+          position: "fixed",
+          top: "50vh",
+          right: "0%",
+        }}
+        className="text-white pointer-events-auto"
+      >
+        <a href="/contact" className="px-2 text-2xl sm:text-3xl font-light hover:underline">
+          contact
+        </a>
       </div>
     </div>
   );
 };
 
 export default ContactBioBar;
-  

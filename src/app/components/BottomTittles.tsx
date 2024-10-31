@@ -15,35 +15,47 @@ const BottomTitles = ({ projects, moving }: {
   moving: number;
 }) => {
   const [activeProject, setActiveProject] = useState(1);
-  // Set the initial visibility of the component based on the moving prop
   const [showComponent, setShowComponent] = useState(false);
+  const [holdFirstProject, setHoldFirstProject] = useState(false);
 
   useEffect(() => {
-    // Immediately show the component if moving is 1
     if (moving === 1) {
       setShowComponent(true);
+      setHoldFirstProject(true); // Hold the first project longer
     }
 
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
-      const triggerPoint = windowHeight * 0.5; // Adjust the trigger point as needed
+      const triggerPoint = windowHeight * 0.5; // Trigger point for visibility
 
-      // Show component based on scroll position or if moving is 1
+      // Show the component based on scroll position or moving state
       setShowComponent(scrollPosition > triggerPoint || moving === 1);
 
-      const totalHeight = document.documentElement.scrollHeight;
+      // Calculate the height for each project
+      const totalHeight = document.documentElement.scrollHeight - windowHeight; // Adjust for viewport height
       const projectHeight = totalHeight / projects.length;
+
+      // Calculate the current project index based on scroll position
       const currentProject = Math.floor(scrollPosition / projectHeight) + 1;
 
-      setActiveProject(currentProject);
+      // Ensure we only change to the next project if it's centered in the viewport
+      if (currentProject > 0 && currentProject <= projects.length) {
+        const projectStartPosition = (currentProject - 1) * projectHeight;
+        const projectEndPosition = projectStartPosition + projectHeight;
+
+        // Check if the current project is within the middle of the viewport
+        if (scrollPosition >= projectStartPosition + projectHeight * 0.2 && scrollPosition < projectEndPosition - projectHeight * 0.2) {
+          setActiveProject(currentProject);
+        }
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [projects, moving]); // Include moving in the dependencies array
+  }, [projects, moving]);
 
   return (
     <div className={`fixed bottom-0 mix-blend-difference left-1/2 transform -translate-x-1/2 text-center font-light transition-opacity duration-300 ${showComponent ? 'opacity-100' : 'opacity-0'}`} suppressHydrationWarning={true}>

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 import Masonry from 'react-masonry-css';
 
@@ -28,7 +28,7 @@ type ProjectType = {
   id: number; // Zakładam, że id jest liczbą
   title: string; // Tytuł projektu
   content: JSX.Element; // Element JSX jako zawartość
-  additionalImages: ImageType[]; // Tablica obrazków
+  additionalImages?: StaticImageData; // Tablica obrazków
 };
 
 

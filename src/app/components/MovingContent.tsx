@@ -8,7 +8,7 @@ type Project = {
   id: number;
   title: string;
   content: JSX.Element;
-  additionalImages?: string[];
+  credits: string[];
 };
 
 type ProjectsArray = Project[];

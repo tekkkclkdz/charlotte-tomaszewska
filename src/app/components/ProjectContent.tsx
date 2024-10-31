@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Element } from "react-scroll";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
 
 
@@ -10,10 +11,12 @@ type Project = {
   id: number;
   title: string;
   content: JSX.Element;
-  additionalImages?: string[];
+  additionalImages?: (string | StaticImageData)[];
 };
 
 type ProjectsArray = Project[];
+
+
 
 
 const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {

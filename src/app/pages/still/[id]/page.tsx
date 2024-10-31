@@ -14,7 +14,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-import { projects } from "../../../stillProjects"; // Upewnij się, że ścieżka jest poprawna
+import { stillProjects } from "./../../../stillProjects";
 
 type Params = {
   id: string; // lub number, jeśli id jest liczbą

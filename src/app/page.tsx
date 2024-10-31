@@ -31,7 +31,7 @@ import JAN1 from './../../public/still/JAN_F_CHODOROWICZ/05.jpg'
 import RES1 from "./../../public/still/rest_is_rust/jpeg-optimizer_01-kopia 2.jpg"
 import RES2 from "./../../public/still/rest_is_rust/jpeg-optimizer_8b.jpg"
 
-import  { projectsStill } from "./stillProjects"
+import  { stillProjects }  from "./stillProjects"
 
 const Page = () => {
   return (
@@ -39,7 +39,7 @@ const Page = () => {
       <div className='bg-white h-16 w-full'></div>
       <NavBar stillOrMoving={0} intro={0} />
       <ContactBioBar intro={0}/> {/* Dodajemy komponent ContactBioBar */}
-      <ProjectContent projects={projectsStill} />
+      <ProjectContent projects={stillProjects} />;
       {/* <BottomTitles projects={projects} moving={0}/> */}
       <div className='bg-white w-full h-full' />
     </div>

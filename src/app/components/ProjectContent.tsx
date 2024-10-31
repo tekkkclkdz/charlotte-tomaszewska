@@ -4,6 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Element } from "react-scroll";
 import Link from "next/link";
 
+
+
 type Project = {
   id: number;
   title: string;
@@ -45,21 +47,25 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
 
   return (
     <div>
-      {projects.map((project, index) => (
-        <Element key={project.id} name={`project${project.id}`}>
-          <Link href={`/pages/still/${project.id}`} passHref>
-            <div
-              ref={(el) => (projectRefs.current[index] = el)}
-              className="relative flex items-center py-8 justify-center bg-white text-black font-light cursor-pointer z-0"
-              id={`project${project.id}`}
-            >
-              <div className="text-center">
-                <div>{project.content}</div>
+      {Array.isArray(projects) && projects.length > 0 ? (
+        projects.map((project, index) => (
+          <Element key={project.id} name={`project${project.id}`}>
+            <Link href={`/pages/still/${project.id}`} passHref>
+              <div
+                ref={(el) => (projectRefs.current[index] = el)}
+                className="relative flex items-center py-8 justify-center bg-white text-black font-light cursor-pointer z-0"
+                id={`project${project.id}`}
+              >
+                <div className="text-center">
+                  <div>{project.content}</div>
+                </div>
               </div>
-            </div>
-          </Link>
-        </Element>
-      ))}
+            </Link>
+          </Element>
+        ))
+      ) : (
+        <div>No projects available</div> // Możesz również wyświetlić informację, że brak projektów
+      )}
       <div className="fixed bottom-0 left-0 right-0 mix-blend-difference shadow-md text-center transition-opacity duration-300 ease-in-out">
         {activeProject !== null ? (
           <h2 className="text-3xl sm:text-5xl mb-0 sm:mb-4 font-light mix-blend-difference opacity-100 transition-opacity duration-300">
@@ -74,6 +80,7 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
       </div>
     </div>
   );
+  
 };
 
 export default ProjectContent;

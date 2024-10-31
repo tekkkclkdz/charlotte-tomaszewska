@@ -398,7 +398,7 @@ import okl from "./../../public/StillProjects/planeta_x_poptown_webp/03.gif"
 import lebrand_okladka from "./../../public/StillProjects/LEBRAND_webp/02_con.webp"
 
 
-export const projects = [
+export const stillProjects = [
   {
     id: 1, title: 'KMAG OBLIVIUM', content: (
       <div className="flex">
@@ -652,5 +652,5 @@ export const projects = [
   </div>
 )},
   
-  ];
+];
 

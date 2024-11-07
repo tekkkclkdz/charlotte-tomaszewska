@@ -11,7 +11,7 @@ type Project = {
   id: number;
   title: string;
   content: JSX.Element;
-  additionalImages?: (string | StaticImageData)[];
+  
 };
 
 type ProjectsArray = Project[];
@@ -56,7 +56,7 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
             <Link href={`/pages/still/${project.id}`} passHref>
               <div
                 ref={(el) => (projectRefs.current[index] = el)}
-                className="relative flex items-center py-8 justify-center bg-white text-black font-light cursor-pointer z-0"
+                className="relative flex items-center py-2 justify-center bg-white text-black font-light cursor-pointer z-0"
                 id={`project${project.id}`}
               >
                 <div className="text-center">

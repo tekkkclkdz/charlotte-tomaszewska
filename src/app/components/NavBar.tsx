@@ -44,7 +44,7 @@ const NavBar = ({ stillOrMoving, intro }:{
       )}
 
       {/* Keep the "still | moving" section unchanged */}
-      <div className="sticky top-0 py-2 w-full mix-blend-difference text-3xl bg-transparent transition-opacity duration-300 z-50" suppressHydrationWarning={true}>
+      <div className="sticky top-0 z-50 py-2 w-full mix-blend-difference text-3xl bg-transparent transition-opacity duration-300" suppressHydrationWarning={true}>
         <div className="flex items-center justify-center text-white ">
           <Link href="/" passHref>
             <h1 className={stillStyle}>still</h1>

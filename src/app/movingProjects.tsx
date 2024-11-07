@@ -27,9 +27,68 @@ import IKEA from "./../../public/Gify-High/ikea_-_malm_positive_impact (1080p)-h
 
 export const projects = [
     {
-        id: 1, title: 'ADIDAS', content: (
-            <div className="w-screen">
-                <Image src={ADIDAS} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 1, title: 'BRODKA & IGO', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={BRODKA}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/932867048',
+        credits: `
+        Written and Directed by: Grajper
+        DOP: Mikołaj Syguda
+        Production House: Opus Film
+        Producer: Michał Cichomski
+        Producer: Marcin Pośpiech
+        Production Coordinator: Małgorzata Bors
+      
+        Costumes:
+        Costume Designer: Charlotte Tomaszewska
+        1st Assistant: Natalia Osełka
+        Assistants (Poland): Paulina Biernacka, Martyna Oryszak
+      
+        Editor: Kuba Tomaszewicz
+        Colorist: Nadia Khairat Gómez
+        Post-production House: RIOdePost
+        Post-production Manager: Sylwia Desowska / Alicja Kozińska
+        VFX Supervision: Szymon Kołdej
+        Online: Szymon Kołdej, Michał Kałuża, Rafał Franczak, Pavel Karankevich, Kazimierz Liberski, Krzysiek Laskowski, Jacek Ostaszewski
+      
+        Service House: Color Field
+        Producer: Alejandro Araya
+        Line Producer: Louis Bronsard
+        Production Manager: Dante Ruz
+        1st AD: Flavio Levine
+        2nd AD: Coke Ayala
+      
+        Focus Puller: Carlos Vidal
+        2nd AC: Nicolás Vergara
+        DIT: Cristián Robles
+        Preview: Catalina Orellana
+      
+        Set Designer: Sebastian Torrico
+        Costume Designer Assistants: Lourdes Ramirez, Josefa Nuñez, Catalina Andrade, Catalina Machuca
+      
+        Client: Żywiec (Anna Owczarska, Dorota Nowakowska)
+        Coordination and Artistic Consultation of the Project: Agencja Live (Dorota Harasimowicz, Krzysztof Bąk)
+        Management: Brodka (Kayax - Gabi Szuba), Igo (Iglo Records - Patryk Glinka)
+        Creative and Strategic Supervision:
+        2012 Agency: Barbara Niedziela, Maciej Marasek, Marcin Pucyk, Monika Domagała-Szmidt, Julia Chylińska
+        Feeders Agency: Magda Kantorowicz, Adam Sierociński, Kuba Sagan, Bożedar Kaniewski, Adrianna Kosmala, Patryk Kordulski
+      `
+    },
+    {
+        id: 2, title: 'ADIDAS', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={ADIDAS}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/887736596',
         credits: `Client: ADIDAS / STUDIO A
@@ -129,9 +188,64 @@ export const projects = [
         `,
     },
     {
-        id: 2, title: 'BARBARKA', content: (
-            <div className="w-screen">
-                <Image src={BARBARKA} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 3, title: 'STONE - QUEEN', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={STONE}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/990654176',
+        credits: `
+        Director: Grajper @grajper
+        
+        Prod Co: Friend London  
+        EP: Nicole Hartley  
+        Producer: Wojciech Czarkowski  
+        Director s Rep: Nicole Hartley  
+        Music Video Rep: Lee Fairweather  
+        Label: Polydor Records  
+        Commissioner: Joanna Szyczewska  
+        Production Manager: Henry Richmond  
+        Production Researcher: Gina Crighton  
+        
+        DOP: Louis Evennou  
+        1st AC: Michal Mroczek  
+        2nd AC: Tom French  
+        1st AD: Alfie Jackson  
+        2nd AD: Polly Coombes  
+        
+        Runner: Lily Bloomfield  
+        Runner: Amaiur López Martínez  
+        
+        Production Designer: Joe Munro  
+        Art Assistant: Josh Hooper  
+        
+        Stylist: Charlotte Tomaszewska  
+        Styling Assistant: Natalia Oselka  
+        Special Thank You to @klasyk_store  
+        
+        Key HMUA: Lizzie Checkley  
+        HMU Assistant: Inca Edghill  
+        
+        Editor: Kuba Tomaszewicz  
+        VFX and Online: Miłosz Matuszewski  
+        
+        Filmout: Cinegrell Berlin  
+        Colour Grade: Florian Martiny
+        `
+    },
+    {
+        id: 4, title: 'BARBARKA - MARIA PSZEK FT OSKAR83', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={BARBARKA}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/610083622',
         credits: `
@@ -152,71 +266,122 @@ export const projects = [
       `
     },
     {
-        id: 3, title: 'BASS ASTRAL X IGO', content: (
-            <div className="w-screen">
-                <Image src={BASS} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 5, title: 'SUPERPOWERS', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={SUPERPOWERS}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/408375473',
+        ), videoUrl: 'https://player.vimeo.com/video/828107491',
         credits: `
-        Script & Directing: Grajper
-        Directing of Photography: Piotr Uznanski
-        Production: Graffiti Films
-        Costume Designer: Charlotte Tomaszewska
-      `
+        Script & direction: Grajper
+        
+        Director of photography: Mikołaj Syguda
+        
+        Production Company: Opus Film
+        
+        Executive Producers: Jarek Parzyjagła, Michał Cichomski  
+        Production Manager: Daniel Nowotczyński  
+        Production Coordinators: Anka Bilicka, Małgorzata Bors  
+        
+        1st AD: Marek Cydorowicz  
+        
+        Stunt: MG Stunt Team  
+        Stunt Coordinator: Jarek Golec  
+        Stunt Riggers: Asia Różańska, Łukasz Czubak, Kamil Pardo, Filip Bucki, Michał Burdan, Damian Majewski, Artur Grabowiec  
+        Cars on set & Rigging: Scorpioteam Norbert Możdżyński  
+        
+        Stylist: Charlotte Tomaszewska (Igo, Vito Bambino)  
+        Wardrobe Stylist Assistants: Ula Żelaznowska, Natalia Osełka, Monika Górowska  
+        Stylist: Kamila Picz (Mrozu)  
+        
+        Art Directors: Ładne Rzeczy - Katarzyna Pielużek, Ewelina Rosłaniec  
+        Set Construction: Tomasz Trybulski  
+        
+        Makeup Artists: Agata Kozłowska, Oliwia Niespodziewana  
+        Hair Stylist: Krystian Cezak  
+        
+        Camera Equipment: Panavision Polska  
+        Steadicam Operator: Marek Zajączkowski  
+        
+        Postproduction: RIOdePost / Heaven Postproduction Studio  
+        
+        Editor: Kuba Tomaszewicz  
+        Colorist: Piotr Sasim  
+        
+        Heaven Postproduction Studio
+        `
     },
     {
-        id: 4, title: 'BRODKA & IGO', content: (
-            <div className="w-screen">
-                <Image src={BRODKA} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 6, title: 'HOME', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={HOME}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/932867048',
+        ), videoUrl: 'https://player.vimeo.com/video/669378253',
         credits: `
-        Written and Directed by: Grajper
+        Concept & direction: Grajper
+        
         DOP: Mikołaj Syguda
-        Production House: Opus Film
-        Producer: Michał Cichomski
-        Producer: Marcin Pośpiech
-        Production Coordinator: Małgorzata Bors
-      
-        Costumes:
-        Costume Designer: Charlotte Tomaszewska
-        1st Assistant: Natalia Osełka
-        Assistants (Poland): Paulina Biernacka, Martyna Oryszak
-      
-        Editor: Kuba Tomaszewicz
-        Colorist: Nadia Khairat Gómez
-        Post-production House: RIOdePost
-        Post-production Manager: Sylwia Desowska / Alicja Kozińska
-        VFX Supervision: Szymon Kołdej
-        Online: Szymon Kołdej, Michał Kałuża, Rafał Franczak, Pavel Karankevich, Kazimierz Liberski, Krzysiek Laskowski, Jacek Ostaszewski
-      
-        Service House: Color Field
-        Producer: Alejandro Araya
-        Line Producer: Louis Bronsard
-        Production Manager: Dante Ruz
-        1st AD: Flavio Levine
-        2nd AD: Coke Ayala
-      
-        Focus Puller: Carlos Vidal
-        2nd AC: Nicolás Vergara
-        DIT: Cristián Robles
-        Preview: Catalina Orellana
-      
-        Set Designer: Sebastian Torrico
-        Costume Designer Assistants: Lourdes Ramirez, Josefa Nuñez, Catalina Andrade, Catalina Machuca
-      
-        Client: Żywiec (Anna Owczarska, Dorota Nowakowska)
-        Coordination and Artistic Consultation of the Project: Agencja Live (Dorota Harasimowicz, Krzysztof Bąk)
-        Management: Brodka (Kayax - Gabi Szuba), Igo (Iglo Records - Patryk Glinka)
-        Creative and Strategic Supervision:
-        2012 Agency: Barbara Niedziela, Maciej Marasek, Marcin Pucyk, Monika Domagała-Szmidt, Julia Chylińska
-        Feeders Agency: Magda Kantorowicz, Adam Sierociński, Kuba Sagan, Bożedar Kaniewski, Adrianna Kosmala, Patryk Kordulski
-      `
+        
+        Choreography: Łukasz Przytarski
+        
+        Dancer: Paweł Kozłowski
+        
+        Production: Tomek Gaj/Workshop Films
+        
+        Music:
+        Symphony No.3, Op.36, part II Lento e Largo Tranquillissimo
+        Written by Henryk Mikołaj Górecki,
+        Published by Boosey & Hawkes Music Publishers Ltd
+        Performed by London Sinfonietta, conductor: David Zinman, soprano: Dawn Upshaw (Warner Music Poland)
+        Music supervision: Big Sync Music | Piotr Ćwikliński, Christopher Sulenta
+        
+        Support during interviews: Karol Grygoruk
+        
+        Costume designer: Charlotte Tomaszewska
+        Costume designer assist: Paulina Szczepańska
+        
+        Production Assistant: Jakub Korbecki
+        
+        Production assistant and bird wrangler: Zoja Lena Chudy
+        
+        Set design: Elwira Szyszka
+        
+        Make up: Marta Walendzik
+        
+        Steadicam: Adam Mendry
+        Steadicam assist: Marcin Magiera
+        
+        Grip: Edwin Wolski, Marek Rumek, Jarek Rawa Rawecki
+        
+        Focus puller: Maciej "Horyzont" Barański
+        
+        2nd AC: Kuba Żukowski
+        
+        Color grading: Piotr Sasim
+        
+        Sound: Darek Podhajski
+        
+        Special thanks to: Kuba Tomaszewicz, Daria Siejak
+        `
     },
     {
-        id: 5, title: 'DARK EROS', content: (
-            <div className="w-screen">
-                <Image src={CAP} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 7, title: 'DARK EROS', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={CAP}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/450786928',
         credits: `
@@ -228,35 +393,54 @@ export const projects = [
       `
     },
     {
-        id: 6, title: 'CICHO', content: (
-            <div className="w-screen">
-                <Image src={CICHO} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 8, title: 'WINDOWSEN', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={WINDOWSEN}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/1016725466',
+        credits: `
+        Director: Grajper @grajper  
+        DOP: @salomerapinat, @grajper  
+        
+        Video Producer: @florenthaese  
+        Line Producer: @tommybergez  
+        
+        Score: @rui_hooo, @r8ven.studio  
+        Producer: @sad__asianmom, @jordandctagain  
+        Assistant: Aleks Aleksic  
+        Production Assistant: @ilyesselamig  
+        
+        Art Direction: @grajper, @charlottetomas  
+        Sound Design: @laureenbolton  
+        
+        Colorist: @jadedebritolopesprestes  
+        
+        Production: @caviarparis
+        `
+    },
+    {
+        id: 9, title: 'CICHO', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={CICHO}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/887730475',
         credits: `
-        EDIT: We did it. That campaign contributed to the highest voter turnout in Poland's history.
         
-        We shot that PSA with really low budget during just one shooting day. It was only possible because the whole crew believed we are doing something important. Here is why.
-        
-        In the last decade Poland became no country for women. Women's rights are less and less respected since the right wing parties are in charge. A few years ago, millions of women went to the streets to protest. But it brought nothing, or even changed things for worse. That made women feel powerless. Today we are right before the elections. A lot of women, especially the young ones, declare that they would not vote. And without their votes we are in trouble.
-        
-        So, we want to restore the energy from the women's strikes. How? Live by the sword, die by the sword. We took the actual hurtful hate speech of Polish politicians and we used it against them. All of the misogynistic and infamous quotes are easy to recognize for Polish people. We all do remember.
-        
-        That's probably why this video became a true viral. In the first 5 days since the release it was watched almost 10 million times on Instagram. All of the biggest free media, influencers and many brave women shared that. Some say that the "middle finger shush" gesture and the burning iron became the new symbols of the women's fight.
-        
-        WSCHÓD:
-        
-        Anna Pięta
-        
-        Dominika Lasota
-        
-        Wiktoria Jędroszkowiak
-        
-        Konrad Skotnicki
+         Written and directed by Marcin Pucyk
         
         Production Company: GMC Michał Cichomski
         
-        Written and directed by Marcin Pucyk
+       
         
         Director of photography: Maciej Ryter
         
@@ -270,7 +454,7 @@ export const projects = [
         
         Konrad Bayno
         
-        Location Managers: Kaja d’Erceville, Vadim d’Erceville
+        Location Managers: Kaja dErceville, Vadim dErceville
         
         Set Manager: Katarzyna Frątczak
         
@@ -358,120 +542,28 @@ export const projects = [
         
         Katarzyna Kurpiewska, Anna Samczyk, Beata Maria Borys, Zofia Wichrowska, Ewa Marynowska, Berenika Zimnoch, Agata Goli, Emilia Wasielewska, Marta Piekut, Maja Balcerzak, Małgorzata Jaroń, Sylwia Domańska, Magdalena Flicińska, Milena Zielonka, Emilia Wasielewska, Hanna Zabielska, Zofia Załęska, Karolina Michnowicz, Dominika Kępka Navejar, Sabina Nasloch, Marika Rajs.
         
-        We are grateful for helping us making the film possible:
         
-        Kuba Michalczuk
+
+        WSCHÓD:
         
-        LaVilla: Izabela Michalczuk, Sławek Kowalski
+        Anna Pięta
         
-        Krzysiek Grajper
+        Dominika Lasota
         
-        Maciej Jaźwiecki
+        Wiktoria Jędroszkowiak
         
-        Kamil Kotarba
-        
-        Beata i Roma Pucyk
+        Konrad Skotnicki
         `
     },
     {
-        id: 7, title: 'MALASANA', content: (
-            <div className="w-screen">
-                <Image src={HANIA} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/647779892',
-        credits: `
-        Script and direction: Mateusz Miszczyński
-        
-        DOP: Jakub Stoszek
-        
-        Production Company: Papaya Films
-        
-        Executive Producer: Kacper Sawicki, Paweł Bondarowicz
-        
-        Producer: Ola Pudło
-        
-        Production Manager: Szymon Ziegler
-        
-        Production Coordinators: Franek Kostrzewa, Kuba Wellman
-        
-        Production Designer: Katarzyna Tomczyk
-        
-        II Production Designer: Katarzyna Jendrysik
-        
-        Costume Designer: Charlotte Tomaszewska
-        
-        Costume Designer’s assistants: Aleksandra Badurska
-        
-        Props Master: Michał Daszkiewicz
-        
-        Props Master Assistant: Janek Achonen
-        
-        Makeup Artist: Anna Korzeb
-        
-        Online: Televisor
-        
-        Titles: PWEE3000
-        
-        Colorist: Piotr Sasim
-        `
-    },
-    {
-        id: 8, title: 'HOME', content: (
-            <div className="w-screen">
-                <Image src={HOME} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/669378253',
-        credits: `
-        Concept & direction: Grajper
-        
-        DOP: Mikołaj Syguda
-        
-        Choreography: Łukasz Przytarski
-        
-        Dancer: Paweł Kozłowski
-        
-        Production: Tomek Gaj/Workshop Films
-        
-        Music:
-        Symphony No.3, Op.36, part II Lento e Largo Tranquillissimo
-        Written by Henryk Mikołaj Górecki,
-        Published by Boosey & Hawkes Music Publishers Ltd
-        Performed by London Sinfonietta, conductor: David Zinman, soprano: Dawn Upshaw (Warner Music Poland)
-        Music supervision: Big Sync Music | Piotr Ćwikliński, Christopher Sulenta
-        
-        Support during interviews: Karol Grygoruk
-        
-        Costume designer: Charlotte Tomaszewska
-        Costume designer assist: Paulina Szczepańska
-        
-        Production Assistant: Jakub Korbecki
-        
-        Production assistant and bird wrangler: Zoja Lena Chudy
-        
-        Set design: Elwira Szyszka
-        
-        Make up: Marta Walendzik
-        
-        Steadicam: Adam Mendry
-        Steadicam assist: Marcin Magiera
-        
-        Grip: Edwin Wolski, Marek Rumek, Jarek Rawa Rawecki
-        
-        Focus puller: Maciej "Horyzont" Barański
-        
-        2nd AC: Kuba Żukowski
-        
-        Color grading: Piotr Sasim
-        
-        Sound: Darek Podhajski
-        
-        Special thanks to: Kuba Tomaszewicz, Daria Siejak
-        `
-    },
-    {
-        id: 9, title: 'WITHIN', content: (
-            <div className="w-screen">
-                <Image src={IM} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 10, title: 'WITHIN', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={IM}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1015786082',
         credits: `
@@ -523,61 +615,169 @@ export const projects = [
         `
     },
     {
-        id: 10, title: 'KINDERGARTEN', content: (
-            <div className="w-screen">
-                <Image src={IFOLOR} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 11, title: 'IKEA', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={IKEA}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/776615290',
+        ), videoUrl: 'https://player.vimeo.com/video/1023738021',
+        credits: ''
+    },
+    {
+        id: 12, title: 'TMOBILE', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={TMOBILE}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/690571350',
         credits: `
-        Agency: Jung von Matt LIMMAT
+        Directed by: Piotrek Matejkowski  
+        DOP: Kajetan Plis  
         
-        Director: Krzysztof Grajper
+        Production House: Papaya  
+        Producer: Michał Wojciechowski  
+        Production Manager: Ania Schiller  
+        1st AD: Michał Guga  
         
-        Production Company: Analog/Digital
-        
-        Producer: Barbara Dudek
-        
-        DOP: Patryk Kin
-        
-        Photographer: Alicja Lesiak
-        
-        Postproduction: Televisor
-        
-        Production Manager: Zdzich Heydel
-        
-        Production Coordinators: Aga Frankel + Aleksandra Dębek
-        
-        Set Manager: Michał Mańka
-        
-        1st AD: Bartosz Jarzębski "Dzida"
-        
-        Steadicam: Adam Mendry
-        
-        Gaffer: Mateusz Cichocki
-        
-        Costume designer: Charlotte Tomaszewska
-        
-        Costume designer assistants: Martyna Oryszak, Kasia Klimczyk, Weronika Sadowska
-        
-        Make-up: Aneta Kostrzewa
-        
-        Hair stylist: Łukasz Pycior
-        
-        Set design: Justyna Markowska
+        Stylist: Charlotte Tomaszewska  
+        Stylist Assistants: Maria Konieczna, Martyna Oryszak
         `
     },
     {
-        id: 11, title: 'BATMAN', content: (
-            <div className="w-screen">
-                <Image src={KUKON} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 13, title: 'HANIA RANI & DOBRAWA CZOCHER - MALASANA', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={HANIA}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/647779892',
+        credits: `
+        Script and direction: Mateusz Miszczyński
+        
+        DOP: Jakub Stoszek
+        
+        Production Company: Papaya Films
+        
+        Executive Producer: Kacper Sawicki, Paweł Bondarowicz
+        
+        Producer: Ola Pudło
+        
+        Production Manager: Szymon Ziegler
+        
+        Production Coordinators: Franek Kostrzewa, Kuba Wellman
+        
+        Production Designer: Katarzyna Tomczyk
+        
+        II Production Designer: Katarzyna Jendrysik
+        
+        Costume Designer: Charlotte Tomaszewska
+        
+        Costume Designers assistants: Aleksandra Badurska
+        
+        Props Master: Michał Daszkiewicz
+        
+        Props Master Assistant: Janek Achonen
+        
+        Makeup Artist: Anna Korzeb
+        
+        Online: Televisor
+        
+        Titles: PWEE3000
+        
+        Colorist: Piotr Sasim
+        `
+    },
+    {
+        id: 14, title: 'BASS ASTRAL X IGO BIKINI', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={BASS}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/408375473',
+        credits: `
+        Script & Directing: Grajper
+        Directing of Photography: Piotr Uznanski
+        Production: Graffiti Films
+        Costume Designer: Charlotte Tomaszewska
+      `
+    },
+    {
+        id: 15, title: 'TYMBARK', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={TYMBARK}
+                    className="w-full sm:w-8/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/633844080',
+        credits: `
+        Production Agency: East Eventz  
+        Executive Producer: Michał Fałat  
+        
+        Creative Agency: Brainbox  
+        
+        Artists: Sanah, Artur Rojek, Vito Bambino, Kwiat Jabłoni  
+        
+        Text: Wojciech Młynarski  
+        Composition: Andrzej Zieliński  
+        
+        Direction: Grajper  
+        DOP: Mikołaj Syguda  
+        
+        Production Company: MOON Films  
+        Executive Producers: Kuba Ranik & Magda Betlejewska  
+        Producer: Siasia Seyfried  
+        
+        Set Design: Marta Zając | Najs Studio  
+        Choreography: Weronika Pelczyńska  
+        
+        Costume Designer: Charlotte Tomaszewska  Artur Rojek, Vito Bambino  
+        Costume Designer: Katarzyna Sokołowska  Sanah  
+        
+        Makeup: Aleksandra Lewandowska  
+        
+        Editors: Janek Wierzbicki | Miłosz Matuszewski
+        `
+    },
+    {
+        id: 16, title: 'KUKON & DARIA ZAWIALOW BATMAN', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={KUKON}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1024318254',
         credits: ''
     },
     {
-        id: 12, title: 'MAVERICK', content: (
-            <div className="w-screen">
-                <Image src={MAVERICK} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 17, title: 'MAVERICK SABRE - YOU DONT EVEN NEED IT', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={MAVERICK}
+                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1023220757',
         credits: `
@@ -639,7 +839,7 @@ export const projects = [
         
         Editor: Kuba Tomaszewicz @tomaschevich
         
-        Colour Grade: John O’Riordan @_johngrades_
+        Colour Grade: John ORiordan @_johngrades_
         
         VFX: Jakob Thorhallsson @jakobthorhallsson
         
@@ -649,9 +849,63 @@ export const projects = [
         `
     },
     {
-        id: 13, title: 'REEBOK', content: (
-            <div className="w-screen">
-                <Image src={REEBOK} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 18, title: 'IFOLOR - KINDERGARTEN', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={IFOLOR}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/776615290',
+        credits: `
+        Agency: Jung von Matt LIMMAT
+        
+        Director: Krzysztof Grajper
+        
+        Production Company: Analog/Digital
+        
+        Producer: Barbara Dudek
+        
+        DOP: Patryk Kin
+        
+        Photographer: Alicja Lesiak
+        
+        Postproduction: Televisor
+        
+        Production Manager: Zdzich Heydel
+        
+        Production Coordinators: Aga Frankel + Aleksandra Dębek
+        
+        Set Manager: Michał Mańka
+        
+        1st AD: Bartosz Jarzębski "Dzida"
+        
+        Steadicam: Adam Mendry
+        
+        Gaffer: Mateusz Cichocki
+        
+        Costume designer: Charlotte Tomaszewska
+        
+        Costume designer assistants: Martyna Oryszak, Kasia Klimczyk, Weronika Sadowska
+        
+        Make-up: Aneta Kostrzewa
+        
+        Hair stylist: Łukasz Pycior
+        
+        Set design: Justyna Markowska
+        `
+    },
+    {
+        id: 19, title: 'REEBOK #REEDEFINE', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={REEBOK}
+                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/408333769',
         credits: `
@@ -663,9 +917,14 @@ export const projects = [
         `
     },
     {
-        id: 14, title: 'VATOS LANOS', content: (
-            <div className="w-screen">
-                <Image src={REVS} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 20, title: 'REVS - VATOS LANOS', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={REVS}
+                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/408333976',
         credits: `
@@ -681,195 +940,22 @@ export const projects = [
         `
     },
     {
-        id: 15, title: 'STONE', content: (
-            <div className="w-screen">
-                <Image src={STONE} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/990654176',
-        credits: `
-        Director: Grajper @grajper
-        
-        Prod Co: Friend London  
-        EP: Nicole Hartley  
-        Producer: Wojciech Czarkowski  
-        Director’s Rep: Nicole Hartley  
-        Music Video Rep: Lee Fairweather  
-        Label: Polydor Records  
-        Commissioner: Joanna Szyczewska  
-        Production Manager: Henry Richmond  
-        Production Researcher: Gina Crighton  
-        
-        DOP: Louis Evennou  
-        1st AC: Michal Mroczek  
-        2nd AC: Tom French  
-        1st AD: Alfie Jackson  
-        2nd AD: Polly Coombes  
-        
-        Runner: Lily Bloomfield  
-        Runner: Amaiur López Martínez  
-        
-        Production Designer: Joe Munro  
-        Art Assistant: Josh Hooper  
-        
-        Stylist: Charlotte Tomaszewska  
-        Styling Assistant: Natalia Oselka  
-        Special Thank You to @klasyk_store  
-        
-        Key HMUA: Lizzie Checkley  
-        HMU Assistant: Inca Edghill  
-        
-        Editor: Kuba Tomaszewicz  
-        VFX and Online: Miłosz Matuszewski  
-        
-        Filmout: Cinegrell Berlin  
-        Colour Grade: Florian Martiny
-        `
-    },
-    {
-        id: 16, title: 'SUPERPOWERS', content: (
-            <div className="w-screen">
-                <Image src={SUPERPOWERS} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/828107491',
-        credits: `
-        Script & direction: Grajper
-        
-        Director of photography: Mikołaj Syguda
-        
-        Production Company: Opus Film
-        
-        Executive Producers: Jarek Parzyjagła, Michał Cichomski  
-        Production Manager: Daniel Nowotczyński  
-        Production Coordinators: Anka Bilicka, Małgorzata Bors  
-        
-        1st AD: Marek Cydorowicz  
-        
-        Stunt: MG Stunt Team  
-        Stunt Coordinator: Jarek Golec  
-        Stunt Riggers: Asia Różańska, Łukasz Czubak, Kamil Pardo, Filip Bucki, Michał Burdan, Damian Majewski, Artur Grabowiec  
-        Cars on set & Rigging: Scorpioteam Norbert Możdżyński  
-        
-        Stylist: Charlotte Tomaszewska (Igo, Vito Bambino)  
-        Wardrobe Stylist Assistants: Ula Żelaznowska, Natalia Osełka, Monika Górowska  
-        Stylist: Kamila Picz (Mrozu)  
-        
-        Art Directors: Ładne Rzeczy - Katarzyna Pielużek, Ewelina Rosłaniec  
-        Set Construction: Tomasz Trybulski  
-        
-        Makeup Artists: Agata Kozłowska, Oliwia Niespodziewana  
-        Hair Stylist: Krystian Cezak  
-        
-        Camera Equipment: Panavision Polska  
-        Steadicam Operator: Marek Zajączkowski  
-        
-        Postproduction: RIOdePost / Heaven Postproduction Studio  
-        
-        Editor: Kuba Tomaszewicz  
-        Colorist: Piotr Sasim  
-        
-        Heaven Postproduction Studio
-        `
-    },
-    {
-        id: 17, title: 'ANASTAZJA', content: (
-            <div className="w-screen">
-                <Image src={SZCZYL} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
+        id: 21, title: 'ANASTAZJA', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={SZCZYL}
+                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/549203871',
         credits: ''
     },
     {
-        id: 18, title: 'TMOBILE', content: (
-            <div className="w-screen">
-                <Image src={TMOBILE} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/690571350',
-        credits: `
-        Directed by: Piotrek Matejkowski  
-        DOP: Kajetan Plis  
-        
-        Production House: Papaya  
-        Producer: Michał Wojciechowski  
-        Production Manager: Ania Schiller  
-        1st AD: Michał Guga  
-        
-        Stylist: Charlotte Tomaszewska  
-        Stylist Assistants: Maria Konieczna, Martyna Oryszak
-        `
-    },
-    {
-        id: 19, title: 'TYMBARK', content: (
-            <div className="w-screen">
-                <Image src={TYMBARK} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/633844080',
-        credits: `
-        Production Agency: East Eventz  
-        Executive Producer: Michał Fałat  
-        
-        Creative Agency: Brainbox  
-        
-        Artists: Sanah, Artur Rojek, Vito Bambino, Kwiat Jabłoni  
-        
-        Text: Wojciech Młynarski  
-        Composition: Andrzej Zieliński  
-        
-        Direction: Grajper  
-        DOP: Mikołaj Syguda  
-        
-        Production Company: MOON Films  
-        Executive Producers: Kuba Ranik & Magda Betlejewska  
-        Producer: Siasia Seyfried  
-        
-        Set Design: Marta Zając | Najs Studio  
-        Choreography: Weronika Pelczyńska  
-        
-        Costume Designer: Charlotte Tomaszewska – Artur Rojek, Vito Bambino  
-        Costume Designer: Katarzyna Sokołowska – Sanah  
-        
-        Makeup: Aleksandra Lewandowska  
-        
-        Editors: Janek Wierzbicki | Miłosz Matuszewski
-        `
-    },
-    {
-        id: 20, title: 'WINDOWSEN', content: (
-            <div className="w-screen">
-                <Image src={WINDOWSEN} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1016725466',
-        credits: `
-        Director: Grajper @grajper  
-        DOP: @salomerapinat, @grajper  
-        
-        Video Producer: @florenthaese  
-        Line Producer: @tommybergez  
-        
-        Score: @rui_hooo, @r8ven.studio  
-        Producer: @sad__asianmom, @jordandctagain  
-        Assistant: Aleks Aleksic  
-        Production Assistant: @ilyesselamig  
-        
-        Art Direction: @grajper, @charlottetomas  
-        Sound Design: @laureenbolton  
-        
-        Colorist: @jadedebritolopesprestes  
-        
-        Production: @caviarparis
-        `
-    },
-    {
-        id: 21, title: 'IKEA', content: (
-            <div className="w-screen">
-                <Image src={IKEA} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy" />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1023738021',
-        credits: ''
-    },
-    {
         id: 22, title: 'IKEA', content: (
             <div className="w-screen h-1/4">
-                
+
             </div>
         ), videoUrl: '',
         credits: ''

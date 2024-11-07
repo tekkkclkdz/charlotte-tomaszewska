@@ -33,7 +33,7 @@ const ContactBioBar = ({ intro }: { intro: number }) => {
         className="text-white pointer-events-auto"
       >
         <a href="/biography" className="px-2 text-2xl font-light sm:text-3xl mix-blend-difference hover:underline">
-          biography
+          bio
         </a>
       </div>
       <div

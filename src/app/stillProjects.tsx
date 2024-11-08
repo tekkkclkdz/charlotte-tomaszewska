@@ -203,7 +203,7 @@ import dc24 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekr
 import dc25 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.39_con.webp";
 import dc26 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07_con.webp";
 import dc27 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.18_con.webp";
-import dc28 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.29_con.webp";
+import okladka_dc from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/screen_na_okladke.webp";
 import dc29 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.39_con.webp";
 import dc30 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08_con.webp";
 import dc31 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/09Zrzut ekranu 2024-03-25 o 11.42.00_con.webp";
@@ -404,155 +404,16 @@ import lebrand_okladka from "./../../public/StillProjects/LEBRAND_webp/02_con.we
 
 
 export const stillProjects = [
-  {
-    id: 1, title: 'KMAG OBLIVIUM', content: (
-      <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full">
-    {/* Pierwsze zdjęcie */}
-    <div className="flex items-center w-full md:w-1/2">
-      <a href="lol" className="w-full flex justify-center">
-        <Image
-          src={a02_1}
-          className="w-full md:w-10/12 md:ml-36 object-cover"
-          alt="pic1"
-          loading="lazy"
-        />
-      </a>
-    </div>
-
-    {/* Drugie zdjęcie, ukryte na mobilnych urządzeniach */}
-    <div className=" items-center w-1/2 hidden md:flex">
-      <Image
-        src={a04}
-        className="w-10/12 object-contain"
-        alt="pic2"
-        loading="lazy"
-      />
-    </div>
-  </div>
-</div>
-    ), additionalImages: [ kmag1, kmag2, kmag3, kmag4]
-  },
-  { id: 2, title: 'LOVE MAGAZINE', content: (
-    <div className="w-full h-auto">
-    <Image 
-      src={JAN} 
-      className="w-full sm:max-w-8xl h-auto top-0" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
-  ), additionalImages: [love1, love2, love3, love4, love5, love6, love7]
-},
-  { id: 3, title: 'DOCUMENT JOURNAL', content: (
+  { id: 1, title: 'REST IS RUST', content: (
     <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
-    
-    {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
-    <div className=" items-center w-full md:w-1/2 hidden md:flex">
-      <a href="lol" className="w-full flex justify-center">
-        <Image
-          src={a01}
-          className="h-4/6 w-10/12 md:ml-36 object-cover"
-          alt="pic1"
-          loading="lazy"
-        />
-      </a>
-    </div>
-    
-    {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
-    <div className=" items-center w-full md:w-1/2 hidden md:flex">
-      <Image
-        src={dc02}
-        className="w-10/12 object-contain"
-        alt="pic2"
-        loading="lazy"
-      />
-    </div>
-
-    {/* Trzecie zdjęcie (tylko dla wersji mobilnej, pełna szerokość) */}
-    <div className="flex items-center w-full md:hidden">
-      <Image
-        src={dc03}
-        className="w-full object-cover"
-        alt="pic3"
-        loading="lazy"
-      />
-    </div>
-    
-  </div>
-</div>
-  ), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, dc28, dc29, dc30, dc31, dc32]},
-  {
-    id: 4, title: 'LEBRAND', content: (
-      <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
+  <div className="flex flex-col md:flex-row w-full h-full">
     
     {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
-    <div className="flex items-center w-full md:w-1/2">
-      <a href="lol" className="w-full flex justify-center">
+    <div className="flex items-center w-full md:w-1/2 md:h-full">
+      <a href="lol" className="w-full flex justify-center h-full">
         <Image
-          src={lebrand3}
-          className="w-full md:w-8/12 md:ml-60 object-cover"
-          alt="pic1"
-          loading="lazy"
-        />
-      </a>
-    </div>
-    
-    {/* Drugie zdjęcie (tylko dla wersji komputerowej) */}
-    <div className=" items-center w-1/2 hidden md:flex">
-      <Image
-        src={lebrand8}
-        className="w-8/12 object-contain"
-        alt="pic2"
-        loading="lazy"
-      />
-    </div>
-    
-  </div>
-</div>
-    ), additionalImages: [lebrand1, lebrand3, lebrand4, lebrand5 , lebrand8, lebrand10, lebrand6, lebrand7, lebrand2,lebrand13, lebrand12]
-  },
-  { id: 5, title: 'ARCHIVES FUTURE', content: (
-    <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
-    
-    {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
-    <div className="flex items-center w-full md:w-1/2">
-      <a href="lol" className="w-full flex justify-center">
-        <Image
-          src={MATIGRZELAK_ARCHIVESFUTURES2}
-          className="w-full md:w-10/12 md:ml-36 object-cover"
-          alt="pic1"
-          loading="lazy"
-        />
-      </a>
-    </div>
-    
-    {/* Drugie zdjęcie (tylko na komputerach) */}
-    <div className="items-center w-1/2 hidden md:flex">
-      <Image
-        src={MATIGRZELAK_ARCHIVESFUTURES1}
-        className="w-10/12 object-contain"
-        alt="pic2"
-        loading="lazy"
-      />
-    </div>
-    
-  </div>
-</div>
-  ), additionalImages: [ arch1, arch2, arch3, arch4, arch5, arch6, arch7, arch8, arch10, arch9, arch12, arch11, arch14, arch13]},
-  { id: 6, title: '303AVENUE', content: (
-    <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
-    
-    {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
-    <div className="flex items-center w-full md:w-1/2">
-      <a href="lol" className="w-full flex justify-center">
-        <Image
-          src={ave3032}
-          className="w-full md:w-9/12 md:ml-20 object-cover"
+          src={REST3}
+          className="w-full h-full object-cover"
           alt="pic1"
           loading="lazy"
         />
@@ -560,220 +421,10 @@ export const stillProjects = [
     </div>
     
     {/* Drugie zdjęcie (widoczne tylko na komputerach) */}
-    <div className="flex items-center w-full md:w-2/3 hidden md:flex">
+    <div className="items-center w-full md:w-1/2 hidden md:flex md:h-full">
       <Image
-        src={Alberto303}
-        className="w-full h-full object-contain"
-        alt="pic2"
-        loading="lazy"
-      />
-    </div>
-    
-  </div>
-</div>
-  ), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave8, ave9, ave10, ave11, ave12, ave13, ave14]
-},
-  { id: 7, title: 'NEWONCE', content: (
-    <div>
-  {/* Pierwsze zdjęcie - widoczne na urządzeniach większych niż 'sm' */}
-  <div className="flex justify-center w-screen sm:block hidden">
-  <Image 
-    src={NO8} 
-    className="w-full sm:w-5/6 h-auto object-cover object-center mx-auto" 
-    alt="pic1" 
-    loading="lazy" 
-  />
-</div>
-
-  {/* Grida, widocznego tylko na telefonach */}
-  <div className="sm:grid grid-rows-3 grid-cols-1 justify-center lg:hidden">
-  {/* Pierwszy obrazek */}
-  <div className="w-screen">
-    <Image 
-      src={NO7} 
-      className="w-full h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
-
-  {/* Drugi obrazek */}
-  <div className="w-screen">
-    <Image 
-      src={NO8} 
-      className="w-full h-auto object-cover object-center" 
-      alt="pic2" 
-      loading="lazy" 
-    />
-  </div>
-
-  {/* Trzeci obrazek */}
-  <div className="w-screen">
-    <Image 
-      src={NO9} 
-      className="w-full h-auto object-cover object-center" 
-      alt="pic3" 
-      loading="lazy" 
-    />
-  </div>
-</div>
-
-</div>
-  )},
-  { id: 8, title: 'MOON SHADOW', content: (
-    <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
-    
-    {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
-    <div className="flex items-center w-full md:w-1/2">
-      <a href="lol" className="w-full flex justify-center">
-        <Image
-          src={Moo1}
-          className="w-full md:w-10/12 md:ml-20 object-cover"
-          alt="pic1"
-          loading="lazy"
-        />
-      </a>
-    </div>
-    
-    {/* Drugie zdjęcie (widoczne tylko na komputerach) */}
-    <div className="flex items-center w-full md:w-1/2 hidden md:flex">
-      <Image
-        src={Moo2}
-        className="w-10/12 object-contain"
-        alt="pic2"
-        loading="lazy"
-      />
-    </div>
-    
-  </div>
-</div>
-  ), additionalImages: [moon1, Moo2, moon3, moon4, moon5, moon6, moon7, moon8]},
-  { id: 9, title: 'JAN_F_CHODOROWICZ 2', content: (
-    <div className="flex justify-center w-screen">
-  <Image 
-    src={JAN22} 
-    className="w-full md:w-8/12 h-auto object-cover object-center" 
-    alt="pic1" 
-    loading="lazy" 
-  />
-</div>
-
-  ), additionalImages: [cho1, cho2, cho3, cho4, cho5, cho6, cho7, cho10, cho9, cho8, cho11]},
-  { id: 10, title: 'ENORA', content: (
-    <div className="flex flex-wrap lg:flex-nowrap">
-      <div className="w-1/3 px-8 hidden sm:block">
-        <Image src={EN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
-      </div>
-      <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-        <Image src={EN2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
-      </div>
-      <div className="w-1/3 px-8 hidden sm:block">
-        <Image src={EN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
-      </div>
-    </div>
-  ), additionalImages: [ enora1, enora2, enora3]},
-  {
-    id: 11, title: 'CAP PLANETA', content: (
-      <div className="flex justify-center w-screen">
-  <Image 
-    src={PLA11} 
-    className="w-full sm:w-4/6 max-w-full h-auto object-cover object-center" 
-    alt="pic1" 
-    loading="lazy" 
-  />
-</div>
-    ), additionalImages: [ cap1, cap2, cap3, cap4, cap5, cap7, cap8, cap9, cap10]
-  },
-  { id: 12, title: 'JAN_F_CHODOROWICZ', content: (
-    <div>
-  <div className="flex justify-center w-screen">
-    <Image 
-      src={jan2} 
-      className="w-full sm:w-4/6 h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
-  <div className="sm:grid grid-rows-2 justify-center lg:hidden">
-    <div className="w-screen hidden">
-      <Image 
-        src={jan2} 
-        className="w-full h-auto object-cover object-center" 
-        alt="pic1" 
-        loading="lazy" 
-      />
-    </div>
-    <div className="w-screen">
-      <Image 
-        src={jan3} 
-        className="w-full h-auto object-cover object-center" 
-        alt="pic3" 
-        loading="lazy" 
-      />
-    </div>
-  </div>
-</div>
-  ), additionalImages: [ jan1, jan2, jan3, jan4, jan5, jan6, jan7, jan8 ]},
-  { id: 13, title: 'DOUBLEDARE', content: (
-    <div>
-  <div className="flex justify-center w-screen">
-    <Image 
-      src={DUB} 
-      className="w-full sm:w-4/6 h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
-</div>
-  ), additionalImages: [ double1]},
-  { id: 14, title: 'HOLES', content: (
-    <div className="flex flex-wrap lg:flex-nowrap">
-      <div className="w-1/3 px-8 hidden sm:block">
-        <Image src={PAR12} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
-      </div>
-      <div className="w-1/3 px-8 hidden sm:block">
-        <Image src={PAR11} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
-      </div>
-      <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
-        <Image src={PAR13} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
-      </div>
-    </div>
-  ), additionalImages: [parisian1, parisian2, parisian3, parisian4, parisian5, parisian6, parisian8, parisian7, parisian9]
-},
-  { id: 15, title: 'ANASTAZJA', content: (
-    <div>
-  <div className="flex justify-center w-screen">
-    <Image 
-      src={ANA} 
-      className="w-full sm:w-4/6 h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
-</div>
-  )},
-  { id: 16, title: 'REST IS RUST', content: (
-    <div className="flex justify-center items-center h-auto md:h-screen">
-  <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
-    
-    {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
-    <div className="flex items-center w-full md:w-1/2">
-      <a href="lol" className="w-full flex justify-center">
-        <Image
-          src={REST2}
-          className="w-full md:w-9/12 md:ml-40 object-cover"
-          alt="pic1"
-          loading="lazy"
-        />
-      </a>
-    </div>
-    
-    {/* Drugie zdjęcie (widoczne tylko na komputerach) */}
-    <div className="items-center w-full md:w-1/2 hidden md:flex">
-      <Image
-        src={REST3}
-        className="w-9/12 object-contain"
+        src={REST2}
+        className="w-full h-full object-cover"
         alt="pic2"
         loading="lazy"
       />
@@ -783,62 +434,121 @@ export const stillProjects = [
 </div>
   ), additionalImages: [rest_is_dust1, rest_is_dust2, rest_is_dust3, rest_is_dust4, rest_is_dust5, rest_is_dust6, rest_is_dust7, rest_is_dust8, rest_is_dust9, rest_is_dust10, rest_is_dust11, rest_is_dust12]
 },
-  { id: 17, title: 'GRAJPER', content: (
-    <div>
-  <div className="flex justify-center w-screen">
-    <Image 
-      src={GRAJP} 
-      className="w-full sm:w-4/6 h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
+{ id: 2, title: 'LOVE MAGAZINE', content: (
+  <div className="w-full h-screen">
+  <Image 
+    src={JAN} 
+    className="w-full h-full object-cover" 
+    alt="pic1" 
+    loading="lazy" 
+  />
+</div>
+), additionalImages: [love1, love2, love3, love4, love5, love6, love7]
+},
+{ id: 3, title: 'ARCHIVES FUTURE', content: (
+  <div className="flex flex-col h-screen w-full">
+{/* Górne zdjęcie */}
+<div className="flex w-full h-1/2">
+  <Image
+    src={arch4}
+    className="w-full h-full object-cover"
+    alt="pic-top"
+    loading="lazy"
+  />
+</div>
+
+{/* Dolne dwa zdjęcia */}
+<div className="flex w-full h-1/2">
+  {/* Lewe dolne zdjęcie */}
+  <div className="w-1/2 h-full">
+    <Image
+      src={MATIGRZELAK_ARCHIVESFUTURES2}
+      className="w-full h-full object-cover"
+      alt="pic-bottom-left"
+      loading="lazy"
+    />
+  </div>
+  
+  {/* Prawe dolne zdjęcie */}
+  <div className="w-1/2 h-full">
+    <Image
+      src={MATIGRZELAK_ARCHIVESFUTURES1}
+      className="w-full h-full object-cover"
+      alt="pic-bottom-right"
+      loading="lazy"
     />
   </div>
 </div>
-  )},
-  { id: 18, title: 'NEWONCE MAANAM', content: (
-    <div className="flex flex-wrap justify-center">
-  
-  {/* Pierwsze zdjęcie (widoczne tylko na tabletach i komputerach) */}
-  <div className="hidden sm:block sm:w-1/2 sm:px-20">
-    <Image 
-      src={WAW1} 
-      className="w-full h-auto object-cover object-center" 
-      alt="en1" 
-      loading="lazy" 
-    />
+</div>
+), additionalImages: [ arch1, arch2, arch3, arch4, arch5, arch6, arch7, arch8, arch10, arch9, arch12, arch11, arch14, arch13]},
+{ id: 4, title: 'DOCUMENT JOURNAL', content: (
+  <div className="flex justify-center items-center h-auto md:h-screen">
+  <div className="flex flex-col md:flex-row w-full md:h-full justify-center items-center ">
+    
+    {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
+    <div className="hidden md:flex items-center w-1/3 h-[100%]">
+      <a href="lol" className="w-full h-full flex justify-center">
+        <Image
+          src={dc03}
+          className="w-full h-full object-cover"
+          alt="pic1"
+          loading="lazy"
+        />
+      </a>
+    </div>
+    
+    {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
+    <div className="hidden md:flex items-center w-1/3 h-[100%]">
+      <Image
+        src={okladka_dc}
+        className="w-full h-full object-cover"
+        alt="pic2"
+        loading="lazy"
+      />
+    </div>
+
+    {/* Trzecie zdjęcie (widoczne tylko na komputerze) */}
+    <div className="hidden md:flex items-center w-1/3 h-[100%]">
+      <Image
+        src={dc30}
+        className="w-full h-full object-cover"
+        alt="pic3"
+        loading="lazy"
+      />
+    </div>
+
+    {/* Trzecie zdjęcie (widoczne tylko na mobilkach) */}
+    <div className="flex md:hidden items-center w-full">
+      <Image
+        src={dc03}
+        className="w-full object-cover"
+        alt="pic3-mobile"
+        loading="lazy"
+      />
+    </div>
+    
   </div>
-  
-  {/* Drugie zdjęcie (widoczne na mobilkach oraz na większych ekranach) */}
-  <div className="w-full sm:hidden lg:w-1/2 lg:block sm:px-8 flex justify-center">
+</div>
+), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, okladka_dc, dc29, dc30, dc31, dc32]},
+{
+  id: 5, title: 'LEBRAND', content: (
+    <div className="flex flex-wrap">
+
+  {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
+  <div className="w-full sm:w-1/2 h-[100vh] ">
     <Image 
-      src={WAW2} 
-      className="w-full lg:w-9/12 h-auto object-cover object-center" 
-      alt="en2" 
+      src={lebrand3} 
+      className="w-full h-full object-cover object-center" 
+      alt="en1" 
       loading="lazy" 
     />
   </div>
 
-</div>
-  ), additionalImages: [new_maanam1, new_maanam2, za_kopare, new_maanam5, new_maanam7, new_maanam6, new_maanam8, new_maanam9, new_maanam10, new_maanam11, new_maanam12, new_maanam13, new_maanam14, new_maanam15, new_maanam16]
-},
-  { id: 19, title: 'SZCZYL X TATIANA I KAROL', content: (
-    <div className="flex flex-wrap">
-  
-  {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
-  <div className="w-full sm:w-1/2 h-[calc(100svh)] sm:px-12">
-    <Image 
-      src={SZ1} 
-      className="w-11/12 ml-4 h-auto object-cover object-center" 
-      alt="en1" 
-      loading="lazy" 
-    />
-  </div>
-  
   {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
-  <div className="hidden sm:block sm:w-1/2 px-12 sm:px-20">
+  <div className="hidden sm:block sm:w-1/2 h-[100vh] ">
     <Image 
-      src={SZ2} 
-      className="w-full h-auto object-cover object-center" 
+      src={lebrand8} 
+      className="w-full h-full object-cover object-center" 
       alt="en2" 
       loading="lazy" 
     />
@@ -846,60 +556,749 @@ export const stillProjects = [
   </div>
 
 </div>
-  ), additionalImages: [szczylXtatiana1, szczylXtatiana2, szczyl_podmiana, szczylXtatiana4, szczylXtatiana5, szczylXtatiana7, szczylXtatiana8, szczylXtatiana9, szczylXtatiana10, szczylXtatiana6]
+  ), additionalImages: [lebrand1, lebrand3, lebrand4, lebrand5 , lebrand8, lebrand10, lebrand6, lebrand7, lebrand2,lebrand13, lebrand12]
 },
-  { id: 20, title: 'NEWONCE WARSZAWA TURCZI', content: (
+{ id: 6, title: 'HOLES', content: (
+  <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-screen items-center justify-center">
+  
+  {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
+  <div className="w-full lg:w-1/3 px-8 hidden sm:block">
+    <Image 
+      src={PAR12} 
+      className="w-full h-auto object-cover object-center" 
+      alt="pic1" 
+      loading="lazy"
+    />
+  </div>
+  
+  {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
+  <div className="w-full lg:w-1/3 px-8 hidden sm:block">
+    <Image 
+      src={PAR11} 
+      className="w-full h-auto object-cover object-center" 
+      alt="pic2" 
+      loading="lazy"
+    />
+  </div>
+
+  {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
+  <div className="w-full lg:w-1/3 px-8 sm:hidden lg:block">
+    <Image 
+      src={PAR13} 
+      className="w-full h-auto object-cover object-center" 
+      alt="pic3" 
+      loading="lazy"
+    />
+  </div>
+
+</div>
+), additionalImages: [parisian1, parisian2, parisian3, parisian4, parisian5, parisian6, parisian8, parisian7, parisian9]
+},
+{
+  id: 7, title: 'NEWONCE HUMAN', content: (
+    <div className="flex justify-center w-screen">
+  <Image 
+    src={human_okl} 
+    className="w-full sm:w-5/6 h-auto object-cover object-center" 
+    alt="pic1" 
+    loading="lazy" 
+  />
+</div>
+  ), additionalImages: [new_human_1, new_human_2, new_human_3, new_human_4, new_human_5, new_human_6, new_human_7, new_human_8, new_human_9, new_human_10, new_human_11, new_human_12, new_human_13, new_human_14]
+},
+{ id: 8, title: 'SZCZYL X TATIANA I KAROL', content: (
+  <div className="flex flex-wrap">
+
+  {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
+  <div className="w-full sm:w-1/2 h-[100vh] ">
+    <Image 
+      src={SZ1} 
+      className="w-full h-full object-cover object-center" 
+      alt="en1" 
+      loading="lazy" 
+    />
+  </div>
+
+  {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
+  <div className="hidden sm:block sm:w-1/2 h-[100vh] ">
+    <Image 
+      src={szczylXtatiana4} 
+      className="w-full h-full object-cover object-center" 
+      alt="en2" 
+      loading="lazy" 
+    />
+    <div className="h-24 bg-white"></div>
+  </div>
+
+</div>
+), additionalImages: [szczylXtatiana1, szczylXtatiana2, szczyl_podmiana, szczylXtatiana4, szczylXtatiana5, szczylXtatiana7, szczylXtatiana8, szczylXtatiana9, szczylXtatiana10, szczylXtatiana6]
+},
+{ id: 9, title: 'GRAJPER', content: (
+  <div>
+<div className="flex justify-center w-screen">
+  <Image 
+    src={GRAJP} 
+    className="w-full sm:w-5/6 h-auto object-cover object-center" 
+    alt="pic1" 
+    loading="lazy" 
+  />
+</div>
+</div>
+)},
+{ id: 10, title: '303AVENUE', content: (
+  <div className="flex justify-center items-center h-screen">
+  <div className="flex flex-row w-full h-full">
+
+    {/* Pierwsze zdjęcie */}
+    <div className="flex items-center w-1/2 h-full">
+      <a href="lol" className="w-full h-full flex justify-center">
+        <Image
+          src={ave2}
+          className="w-full h-full object-cover"
+          alt="pic1"
+          loading="lazy"
+        />
+      </a>
+    </div>
+
+    {/* Drugie zdjęcie */}
+    <div className="flex items-center w-1/2 h-full">
+      <Image
+        src={ave4}
+        className="w-full h-full object-cover"
+        alt="pic2"
+        loading="lazy"
+      />
+    </div>
+
+  </div>
+</div>
+), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave8, ave9, ave10, ave11, ave12, ave13, ave14]
+},
+{ id: 11, title: 'NEWONCE MAANAM', content: (
+  <div className="flex h-screen">
+
+  {/* Pierwsze zdjęcie - zajmuje lewą połowę ekranu od średnich ekranów wzwyż */}
+  <div className="hidden md:block w-full md:w-1/2 h-full">
+    <Image 
+      src={WAW1} 
+      className="w-full h-full object-cover object-center" 
+      alt="en1" 
+      loading="lazy" 
+    />
+  </div>
+
+  {/* Drugie zdjęcie - zajmuje prawą połowę ekranu od średnich ekranów wzwyż */}
+  <div className="w-full md:w-1/2 h-full flex justify-center">
+    <Image 
+      src={new_maanam14} 
+      className="w-full h-full object-cover object-center" 
+      alt="en2" 
+      loading="lazy" 
+    />
+  </div>
+
+</div>
+), additionalImages: [new_maanam1, new_maanam2, za_kopare, new_maanam5, new_maanam7, new_maanam6, new_maanam8, new_maanam9, new_maanam10, new_maanam11, new_maanam12, new_maanam13, new_maanam14, new_maanam15, new_maanam16]
+},
+{
+  id: 12, title: 'CAP PLANETA X POPTOWN', content: (
+    <div className="flex justify-center w-full h-screen sm:h-auto">
+  <Image
+    src={okl}
+    className="w-full h-full object-cover object-center sm:w-full sm:h-auto"
+    alt="l"
+  />
+</div>
+  ), additionalImages: [planetaXpoptown1, planetaXpoptown2, planetaXpoptown3, planetaXpoptown4, planetaXpoptown5, planetaXpoptown6, planetaXpoptown7, planetaXpoptown8]
+},
+{
+  id: 13, title: 'CAP PLANETA', content: (
+    <div className="flex flex-wrap">
+
+  {/* Pierwsze zdjęcie - widoczne tylko na większych ekranach */}
+  <div className="hidden sm:block sm:w-1/2 h-[100vh]">
+    <Image 
+      src={cap7} 
+      className="w-full h-full object-cover object-center" 
+      alt="en1" 
+      loading="lazy" 
+    />
+  </div>
+
+  {/* Drugie zdjęcie - widoczne tylko na większych ekranach */}
+  <div className="hidden sm:block sm:w-1/2 h-[100vh]">
+    <Image 
+      src={cap4} 
+      className="w-full h-full object-cover object-center" 
+      alt="en2" 
+      loading="lazy" 
+    />
+    <div className="h-24 bg-white"></div>
+  </div>
+
+  {/* Trzecie zdjęcie - widoczne tylko na urządzeniach mobilnych, pełna szerokość, automatyczna wysokość */}
+  <div className="block sm:hidden w-full h-auto">
+    <Image 
+      src={cap9} 
+      className="w-full h-auto object-cover object-center" 
+      alt="en3" 
+      loading="lazy" 
+    />
+  </div>
+
+</div>
+  ), additionalImages: [ cap1, cap2, cap3, cap4, cap5, cap7, cap8, cap9, cap10]
+},
+{ id: 14, title: 'NEWONCE', content: (
+  <div>
+{/* Pierwsze zdjęcie - widoczne na urządzeniach większych niż 'sm' */}
+<div className=" justify-center w-screen sm:block hidden">
+<Image 
+  src={NO8} 
+  className="w-full sm:w-6/6 h-auto object-cover object-center mx-auto" 
+  alt="pic1" 
+  loading="lazy" 
+/>
+</div>
+
+{/* Grida, widocznego tylko na telefonach */}
+<div className="sm:grid grid-rows-3 grid-cols-1 justify-center lg:hidden">
+{/* Pierwszy obrazek */}
+<div className="w-screen">
+  <Image 
+    src={NO7} 
+    className="w-full h-auto object-cover object-center" 
+    alt="pic1" 
+    loading="lazy" 
+  />
+</div>
+
+{/* Drugi obrazek */}
+<div className="w-screen">
+  <Image 
+    src={NO8} 
+    className="w-full h-auto object-cover object-center" 
+    alt="pic2" 
+    loading="lazy" 
+  />
+</div>
+
+{/* Trzeci obrazek */}
+<div className="w-screen">
+  <Image 
+    src={NO9} 
+    className="w-full h-auto object-cover object-center" 
+    alt="pic3" 
+    loading="lazy" 
+  />
+</div>
+</div>
+
+</div>
+)}, { id: 15, title: 'NEWONCE WARSZAWA TURCZI', content: (
     <div className="flex justify-center">
     <Image 
-      src={new_turczi1} 
-      className="w-full sm:w-5/12" 
+      src={new_turczi2} 
+      className="w-full sm:w-10/12" 
       alt="pic1" 
       loading="lazy" 
     />
   </div>
   ), additionalImages: [new_turczi1, new_turczi2, new_turczi3, new_turczi4, new_turczi5, new_turczi6, new_turczi7, new_turczi8, new_turczi9, new_turczi10, new_turczi11, new_turczi12, new_turczi13]
-},
-  {
-    id: 21, title: 'CAP PLANETA X POPTOWN', content: (
-      <div className="flex justify-center w-screen">
+}, { id: 16, title: 'ANASTAZJA', content: (
+    <div>
+  <div className="flex justify-center w-screen">
     <Image 
-      src={okl} 
+      src={ANA} 
+      className="w-full sm:w-6/6 h-auto object-cover object-center" 
+      alt="pic1" 
+      loading="lazy" 
+    />
+  </div>
+</div>
+  )},
+   { id: 17, title: 'VATOS LANOS REVS', content: (
+    <div className="flex justify-center w-screen">
+    <Image 
+      src={vatos11} 
       className="w-full sm:w-5/6 h-auto object-cover object-center" 
       alt="pic1" 
       loading="lazy" 
     />
   </div>
-    ), additionalImages: [planetaXpoptown1, planetaXpoptown2, planetaXpoptown3, planetaXpoptown4, planetaXpoptown5, planetaXpoptown6, planetaXpoptown7, planetaXpoptown8]
-  },
-  {
-    id: 22, title: 'NEWONCE HUMAN', content: (
-      <div className="flex justify-center w-screen">
-    <Image 
-      src={human_okl} 
-      className="w-full sm:w-4/6 h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
-    ), additionalImages: [new_human_1, new_human_2, new_human_3, new_human_4, new_human_5, new_human_6, new_human_7, new_human_8, new_human_9, new_human_10, new_human_11, new_human_12, new_human_13, new_human_14]
-  },
-  { id: 23, title: 'VATOS LANOS REVS', content: (
-    <div className="flex justify-center w-screen">
-    <Image 
-      src={vatos11} 
-      className="w-full sm:w-4/6 h-auto object-cover object-center" 
-      alt="pic1" 
-      loading="lazy" 
-    />
-  </div>
   ), additionalImages: [ vatos1, vatos2, vatos3, vatos4, vatos5, vatos6, vatos7, vatos8, vatos10, vatos11]},
-  { id: 24, title: 'VATOS LANOS REVS', content: (
+  { id: 18, title: 'JAN_F_CHODOROWICZ 2', content: (
+    <div className="flex justify-center w-screen">
+  <Image 
+    src={JAN22} 
+    className="w-full md:w-9/12 h-auto object-cover object-center" 
+    alt="pic1" 
+    loading="lazy" 
+  />
+</div>
+
+  ), additionalImages: [cho1, cho2, cho3, cho4, cho5, cho6, cho7, cho10, cho9, cho8, cho11]},
+  { id: 19, title: 'DOUBLEDARE', content: (
     <div>
-    <div className="w-screen h-1/4 bg-white">
-      
-    </div>
+  <div className="flex justify-center w-screen">
+    <Image 
+      src={DUB} 
+      className="w-full sm:w-9/12 h-auto object-cover object-center" 
+      alt="pic1" 
+      loading="lazy" 
+    />
   </div>
-)},
+</div>
+  ), additionalImages: [ double1]},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// { id: 10, title: 'ENORA', content: (
+//   <div className="flex flex-wrap lg:flex-nowrap">
+//     <div className="w-1/3 px-8 hidden sm:block">
+//       <Image src={EN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+//     </div>
+//     <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
+//       <Image src={EN2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+//     </div>
+//     <div className="w-1/3 px-8 hidden sm:block">
+//       <Image src={EN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+//     </div>
+//   </div>
+// ), additionalImages: [ enora1, enora2, enora3]},
+//   {
+//     id: 1, title: 'KMAG OBLIVIUM', content: (
+//       <div className="flex justify-center items-center h-auto md:h-screen">
+//   <div className="flex flex-col md:flex-row md:space-x-8 w-full">
+//     {/* Pierwsze zdjęcie */}
+//     <div className="flex items-center w-full md:w-1/2">
+//       <a href="lol" className="w-full flex justify-center">
+//         <Image
+//           src={a04}
+//           className="w-full md:w-10/12 md:ml-36 object-cover"
+//           alt="pic1"
+//           loading="lazy"
+//         />
+//       </a>
+//     </div>
+
+//     {/* Drugie zdjęcie, ukryte na mobilnych urządzeniach */}
+//     <div className=" items-center w-1/2 hidden md:flex">
+//       <Image
+//         src={a02_1}
+//         className="w-10/12 object-contain"
+//         alt="pic2"
+//         loading="lazy"
+//       />
+//     </div>
+//   </div>
+// </div>
+//     ), additionalImages: [ kmag1, kmag2, kmag3, kmag4]
+//   },
+//   { id: 2, title: 'LOVE MAGAZINE', content: (
+//     <div className="w-full h-auto">
+//     <Image 
+//       src={JAN} 
+//       className="w-full sm:max-w-8xl h-auto top-0" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+//   ), additionalImages: [love1, love2, love3, love4, love5, love6, love7]
+// },
+//   { id: 3, title: 'DOCUMENT JOURNAL', content: (
+//     <div className="flex justify-center items-center h-auto md:h-screen">
+//   <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
+    
+//     {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
+//     <div className=" items-center w-full md:w-1/2 hidden md:flex">
+//       <a href="lol" className="w-full flex justify-center">
+//         <Image
+//           src={dc1}
+//           className="h-4/6 w-10/12 md:ml-36 object-cover"
+//           alt="pic1"
+//           loading="lazy"
+//         />
+//       </a>
+//     </div>
+    
+//     {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
+//     <div className=" items-center w-full md:w-1/2 hidden md:flex">
+//       <Image
+//         src={dc02}
+//         className="w-10/12 object-contain"
+//         alt="pic2"
+//         loading="lazy"
+//       />
+//     </div>
+
+//     {/* Trzecie zdjęcie (tylko dla wersji mobilnej, pełna szerokość) */}
+//     <div className="flex items-center w-full md:hidden">
+//       <Image
+//         src={dc03}
+//         className="w-full object-cover"
+//         alt="pic3"
+//         loading="lazy"
+//       />
+//     </div>
+    
+//   </div>
+// </div>
+//   ), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, dc29, dc30, dc31, dc32]},
+//   {
+//     id: 4, title: 'LEBRAND', content: (
+//       <div>
+//   <div className="flex justify-center w-screen">
+//     <Image 
+//       src={lebrand3} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+// </div>
+//     ), additionalImages: [lebrand1, lebrand3, lebrand4, lebrand5 , lebrand8, lebrand10, lebrand6, lebrand7, lebrand2,lebrand13, lebrand12]
+//   },
+  
+//   { id: 6, title: '303AVENUE', content: (
+//     <div className="flex justify-center items-center h-auto md:h-screen">
+//   <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
+    
+//     {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
+//     <div className="flex items-center w-full md:w-1/2">
+//       <a href="lol" className="w-full flex justify-center">
+//         <Image
+//           src={ave3032}
+//           className="w-full md:w-9/12 md:ml-20 object-cover"
+//           alt="pic1"
+//           loading="lazy"
+//         />
+//       </a>
+//     </div>
+    
+//     {/* Drugie zdjęcie (widoczne tylko na komputerach) */}
+//     <div className="flex items-center w-full md:w-2/3 hidden md:flex">
+//       <Image
+//         src={Alberto303}
+//         className="w-full h-full object-contain"
+//         alt="pic2"
+//         loading="lazy"
+//       />
+//     </div>
+    
+//   </div>
+// </div>
+//   ), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave8, ave9, ave10, ave11, ave12, ave13, ave14]
+// },
+//   { id: 7, title: 'NEWONCE', content: (
+//     <div>
+//   {/* Pierwsze zdjęcie - widoczne na urządzeniach większych niż 'sm' */}
+//   <div className="flex justify-center w-screen sm:block hidden">
+//   <Image 
+//     src={NO8} 
+//     className="w-full sm:w-5/6 h-auto object-cover object-center mx-auto" 
+//     alt="pic1" 
+//     loading="lazy" 
+//   />
+// </div>
+
+//   {/* Grida, widocznego tylko na telefonach */}
+//   <div className="sm:grid grid-rows-3 grid-cols-1 justify-center lg:hidden">
+//   {/* Pierwszy obrazek */}
+//   <div className="w-screen">
+//     <Image 
+//       src={NO7} 
+//       className="w-full h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+
+//   {/* Drugi obrazek */}
+//   <div className="w-screen">
+//     <Image 
+//       src={NO8} 
+//       className="w-full h-auto object-cover object-center" 
+//       alt="pic2" 
+//       loading="lazy" 
+//     />
+//   </div>
+
+//   {/* Trzeci obrazek */}
+//   <div className="w-screen">
+//     <Image 
+//       src={NO9} 
+//       className="w-full h-auto object-cover object-center" 
+//       alt="pic3" 
+//       loading="lazy" 
+//     />
+//   </div>
+// </div>
+
+// </div>
+//   )},
+//   { id: 8, title: 'MOON SHADOW', content: (
+//     <div className="flex justify-center items-center h-auto md:h-screen">
+//   <div className="flex flex-col md:flex-row md:space-x-8 w-full md:h-4/6">
+    
+//     {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
+//     <div className="flex items-center w-full md:w-1/2">
+//       <a href="lol" className="w-full flex justify-center">
+//         <Image
+//           src={Moo1}
+//           className="w-full md:w-10/12 md:ml-20 object-cover"
+//           alt="pic1"
+//           loading="lazy"
+//         />
+//       </a>
+//     </div>
+    
+//     {/* Drugie zdjęcie (widoczne tylko na komputerach) */}
+//     <div className="flex items-center w-full md:w-1/2 hidden md:flex">
+//       <Image
+//         src={Moo2}
+//         className="w-10/12 object-contain"
+//         alt="pic2"
+//         loading="lazy"
+//       />
+//     </div>
+    
+//   </div>
+// </div>
+//   ), additionalImages: [moon1, Moo2, moon3, moon4, moon5, moon6, moon7, moon8]},
+//   { id: 9, title: 'JAN_F_CHODOROWICZ 2', content: (
+//     <div className="flex justify-center w-screen">
+//   <Image 
+//     src={JAN22} 
+//     className="w-full md:w-8/12 h-auto object-cover object-center" 
+//     alt="pic1" 
+//     loading="lazy" 
+//   />
+// </div>
+
+//   ), additionalImages: [cho1, cho2, cho3, cho4, cho5, cho6, cho7, cho10, cho9, cho8, cho11]},
+//   { id: 10, title: 'ENORA', content: (
+//     <div className="flex flex-wrap lg:flex-nowrap">
+//       <div className="w-1/3 px-8 hidden sm:block">
+//         <Image src={EN1} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+//       </div>
+//       <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
+//         <Image src={EN2} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+//       </div>
+//       <div className="w-1/3 px-8 hidden sm:block">
+//         <Image src={EN3} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+//       </div>
+//     </div>
+//   ), additionalImages: [ enora1, enora2, enora3]},
+//   {
+//     id: 11, title: 'CAP PLANETA', content: (
+//       <div className="flex justify-center w-screen">
+//   <Image 
+//     src={PLA11} 
+//     className="w-full sm:w-4/6 max-w-full h-auto object-cover object-center" 
+//     alt="pic1" 
+//     loading="lazy" 
+//   />
+// </div>
+//     ), additionalImages: [ cap1, cap2, cap3, cap4, cap5, cap7, cap8, cap9, cap10]
+//   },
+//   { id: 12, title: 'JAN_F_CHODOROWICZ', content: (
+//     <div>
+//   <div className="flex justify-center w-screen">
+//     <Image 
+//       src={jan2} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+//   <div className="sm:grid grid-rows-2 justify-center lg:hidden">
+//     <div className="w-screen hidden">
+//       <Image 
+//         src={jan2} 
+//         className="w-full h-auto object-cover object-center" 
+//         alt="pic1" 
+//         loading="lazy" 
+//       />
+//     </div>
+//     <div className="w-screen">
+//       <Image 
+//         src={jan3} 
+//         className="w-full h-auto object-cover object-center" 
+//         alt="pic3" 
+//         loading="lazy" 
+//       />
+//     </div>
+//   </div>
+// </div>
+//   ), additionalImages: [ jan1, jan2, jan3, jan4, jan5, jan6, jan7, jan8 ]},
+//   { id: 13, title: 'DOUBLEDARE', content: (
+//     <div>
+//   <div className="flex justify-center w-screen">
+//     <Image 
+//       src={DUB} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+// </div>
+//   ), additionalImages: [ double1]},
+//   { id: 14, title: 'HOLES', content: (
+//     <div className="flex flex-wrap lg:flex-nowrap">
+//       <div className="w-1/3 px-8 hidden sm:block">
+//         <Image src={PAR12} className="w-full h-auto object-cover object-center" alt="pic1" loading="lazy"/>
+//       </div>
+//       <div className="w-1/3 px-8 hidden sm:block">
+//         <Image src={PAR11} className="w-full h-auto object-cover object-center" alt="pic2" loading="lazy"/>
+//       </div>
+//       <div className="w-full lg:w-1/3 sm:px-8 sm:hidden lg:block">
+//         <Image src={PAR13} className="w-full h-auto object-cover object-center" alt="pic3" loading="lazy"/>
+//       </div>
+//     </div>
+//   ), additionalImages: [parisian1, parisian2, parisian3, parisian4, parisian5, parisian6, parisian8, parisian7, parisian9]
+// },
+//   { id: 15, title: 'ANASTAZJA', content: (
+//     <div>
+//   <div className="flex justify-center w-screen">
+//     <Image 
+//       src={ANA} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+// </div>
+//   )},
+//   { id: 17, title: 'GRAJPER', content: (
+//     <div>
+//   <div className="flex justify-center w-screen">
+//     <Image 
+//       src={GRAJP} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+// </div>
+//   )},
+//   { id: 18, title: 'NEWONCE MAANAM', content: (
+//     <div className="flex flex-wrap justify-center">
+  
+//   {/* Pierwsze zdjęcie (widoczne tylko na tabletach i komputerach) */}
+//   <div className="hidden sm:block sm:w-1/2 sm:px-20">
+//     <Image 
+//       src={WAW1} 
+//       className="w-full h-auto object-cover object-center" 
+//       alt="en1" 
+//       loading="lazy" 
+//     />
+//   </div>
+  
+//   {/* Drugie zdjęcie (widoczne na mobilkach oraz na większych ekranach) */}
+//   <div className="w-full sm:hidden lg:w-1/2 lg:block sm:px-8 flex justify-center">
+//     <Image 
+//       src={WAW2} 
+//       className="w-full lg:w-9/12 h-auto object-cover object-center" 
+//       alt="en2" 
+//       loading="lazy" 
+//     />
+//   </div>
+
+// </div>
+//   ), additionalImages: [new_maanam1, new_maanam2, za_kopare, new_maanam5, new_maanam7, new_maanam6, new_maanam8, new_maanam9, new_maanam10, new_maanam11, new_maanam12, new_maanam13, new_maanam14, new_maanam15, new_maanam16]
+// },
+//   { id: 19, title: 'SZCZYL X TATIANA I KAROL', content: (
+//     <div className="flex flex-wrap">
+  
+//   {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
+//   <div className="w-full sm:w-1/2 h-[calc(100svh)] sm:px-12">
+//     <Image 
+//       src={SZ1} 
+//       className="w-11/12 ml-4 h-auto object-cover object-center" 
+//       alt="en1" 
+//       loading="lazy" 
+//     />
+//   </div>
+  
+//   {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
+//   <div className="hidden sm:block sm:w-1/2 px-12 sm:px-20">
+//     <Image 
+//       src={SZ2} 
+//       className="w-full h-auto object-cover object-center" 
+//       alt="en2" 
+//       loading="lazy" 
+//     />
+//     <div className="h-24 bg-white"></div>
+//   </div>
+
+// </div>
+//   ), additionalImages: [szczylXtatiana1, szczylXtatiana2, szczyl_podmiana, szczylXtatiana4, szczylXtatiana5, szczylXtatiana7, szczylXtatiana8, szczylXtatiana9, szczylXtatiana10, szczylXtatiana6]
+// },
+//   { id: 20, title: 'NEWONCE WARSZAWA TURCZI', content: (
+//     <div className="flex justify-center">
+//     <Image 
+//       src={new_turczi1} 
+//       className="w-full sm:w-5/12" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+//   ), additionalImages: [new_turczi1, new_turczi2, new_turczi3, new_turczi4, new_turczi5, new_turczi6, new_turczi7, new_turczi8, new_turczi9, new_turczi10, new_turczi11, new_turczi12, new_turczi13]
+// },
+//   {
+//     id: 21, title: 'CAP PLANETA X POPTOWN', content: (
+//       <div className="flex justify-center w-screen">
+//     <Image 
+//       src={okl} 
+//       className="w-full sm:w-5/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+//     ), additionalImages: [planetaXpoptown1, planetaXpoptown2, planetaXpoptown3, planetaXpoptown4, planetaXpoptown5, planetaXpoptown6, planetaXpoptown7, planetaXpoptown8]
+//   },
+//   {
+//     id: 22, title: 'NEWONCE HUMAN', content: (
+//       <div className="flex justify-center w-screen">
+//     <Image 
+//       src={human_okl} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+//     ), additionalImages: [new_human_1, new_human_2, new_human_3, new_human_4, new_human_5, new_human_6, new_human_7, new_human_8, new_human_9, new_human_10, new_human_11, new_human_12, new_human_13, new_human_14]
+//   },
+//   { id: 23, title: 'VATOS LANOS REVS', content: (
+//     <div className="flex justify-center w-screen">
+//     <Image 
+//       src={vatos11} 
+//       className="w-full sm:w-4/6 h-auto object-cover object-center" 
+//       alt="pic1" 
+//       loading="lazy" 
+//     />
+//   </div>
+//   ), additionalImages: [ vatos1, vatos2, vatos3, vatos4, vatos5, vatos6, vatos7, vatos8, vatos10, vatos11]},
+//   { id: 24, title: 'VATOS LANOS REVS', content: (
+//     <div>
+//     <div className="w-screen h-1/4 bg-white">
+      
+//     </div>
+//   </div>
+// )},
   
 ];
 

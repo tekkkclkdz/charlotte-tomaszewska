@@ -58,26 +58,32 @@ const BottomTitles = ({ projects, moving }: {
   }, [projects, moving]);
 
   return (
-    <div className={`fixed bottom-0 mix-blend-difference left-1/2 transform -translate-x-1/2 text-center font-light transition-opacity duration-300 ${showComponent ? 'opacity-100' : 'opacity-0'}`} suppressHydrationWarning={true}>
-      {projects.map((project) => (
-        <Link
-          key={project.id}
-          activeClass=""
-          to={`project${project.id}`}
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          suppressHydrationWarning={true}
-        >
-          <span
-            className={`bottom-0 text-2xl sm:text-6xl py-1 sm:py-2 mix-blend-difference text-white left-1/2 transform -translate-x-1/2 text-center transition-opacity duration-300 absolute ${activeProject === project.id ? 'opacity-100' : 'opacity-0'}`}
-            style={{ whiteSpace: 'nowrap' }}
+    <div className={`fixed bottom-0 left-1/2 transform -translate-x-1/2 text-center font-light transition-opacity duration-300 ${showComponent ? 'opacity-100' : 'opacity-0'}`} suppressHydrationWarning={true}>
+      <div className="relative mix-blend-difference text-center">
+        {/* Background for mix-blend contrast */}
+        <div className="absolute inset-0 bg-white dark:bg-black opacity-90 -z-10" />
+        {projects.map((project) => (
+          <Link
+            key={project.id}
+            activeClass=""
+            to={`project${project.id}`}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            suppressHydrationWarning={true}
           >
-            {project.title}
-          </span>
-        </Link>
-      ))}
+            <span
+              className={`bottom-0 text-2xl sm:text-6xl py-1 sm:py-2 mix-blend-difference left-1/2 transform -translate-x-1/2 text-center transition-opacity duration-300 absolute ${activeProject === project.id ? 'opacity-100' : 'opacity-0'} ${
+                typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'text-white' : 'text-black'
+              }`}
+              style={{ whiteSpace: 'nowrap' }}
+            >
+              {project.title}
+            </span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };

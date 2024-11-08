@@ -31,7 +31,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={BRODKA}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-10/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -85,7 +85,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={ADIDAS}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-10/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -192,7 +192,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={STONE}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-11/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -242,7 +242,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={BARBARKA}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -270,7 +270,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={SUPERPOWERS}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-10/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -320,7 +320,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={HOME}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -397,7 +397,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={WINDOWSEN}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -428,7 +428,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={CICHO}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -560,7 +560,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={IM}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -619,7 +619,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={IKEA}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -632,7 +632,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={TMOBILE}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -656,7 +656,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={HANIA}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -703,7 +703,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={BASS}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -721,7 +721,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={TYMBARK}
-                    className="w-full sm:w-8/12 h-auto object-cover object-center"
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -761,7 +761,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={KUKON}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -774,7 +774,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={MAVERICK}
-                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    className="w-full sm:w-7/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -853,7 +853,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={IFOLOR}
-                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -902,7 +902,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={REEBOK}
-                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    className="w-full sm:w-7/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -921,7 +921,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={REVS}
-                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />
@@ -944,7 +944,7 @@ export const projects = [
             <div className="flex justify-center w-screen">
                 <Image
                     src={SZCZYL}
-                    className="w-full sm:w-6/12 h-auto object-cover object-center"
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
                 />

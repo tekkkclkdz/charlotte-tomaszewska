@@ -25,6 +25,18 @@ import WINDOWSEN from "./../../public/Gify-High/WINDOWSEN-high.gif";
 import IKEA from "./../../public/Gify-High/ikea_-_malm_positive_impact (1080p)-high.gif";
 
 
+import BIKINI from "./../../public/GIFY_nowe/BASS ASTRAL X IGO Bikini-high (1).gif";
+import MALASANA from "./../../public/GIFY_nowe/HANIA RANI & DOBRAWA CZOCHER - MALASANA-high (2).gif";
+import BATMAN from "./../../public/GIFY_nowe/KUKON & DARIA ZAWIALOW - Batman-high (4).gif";
+import AVEMARIA from "./../../public/GIFY_nowe/MARIA PESZEK - Ave Maria-high (1).gif";
+import MAVERICK2 from "./../../public/GIFY_nowe/MAVERICK SABRE - You Don't Even Need It-high (3).gif";
+import MEMYSLEF from "./../../public/GIFY_nowe/ME MYSELF & TOUCH-high (3).gif";
+import REEBOK2 from "./../../public/GIFY_nowe/REEBOK #Reedefine-low.gif";
+import REVS2 from "./../../public/GIFY_nowe/REVS - Vatos Lanos-high.gif";
+import HIPHOPKRYTA from "./../../public/GIFY_nowe/SZCZYL - Hiphopkryta-high.gif";
+import WIELKIEMIASTA from "./../../public/GIFY_nowe/SZCZYL - Wielkie Miasta-high.gif";
+
+
 export const projects = [
     {
         id: 1, title: 'BRODKA & IGO', content: (
@@ -188,7 +200,20 @@ export const projects = [
         `,
     },
     {
-        id: 3, title: 'STONE - QUEEN', content: (
+        id: 3, title: 'ME MYSELF & TOUCH', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={MEMYSLEF}
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/1025377298',
+        credits: ''
+    },
+    {
+        id: 4, title: 'STONE - QUEEN', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={STONE}
@@ -238,7 +263,7 @@ export const projects = [
         `
     },
     {
-        id: 4, title: 'BARBARKA - MARIA PSZEK FT OSKAR83', content: (
+        id: 5, title: 'BARBARKA - MARIA PSZEK FT OSKAR83', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={BARBARKA}
@@ -266,7 +291,7 @@ export const projects = [
       `
     },
     {
-        id: 5, title: 'SUPERPOWERS', content: (
+        id: 6, title: 'SUPERPOWERS', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={SUPERPOWERS}
@@ -316,7 +341,7 @@ export const projects = [
         `
     },
     {
-        id: 6, title: 'HOME', content: (
+        id: 7, title: 'HOME', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={HOME}
@@ -374,7 +399,7 @@ export const projects = [
         `
     },
     {
-        id: 7, title: 'DARK EROS', content: (
+        id: 8, title: 'DARK EROS', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={CAP}
@@ -393,7 +418,7 @@ export const projects = [
       `
     },
     {
-        id: 8, title: 'WINDOWSEN', content: (
+        id: 9, title: 'WINDOWSEN', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={WINDOWSEN}
@@ -424,7 +449,7 @@ export const projects = [
         `
     },
     {
-        id: 9, title: 'CICHO', content: (
+        id: 10, title: 'CICHO', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={CICHO}
@@ -556,7 +581,7 @@ export const projects = [
         `
     },
     {
-        id: 10, title: 'WITHIN', content: (
+        id: 11, title: 'WITHIN', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={IM}
@@ -615,7 +640,33 @@ export const projects = [
         `
     },
     {
-        id: 11, title: 'IKEA', content: (
+        id: 12, title: 'SZCZYL - WIELKIE MIASTA', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={WIELKIEMIASTA}
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/1028107804',
+        credits: ''
+    },
+    {
+        id: 13, title: 'MARIA PESZEK - AVE MARIA', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={AVEMARIA}
+                    className="w-full sm:w-12/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/1028099351',
+        credits: ''
+    },
+    {
+        id: 14, title: 'IKEA - POSITIVE IMPACT', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={IKEA}
@@ -628,7 +679,7 @@ export const projects = [
         credits: ''
     },
     {
-        id: 12, title: 'TMOBILE', content: (
+        id: 15, title: 'TMOBILE - KUKON X HODAK', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={TMOBILE}
@@ -652,10 +703,10 @@ export const projects = [
         `
     },
     {
-        id: 13, title: 'HANIA RANI & DOBRAWA CZOCHER - MALASANA', content: (
+        id: 16, title: 'HANIA RANI & DOBRAWA CZOCHER - MALASANA', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={HANIA}
+                    src={MALASANA}
                     className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
@@ -699,10 +750,10 @@ export const projects = [
         `
     },
     {
-        id: 14, title: 'BASS ASTRAL X IGO BIKINI', content: (
+        id: 17, title: 'BASS ASTRAL X IGO - BIKINI', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={BASS}
+                    src={BIKINI}
                     className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
@@ -717,7 +768,7 @@ export const projects = [
       `
     },
     {
-        id: 15, title: 'TYMBARK', content: (
+        id: 18, title: 'TYMBARK', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={TYMBARK}
@@ -757,10 +808,10 @@ export const projects = [
         `
     },
     {
-        id: 16, title: 'KUKON & DARIA ZAWIALOW BATMAN', content: (
+        id: 19, title: 'KUKON & DARIA ZAWIALOW BATMAN', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={KUKON}
+                    src={BATMAN}
                     className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
@@ -770,10 +821,10 @@ export const projects = [
         credits: ''
     },
     {
-        id: 17, title: 'MAVERICK SABRE - YOU DONT EVEN NEED IT', content: (
+        id: 20, title: 'MAVERICK SABRE - YOU DONT EVEN NEED IT', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={MAVERICK}
+                    src={MAVERICK2}
                     className="w-full sm:w-7/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
@@ -849,7 +900,20 @@ export const projects = [
         `
     },
     {
-        id: 18, title: 'IFOLOR - KINDERGARTEN', content: (
+        id: 21, title: 'SZCZYL - HIPHOPKRYTA', content: (
+            <div className="flex justify-center w-screen">
+                <Image
+                    src={HIPHOPKRYTA}
+                    className="w-full sm:w-9/12 h-auto object-cover object-center"
+                    alt="pic1"
+                    loading="lazy"
+                />
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/1026792192',
+        credits: ''
+    },
+    {
+        id: 22, title: 'IFOLOR - KINDERGARTEN', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={IFOLOR}
@@ -898,7 +962,7 @@ export const projects = [
         `
     },
     {
-        id: 19, title: 'REEBOK #REEDEFINE', content: (
+        id: 23, title: 'REEBOK #REEDEFINE', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={REEBOK}
@@ -917,10 +981,10 @@ export const projects = [
         `
     },
     {
-        id: 20, title: 'REVS - VATOS LANOS', content: (
+        id: 24, title: 'REVS - VATOS LANOS', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={REVS}
+                    src={REVS2}
                     className="w-full sm:w-12/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
@@ -940,7 +1004,7 @@ export const projects = [
         `
     },
     {
-        id: 21, title: 'ANASTAZJA', content: (
+        id: 25, title: 'ANASTAZJA', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={SZCZYL}
@@ -953,7 +1017,7 @@ export const projects = [
         credits: ''
     },
     {
-        id: 22, title: 'IKEA', content: (
+        id: 26, title: 'ANASTAZJA', content: (
             <div className="w-screen h-1/4">
 
             </div>

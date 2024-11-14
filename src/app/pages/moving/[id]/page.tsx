@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import React, { useEffect, useState } from 'react';
 import { projects } from '../../../movingProjects';
 
@@ -47,13 +48,13 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
   if (!project) return <p>Loading project...</p>;
 
-  const creditsLines: string[] = project.credits.split('\n'); // Explicitly typing creditsLines as string array
-  const columns = 3;
-  const linesPerColumn = Math.ceil(creditsLines.length / columns);
-  
-  const columnContents = Array.from({ length: columns }, (_, columnIndex) =>
-    creditsLines.slice(columnIndex * linesPerColumn, (columnIndex + 1) * linesPerColumn)
-  );
+  // Split credits into lines and distribute them evenly across three columns
+  const creditsLines: string[] = project.credits.split('\n').map(line => line.trim());
+  const columns = [[], [], []]; // Array to hold three columns
+
+  creditsLines.forEach((line, index) => {
+    columns[index % 3].push(line); // Distribute lines evenly across columns
+  });
 
   return (
     <div className='bg-white min-h-screen'>
@@ -64,9 +65,9 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
       <div className="bg-white text-black min-h-screen">
         {project.videoUrl && <ProjectVideo videoUrl={project.videoUrl} />}
         <div className="p-4 w-full grid font-light grid-cols-1 md:grid-cols-3 gap-4">
-          {columnContents.map((column, index) => (
+          {columns.map((column, index) => (
             <div key={index} className="col-span-1">
-              {column.map((line: string, lineIndex: number) => (  // Explicitly type 'line' as string
+              {column.map((line: string, lineIndex: number) => (
                 <p key={lineIndex} className="text-sm">{line}</p>
               ))}
             </div>

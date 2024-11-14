@@ -435,10 +435,10 @@ export const stillProjects = [
   ), additionalImages: [rest_is_dust1, rest_is_dust2, rest_is_dust3, rest_is_dust4, rest_is_dust5, rest_is_dust6, rest_is_dust7, rest_is_dust8, rest_is_dust9, rest_is_dust10, rest_is_dust11, rest_is_dust12]
 },
 { id: 2, title: 'LOVE MAGAZINE', content: (
-  <div className="w-full h-screen">
+  <div className="w-full h-auto">
   <Image 
     src={JAN} 
-    className="w-full h-full object-cover" 
+    className="w-full  object-cover sm:h-auto sm:w-auto" 
     alt="pic1" 
     loading="lazy" 
   />
@@ -446,9 +446,9 @@ export const stillProjects = [
 ), additionalImages: [love1, love2, love3, love4, love5, love6, love7]
 },
 { id: 3, title: 'ARCHIVES FUTURE', content: (
-  <div className="flex flex-col h-screen w-full">
+  <div className="flex flex-col md:h-screen h-auto w-full">
 {/* Górne zdjęcie */}
-<div className="flex w-full h-1/2">
+<div className="hidden md:flex w-full h-1/2">
   <Image
     src={arch4}
     className="w-full h-full object-cover"
@@ -460,7 +460,7 @@ export const stillProjects = [
 {/* Dolne dwa zdjęcia */}
 <div className="flex w-full h-1/2">
   {/* Lewe dolne zdjęcie */}
-  <div className="w-1/2 h-full">
+  <div className="w-screen md:w-1/2 h-full">
     <Image
       src={MATIGRZELAK_ARCHIVESFUTURES2}
       className="w-full h-full object-cover"
@@ -470,7 +470,7 @@ export const stillProjects = [
   </div>
   
   {/* Prawe dolne zdjęcie */}
-  <div className="w-1/2 h-full">
+  <div className="hidden md:flex w-1/2 h-full">
     <Image
       src={MATIGRZELAK_ARCHIVESFUTURES1}
       className="w-full h-full object-cover"
@@ -535,10 +535,10 @@ export const stillProjects = [
     <div className="flex flex-wrap">
 
   {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
-  <div className="w-full sm:w-1/2 h-[100vh] ">
+  <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
     <Image 
       src={lebrand3} 
-      className="w-full h-full object-cover object-center" 
+      className="w-full sm:h-full object-cover object-center" 
       alt="en1" 
       loading="lazy" 
     />
@@ -610,10 +610,10 @@ export const stillProjects = [
   <div className="flex flex-wrap">
 
   {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
-  <div className="w-full sm:w-1/2 h-[100vh] ">
+  <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
     <Image 
       src={SZ1} 
-      className="w-full h-full object-cover object-center" 
+      className="w-full h-auto sm:h-full object-cover object-center" 
       alt="en1" 
       loading="lazy" 
     />
@@ -635,7 +635,7 @@ export const stillProjects = [
 },
 { id: 9, title: 'GRAJPER', content: (
   <div>
-<div className="flex justify-center w-screen">
+<div className="flex justify-center w-screen h-auto">
   <Image 
     src={GRAJP} 
     className="w-full sm:w-5/6 h-auto object-cover object-center" 
@@ -646,9 +646,11 @@ export const stillProjects = [
 </div>
 )},
 { id: 10, title: '303AVENUE', content: (
-  <div className="flex justify-center items-center h-screen">
-  <div className="flex flex-row w-full h-full">
+  <div className="flex justify-center items-center h-auto sm:h-screen">
 
+  {/* Widoczne tylko na komputerach */}
+  <div className="hidden md:flex flex-row w-full h-full">
+    
     {/* Pierwsze zdjęcie */}
     <div className="flex items-center w-1/2 h-full">
       <a href="lol" className="w-full h-full flex justify-center">
@@ -672,11 +674,23 @@ export const stillProjects = [
     </div>
 
   </div>
+
+  {/* Zdjęcie widoczne tylko na mobilkach */}
+  <div className="flex md:hidden w-full h-auto">
+    <Image
+      src={ave1}
+      className="w-full h-auto object-cover"
+      alt="pic-mobile"
+      loading="lazy"
+    />
+  </div>
+
 </div>
+
 ), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave8, ave9, ave10, ave11, ave12, ave13, ave14]
 },
 { id: 11, title: 'NEWONCE MAANAM', content: (
-  <div className="flex h-screen">
+  <div className="flex sm:h-screen h-auto">
 
   {/* Pierwsze zdjęcie - zajmuje lewą połowę ekranu od średnich ekranów wzwyż */}
   <div className="hidden md:block w-full md:w-1/2 h-full">
@@ -692,7 +706,7 @@ export const stillProjects = [
   <div className="w-full md:w-1/2 h-full flex justify-center">
     <Image 
       src={new_maanam14} 
-      className="w-full h-full object-cover object-center" 
+      className="w-full h-auto sm:h-full object-cover object-center" 
       alt="en2" 
       loading="lazy" 
     />
@@ -703,7 +717,7 @@ export const stillProjects = [
 },
 {
   id: 12, title: 'CAP PLANETA X POPTOWN', content: (
-    <div className="flex justify-center w-full h-screen sm:h-auto">
+    <div className="flex justify-center w-full sm:h-screen h-auto">
   <Image
     src={okl}
     className="w-full h-full object-cover object-center sm:w-full sm:h-auto"

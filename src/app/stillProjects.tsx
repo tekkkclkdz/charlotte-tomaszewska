@@ -176,38 +176,42 @@ import cap10 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (10)_co
 
 
 
-import dc1 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01Zrzut ekranu 2024-03-25 o 11.29.13_con.webp";
-import dc2 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01Zrzut ekranu 2024-03-25 o 11.31.02_con.webp";
-import dc3 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01Zrzut ekranu 2024-03-25 o 11.31.13_con.webp";
-import dc4 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/01_con.webp";
-import dc5 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02Zrzut ekranu 2024-03-25 o 11.31.42_con.webp";
-import dc6 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02Zrzut ekranu 2024-03-25 o 11.32.05_con.webp";
-import dc7 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02Zrzut ekranu 2024-03-25 o 11.32.15_con.webp";
-import dc8 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/02_con.webp";
-import dc9 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/03Zrzut ekranu 2024-03-25 o 11.35.24_con.webp";
-import dc10 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/03Zrzut ekranu 2024-03-_con.webp";
-import dc11 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/03_con.webp";
-import dc12 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04Zrzut ekranu 2024-03-25 o 11.36.04_con.webp";
-import dc13 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04Zrzut ekranu 2024-03-25 o 11.36.48_con.webp";
-import dc14 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04Zrzut ekranu 2024-03-25 o 11.36.59_con.webp";
-import dc15 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/04_con.webp";
-import dc16 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05Zrzut ekranu 2024-03-25 o 11.39.32_con.webp";
-import dc17 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05Zrzut ekranu 2024-03-25 o 11.40.30_con.webp";
-import dc18 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05_con.webp";
-import dc19 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/05żrzut ekranu 2024-03-25 o 11.41.28_con.webp";
-import dc20 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/06Zrzut ekranu 2024-03-25 o 11.38.35_con.webp";
-import dc21 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/06Zrzut ekranu 2024-03-25 o 11.38.54_con.webp";
-import dc22 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/06_con.webp";
-import dc23 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.07_con.webp";
-import dc24 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.27_con.webp";
-import dc25 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07Zrzut ekranu 2024-03-25 o 11.43.39_con.webp";
-import dc26 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/07_con.webp";
-import dc27 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.18_con.webp";
-import okladka_dc from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/screen_na_okladke.webp";
-import dc29 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08Zrzut ekranu 2024-03-25 o 11.37.39_con.webp";
-import dc30 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/08_con.webp";
-import dc31 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/09Zrzut ekranu 2024-03-25 o 11.42.00_con.webp";
-import dc32 from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/09Zrzut ekranu 2024-03-25 o 11.42.39_con.webp";
+import dc1 from "./../../public/StillProjects/Document_Journal_new/01Zrzut ekranu 2024-03-25 o 11.29.13_con.webp";
+import dc2 from "./../../public/StillProjects/Document_Journal_new/01Zrzut ekranu 2024-03-25 o 11.31.02_con.webp";
+import dc3 from "./../../public/StillProjects/Document_Journal_new/01Zrzut ekranu 2024-03-25 o 11.31.13_con.webp";
+import dc4 from "./../../public/StillProjects/Document_Journal_new/02 copy_con.webp";
+import dc5 from "./../../public/StillProjects/Document_Journal_new/02Zrzut ekranu 2024-03-25 o 11.31.42_con.webp";
+import dc6 from "./../../public/StillProjects/Document_Journal_new/02Zrzut ekranu 2024-03-25 o 11.32.05_con.webp";
+import dc7 from "./../../public/StillProjects/Document_Journal_new/02Zrzut ekranu 2024-03-25 o 11.32.15_con.webp";
+import dc8 from "./../../public/StillProjects/Document_Journal_new/03 copy_con.webp";
+import dc9 from "./../../public/StillProjects/Document_Journal_new/03Zrzut ekranu 2024-03-25 o 11.35.24_con.webp";
+import dc10 from "./../../public/StillProjects/Document_Journal_new/03Zrzut ekranu 2024-03-_con.webp";
+import dc11 from "./../../public/StillProjects/Document_Journal_new/04 copy_con.webp";
+import dc12 from "./../../public/StillProjects/Document_Journal_new/04Zrzut ekranu 2024-03-25 o 11.36.04 copy_con.webp";
+import dc13 from "./../../public/StillProjects/Document_Journal_new/04Zrzut ekranu 2024-03-25 o 11.36.48 copy_con.webp";
+import dc14 from "./../../public/StillProjects/Document_Journal_new/04Zrzut ekranu 2024-03-25 o 11.36.59 copy_con.webp";
+import dc15 from "./../../public/StillProjects/Document_Journal_new/05 copy_con.webp";
+import dc16 from "./../../public/StillProjects/Document_Journal_new/05Zrzut ekranu 2024-03-25 o 11.39.32_con.webp";
+import dc17 from "./../../public/StillProjects/Document_Journal_new/05Zrzut ekranu 2024-03-25 o 11.40.30_con.webp";
+import dc18 from "./../../public/StillProjects/Document_Journal_new/05żrzut ekranu 2024-03-25 o 11.41.28_con.webp";
+import dc19 from "./../../public/StillProjects/Document_Journal_new/06 copy_con.webp";
+import dc20 from "./../../public/StillProjects/Document_Journal_new/06Zrzut ekranu 2024-03-25 o 11.38.35_con.webp";
+import dc21 from "./../../public/StillProjects/Document_Journal_new/06Zrzut ekranu 2024-03-25 o 11.38.54 copy_con.webp";
+import dc22 from "./../../public/StillProjects/Document_Journal_new/07Zrzut ekranu 2024-03-25 o 11.43.07 copy_con.webp";
+import dc23 from "./../../public/StillProjects/Document_Journal_new/07Zrzut ekranu 2024-03-25 o 11.43.27 copy_con.webp";
+import dc24 from "./../../public/StillProjects/Document_Journal_new/07Zrzut ekranu 2024-03-25 o 11.43.39 copy_con.webp";
+import dc25 from "./../../public/StillProjects/Document_Journal_new/07_con.webp";
+import dc26 from "./../../public/StillProjects/Document_Journal_new/08Zrzut ekranu 2024-03-25 o 11.37 copy22_con.webp";
+import dc27 from "./../../public/StillProjects/Document_Journal_new/08Zrzut ekranu 2024-03-25 o 11.37 copy2_con.webp";
+import okladka_dc from "./../../public/StillProjects/Document_Journal_new/08Zrzut ekranu 2024-03-25 o 11.37 copy_con.webp"; // dc28 as okladka_dc
+import dc29 from "./../../public/StillProjects/Document_Journal_new/08_con.webp";
+import dc30 from "./../../public/StillProjects/Document_Journal_new/09 copy_con.webp";
+import dc31 from "./../../public/StillProjects/Document_Journal_new/09Zrzut ekranu 2024-03-25 o 11.42.00_con.webp";
+import dc32 from "./../../public/StillProjects/Document_Journal_new/09Zrzut ekranu 2024-03-25 o 11.42.39_con.webp";
+import dc33 from "./../../public/StillProjects/Document_Journal_new/10 copy_con.webp";
+import dc34 from "./../../public/StillProjects/Document_Journal_new/10Zrzut ekranu 2024-03-25 o 11.44.15_con.webp";
+import dc35 from "./../../public/StillProjects/Document_Journal_new/10Zrzut ekranu 2024-03-25 o 11.44.22_con.webp";
+import dc36 from "./../../public/StillProjects/Document_Journal_new/10Zrzut ekranu 2024-03-25 o 11.44.52_con.webp";
 
 import double1 from "./../../public/StillProjects/doubledare_webp/230106_CHT_0403_con.webp";
 
@@ -329,15 +333,15 @@ import new_turczi12 from "./../../public/StillProjects/newonce_warszawa_turczi_w
 import new_turczi13 from "./../../public/StillProjects/newonce_warszawa_turczi_webp/warszawa12_con.webp";
 
 
-import parisian1 from "./../../public/StillProjects/parisian_webp/01_con.webp";
-import parisian2 from "./../../public/StillProjects/parisian_webp/02_con.webp";
-import parisian3 from "./../../public/StillProjects/parisian_webp/03_con.webp";
-import parisian4 from "./../../public/StillProjects/parisian_webp/04_con.webp";
-import parisian5 from "./../../public/StillProjects/parisian_webp/05_con.webp";
-import parisian6 from "./../../public/StillProjects/parisian_webp/06_con.webp";
-import parisian7 from "./../../public/StillProjects/parisian_webp/07_con.webp";
-import parisian8 from "./../../public/StillProjects/parisian_webp/08_con.webp";
-import parisian9 from "./../../public/StillProjects/parisian_webp/09_con.webp";
+import parisian1 from "./../../public/StillProjects/01_con.webp";
+import parisian2 from "./../../public/StillProjects/02_con.webp";
+import parisian3 from "./../../public/StillProjects/03_con.webp";
+import parisian4 from "./../../public/StillProjects/04 copy_con.webp";
+import parisian5 from "./../../public/StillProjects/05 copy_con.webp";
+import parisian6 from "./../../public/StillProjects/06 copy_con.webp";
+import parisian7 from "./../../public/StillProjects/07 copy_con.webp";
+import parisian8 from "./../../public/StillProjects/08 copy_con.webp";
+import parisian9 from "./../../public/StillProjects/09 copy_con.webp";
 
 
 import planetaXpoptown1 from "./../../public/StillProjects/planeta_x_poptown_webp/01_con.webp";
@@ -363,6 +367,10 @@ import rest_is_dust10 from "./../../public/StillProjects/rest_is_dust_webp/10_co
 import rest_is_dust11 from "./../../public/StillProjects/rest_is_dust_webp/11_con.webp";
 import rest_is_dust12 from "./../../public/StillProjects/rest_is_dust_webp/12_con.webp";
 
+
+import rust_last1 from "./../../public/StillProjects/11.jpg"
+import rust_last2 from "./../../public/StillProjects/12 copy.jpg"
+
 import szczylXtatiana1 from "./../../public/StillProjects/szczyl_x_tatiana_webp/01_con.webp"; 
 import szczylXtatiana2 from "./../../public/StillProjects/szczyl_x_tatiana_webp/02_con.webp"; 
 import szczylXtatiana3 from "./../../public/StillProjects/szczyl_x_tatiana_webp/03_con.webp"; 
@@ -384,6 +392,17 @@ import vatos7 from "./../../public/StillProjects/vatos_lanos_revs_webp/07_con.we
 import vatos8 from "./../../public/StillProjects/vatos_lanos_revs_webp/08_con.webp"; 
 import vatos10 from "./../../public/StillProjects/vatos_lanos_revs_webp/10_con.webp"; 
 import vatos11 from "./../../public/StillProjects/vatos_lanos_revs_webp/11_con.webp"; 
+
+
+
+import doubl1 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia1_con.webp"
+import doubl2 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia2_con.webp"
+import doubl3 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia3_con.webp"
+import doubl4 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia4_con.webp"
+import doubl5 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia_con.webp"
+
+
+import docJ1 from "./../../public/StillProjects/Document_Journal_new/01Zrzut ekranu 2024-03-25 o 11.29.13_con.webp"
 
 
 import human_okl from "./../../public/StillProjects/newonce_human_webp/HUMAN.gif"
@@ -432,17 +451,19 @@ export const stillProjects = [
     
   </div>
 </div>
-  ), additionalImages: [rest_is_dust1, rest_is_dust2, rest_is_dust3, rest_is_dust4, rest_is_dust5, rest_is_dust6, rest_is_dust7, rest_is_dust8, rest_is_dust9, rest_is_dust10, rest_is_dust11, rest_is_dust12]
+  ), additionalImages: [rest_is_dust1, rest_is_dust2, rest_is_dust3, rest_is_dust4, rest_is_dust5, rest_is_dust6, rest_is_dust7, rest_is_dust8, rest_is_dust9, rest_is_dust10, rust_last1, rust_last2]
 },
 { id: 2, title: 'LOVE MAGAZINE', content: (
-  <div className="w-full h-auto">
-  <Image 
-    src={JAN} 
-    className="w-full  object-cover sm:h-auto sm:w-auto" 
-    alt="pic1" 
-    loading="lazy" 
-  />
-</div>
+  <div>
+  <div className="flex justify-center w-screen h-auto">
+    <Image 
+      src={JAN} 
+      className="w-full sm:w-9/12 h-auto object-cover object-center" 
+      alt="pic1" 
+      loading="lazy" 
+    />
+  </div>
+  </div>
 ), additionalImages: [love1, love2, love3, love4, love5, love6, love7]
 },
 { id: 3, title: 'ARCHIVES FUTURE', content: (
@@ -480,7 +501,7 @@ export const stillProjects = [
   </div>
 </div>
 </div>
-), additionalImages: [ arch1, arch2, arch3, arch4, arch5, arch6, arch7, arch8, arch10, arch9, arch12, arch11, arch14, arch13]},
+), additionalImages: [ arch1, arch2, arch4, arch5, arch6, arch7, arch11, arch9, arch10, arch8, arch12, arch13, arch3, arch14]},
 { id: 4, title: 'DOCUMENT JOURNAL', content: (
   <div className="flex justify-center items-center h-auto md:h-screen">
   <div className="flex flex-col md:flex-row w-full md:h-full justify-center items-center ">
@@ -529,7 +550,7 @@ export const stillProjects = [
     
   </div>
 </div>
-), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, okladka_dc, dc29, dc30, dc31, dc32]},
+), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, okladka_dc, dc29, dc30, dc31, dc32, dc33, dc34, dc35, dc36]},
 {
   id: 5, title: 'LEBRAND', content: (
     <div className="flex flex-wrap">
@@ -556,7 +577,7 @@ export const stillProjects = [
   </div>
 
 </div>
-  ), additionalImages: [lebrand1, lebrand3, lebrand4, lebrand5 , lebrand8, lebrand10, lebrand6, lebrand7, lebrand2,lebrand13, lebrand12]
+  ), additionalImages: [lebrand3, lebrand4, lebrand5 , lebrand8, lebrand10, lebrand6, lebrand7, lebrand2,lebrand13, lebrand12]
 },
 { id: 6, title: 'HOLES', content: (
   <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-screen items-center justify-center">
@@ -564,7 +585,7 @@ export const stillProjects = [
   {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
   <div className="w-full lg:w-1/3 px-8 hidden sm:block">
     <Image 
-      src={PAR12} 
+      src={parisian8} 
       className="w-full h-auto object-cover object-center" 
       alt="pic1" 
       loading="lazy"
@@ -574,7 +595,7 @@ export const stillProjects = [
   {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
   <div className="w-full lg:w-1/3 px-8 hidden sm:block">
     <Image 
-      src={PAR11} 
+      src={parisian2} 
       className="w-full h-auto object-cover object-center" 
       alt="pic2" 
       loading="lazy"
@@ -584,7 +605,7 @@ export const stillProjects = [
   {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
   <div className="w-full lg:w-1/3 px-8 sm:hidden lg:block">
     <Image 
-      src={PAR13} 
+      src={parisian9} 
       className="w-full h-auto object-cover object-center" 
       alt="pic3" 
       loading="lazy"
@@ -864,7 +885,7 @@ export const stillProjects = [
     />
   </div>
 </div>
-  ), additionalImages: [ double1]},
+  ), additionalImages: [ doubl1, doubl2,doubl3, doubl4, doubl5]},
 
 
 

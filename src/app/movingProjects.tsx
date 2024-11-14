@@ -56,34 +56,28 @@ export const projects = [
         Producer: Michał Cichomski
         Producer: Marcin Pośpiech
         Production Coordinator: Małgorzata Bors
-      
         Costumes:
         Costume Designer: Charlotte Tomaszewska
         1st Assistant: Natalia Osełka
         Assistants (Poland): Paulina Biernacka, Martyna Oryszak
-      
         Editor: Kuba Tomaszewicz
         Colorist: Nadia Khairat Gómez
         Post-production House: RIOdePost
         Post-production Manager: Sylwia Desowska / Alicja Kozińska
         VFX Supervision: Szymon Kołdej
         Online: Szymon Kołdej, Michał Kałuża, Rafał Franczak, Pavel Karankevich, Kazimierz Liberski, Krzysiek Laskowski, Jacek Ostaszewski
-      
         Service House: Color Field
         Producer: Alejandro Araya
         Line Producer: Louis Bronsard
         Production Manager: Dante Ruz
         1st AD: Flavio Levine
         2nd AD: Coke Ayala
-      
         Focus Puller: Carlos Vidal
         2nd AC: Nicolás Vergara
         DIT: Cristián Robles
         Preview: Catalina Orellana
-      
         Set Designer: Sebastian Torrico
         Costume Designer Assistants: Lourdes Ramirez, Josefa Nuñez, Catalina Andrade, Catalina Machuca
-      
         Client: Żywiec (Anna Owczarska, Dorota Nowakowska)
         Coordination and Artistic Consultation of the Project: Agencja Live (Dorota Harasimowicz, Krzysztof Bąk)
         Management: Brodka (Kayax - Gabi Szuba), Igo (Iglo Records - Patryk Glinka)
@@ -678,32 +672,32 @@ export const projects = [
         ), videoUrl: 'https://player.vimeo.com/video/1023738021',
         credits: ''
     },
-    {
-        id: 15, title: 'TMOBILE - KUKON X HODAK', content: (
-            <div className="flex justify-center w-screen">
-                <Image
-                    src={TMOBILE}
-                    className="w-full sm:w-12/12 h-auto object-cover object-center"
-                    alt="pic1"
-                    loading="lazy"
-                />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/690571350',
-        credits: `
-        Directed by: Piotrek Matejkowski  
-        DOP: Kajetan Plis  
+    // {
+    //     id: 15, title: 'TMOBILE - KUKON X HODAK', content: (
+    //         <div className="flex justify-center w-screen">
+    //             <Image
+    //                 src={TMOBILE}
+    //                 className="w-full sm:w-12/12 h-auto object-cover object-center"
+    //                 alt="pic1"
+    //                 loading="lazy"
+    //             />
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/690571350',
+    //     credits: `
+    //     Directed by: Piotrek Matejkowski  
+    //     DOP: Kajetan Plis  
         
-        Production House: Papaya  
-        Producer: Michał Wojciechowski  
-        Production Manager: Ania Schiller  
-        1st AD: Michał Guga  
+    //     Production House: Papaya  
+    //     Producer: Michał Wojciechowski  
+    //     Production Manager: Ania Schiller  
+    //     1st AD: Michał Guga  
         
-        Stylist: Charlotte Tomaszewska  
-        Stylist Assistants: Maria Konieczna, Martyna Oryszak
-        `
-    },
+    //     Stylist: Charlotte Tomaszewska  
+    //     Stylist Assistants: Maria Konieczna, Martyna Oryszak
+    //     `
+    // },
     {
-        id: 16, title: 'HANIA RANI & DOBRAWA CZOCHER - MALASANA', content: (
+        id: 15, title: 'HANIA RANI & DOBRAWA CZOCHER - MALASANA', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={MALASANA}
@@ -750,7 +744,7 @@ export const projects = [
         `
     },
     {
-        id: 17, title: 'BASS ASTRAL X IGO - BIKINI', content: (
+        id: 16, title: 'BASS ASTRAL X IGO - BIKINI', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={BIKINI}
@@ -768,7 +762,7 @@ export const projects = [
       `
     },
     {
-        id: 18, title: 'TYMBARK', content: (
+        id: 17, title: 'TYMBARK', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={TYMBARK}
@@ -808,7 +802,7 @@ export const projects = [
         `
     },
     {
-        id: 19, title: 'KUKON & DARIA ZAWIALOW BATMAN', content: (
+        id: 18, title: 'KUKON & DARIA ZAWIALOW BATMAN', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={BATMAN}
@@ -821,7 +815,7 @@ export const projects = [
         credits: ''
     },
     {
-        id: 20, title: 'MAVERICK SABRE - YOU DONT EVEN NEED IT', content: (
+        id: 19, title: 'MAVERICK SABRE - YOU DONT EVEN NEED IT', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={MAVERICK2}
@@ -900,7 +894,7 @@ export const projects = [
         `
     },
     {
-        id: 21, title: 'SZCZYL - HIPHOPKRYTA', content: (
+        id: 20, title: 'SZCZYL - HIPHOPKRYTA', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={HIPHOPKRYTA}
@@ -913,7 +907,7 @@ export const projects = [
         credits: ''
     },
     {
-        id: 22, title: 'IFOLOR - KINDERGARTEN', content: (
+        id: 21, title: 'IFOLOR - KINDERGARTEN', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={IFOLOR}
@@ -962,7 +956,7 @@ export const projects = [
         `
     },
     {
-        id: 23, title: 'REEBOK #REEDEFINE', content: (
+        id: 22, title: 'REEBOK #REEDEFINE', content: (
             <div className="flex justify-center w-screen">
                 <Image
                     src={REEBOK}
@@ -980,44 +974,31 @@ export const projects = [
         Production: SHOOTME Visual Artists
         `
     },
+    // {
+    //     id: 24, title: 'REVS - VATOS LANOS', content: (
+    //         <div className="flex justify-center w-screen">
+    //             <Image
+    //                 src={REVS2}
+    //                 className="w-full sm:w-12/12 h-auto object-cover object-center"
+    //                 alt="pic1"
+    //                 loading="lazy"
+    //             />
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/408333976',
+    //     credits: `
+    //     Published @ REVS Magazine
+        
+    //     Directing & Photography: Tatiana & Karol
+        
+    //     Creative Direction: Charlotte Tomaszewska
+        
+    //     Styling: Charlotte Tomaszewska
+        
+    //     Starring: Angie, Luiza, Hipek, Natalia
+    //     `
+    // },
     {
-        id: 24, title: 'REVS - VATOS LANOS', content: (
-            <div className="flex justify-center w-screen">
-                <Image
-                    src={REVS2}
-                    className="w-full sm:w-12/12 h-auto object-cover object-center"
-                    alt="pic1"
-                    loading="lazy"
-                />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/408333976',
-        credits: `
-        Published @ REVS Magazine
-        
-        Directing & Photography: Tatiana & Karol
-        
-        Creative Direction: Charlotte Tomaszewska
-        
-        Styling: Charlotte Tomaszewska
-        
-        Starring: Angie, Luiza, Hipek, Natalia
-        `
-    },
-    {
-        id: 25, title: 'ANASTAZJA', content: (
-            <div className="flex justify-center w-screen">
-                <Image
-                    src={SZCZYL}
-                    className="w-full sm:w-12/12 h-auto object-cover object-center"
-                    alt="pic1"
-                    loading="lazy"
-                />
-            </div>
-        ), videoUrl: 'https://player.vimeo.com/video/549203871',
-        credits: ''
-    },
-    {
-        id: 26, title: 'ANASTAZJA', content: (
+        id: 23, title: 'REEBOK #REEDEFINE', content: (
             <div className="w-screen h-1/4">
 
             </div>

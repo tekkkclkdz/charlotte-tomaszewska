@@ -48,13 +48,18 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
   if (!project) return <p>Loading project...</p>;
 
-  // Split credits into lines and distribute them evenly across three columns
+  // Split credits into lines
   const creditsLines: string[] = project.credits.split('\n').map(line => line.trim());
-  const columns = [[], [], []]; // Array to hold three columns
+  const columns = 3;
+  const baseLinesPerColumn = Math.floor(creditsLines.length / columns);
+  const extraLines = creditsLines.length % columns;
 
-  creditsLines.forEach((line, index) => {
-    columns[index % 3].push(line); // Distribute lines evenly across columns
-  });
+  // Distribute lines across columns
+  const columnContents = [
+    creditsLines.slice(0, baseLinesPerColumn + (extraLines > 0 ? 1 : 0)),
+    creditsLines.slice(baseLinesPerColumn + (extraLines > 0 ? 1 : 0), (baseLinesPerColumn * 2) + (extraLines > 1 ? 2 : 1)),
+    creditsLines.slice((baseLinesPerColumn * 2) + (extraLines > 1 ? 2 : 1))
+  ];
 
   return (
     <div className='bg-white min-h-screen'>
@@ -65,7 +70,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
       <div className="bg-white text-black min-h-screen">
         {project.videoUrl && <ProjectVideo videoUrl={project.videoUrl} />}
         <div className="p-4 w-full grid font-light grid-cols-1 md:grid-cols-3 gap-4">
-          {columns.map((column, index) => (
+          {columnContents.map((column, index) => (
             <div key={index} className="col-span-1">
               {column.map((line: string, lineIndex: number) => (
                 <p key={lineIndex} className="text-sm">{line}</p>

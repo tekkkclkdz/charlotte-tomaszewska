@@ -133,7 +133,7 @@ import ave3032 from "./../../public/testxnconv/2_0013_con.webp"
 
 
 
-import ave1 from "./../../public/StillProjects/303ave_webp/01_con.webp";
+import ave1 from "./../../public/StillProjects/303ave_webp/303Ave_first_con.webp";
 import ave2 from "./../../public/StillProjects/303ave_webp/02_con.webp";
 import ave3 from "./../../public/StillProjects/303ave_webp/03_con.webp";
 import ave4 from "./../../public/StillProjects/303ave_webp/04_con.webp";
@@ -212,6 +212,7 @@ import dc33 from "./../../public/StillProjects/Document_Journal_new/10 copy_con.
 import dc34 from "./../../public/StillProjects/Document_Journal_new/10Zrzut ekranu 2024-03-25 o 11.44.15_con.webp";
 import dc35 from "./../../public/StillProjects/Document_Journal_new/10Zrzut ekranu 2024-03-25 o 11.44.22_con.webp";
 import dc36 from "./../../public/StillProjects/Document_Journal_new/10Zrzut ekranu 2024-03-25 o 11.44.52_con.webp";
+import dcOla from "./../../public/StillProjects/DOCUMENT_JOURNAL_webp/ola_dc_con.webp";
 
 import double1 from "./../../public/StillProjects/doubledare_webp/230106_CHT_0403_con.webp";
 
@@ -402,6 +403,17 @@ import doubl4 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia
 import doubl5 from "./../../public/StillProjects/doubleDare_new/doubledare-kopia_con.webp"
 
 
+import lebrandRozmiar1 from "./../../public/lebrand_rozmiary/03_con_con.webp"
+import lebrandRozmiar2 from "./../../public/lebrand_rozmiary/04_con_con.webp"
+import lebrandRozmiar3 from "./../../public/lebrand_rozmiary/05_con_con.webp"
+import lebrandRozmiar4 from "./../../public/lebrand_rozmiary/06_con_con.webp"
+import lebrandRozmiar5 from "./../../public/lebrand_rozmiary/07_con_con.webp"
+import lebrandRozmiar6 from "./../../public/lebrand_rozmiary/08_con_con.webp"
+import lebrandRozmiar7 from "./../../public/lebrand_rozmiary/13_con_con2.webp"
+
+
+import lebrandRozmiar52 from "./../../public/lebrand_rozmiary/07_con_con2.webp"
+
 import docJ1 from "./../../public/StillProjects/Document_Journal_new/01Zrzut ekranu 2024-03-25 o 11.29.13_con.webp"
 
 
@@ -415,6 +427,9 @@ import szczyl_podmiana from "./../../public/StillProjects/szczyl_x_tatiana_webp/
 
 
 import za_kopare from "./../../public/StillProjects/newonce_warszawa_maanam_webp/za_kopare_con.webp"
+
+import VatosLanos from "./../../public/GIFY_nowe/REVS - Vatos Lanos-high.gif"
+import VatosLanos2 from "./../../public/Gify-High/REVS - Vatos Lanos-high (3).gif"
 
 
 
@@ -531,7 +546,7 @@ export const stillProjects = [
     {/* Trzecie zdjęcie (widoczne tylko na komputerze) */}
     <div className="hidden md:flex items-center w-1/3 h-[100%]">
       <Image
-        src={dc30}
+        src={dc29}
         className="w-full h-full object-cover"
         alt="pic3"
         loading="lazy"
@@ -550,7 +565,7 @@ export const stillProjects = [
     
   </div>
 </div>
-), additionalImages: [ dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, dc21, dc22, dc23, dc24, dc25, dc26, dc27, okladka_dc, dc29, dc30, dc31, dc32, dc33, dc34, dc35, dc36]},
+), additionalImages: [ DJ1, dc1, dc4, dc5, dc8, dc10, dc11, dc12, dc15, dc16, dc19, dc20, dc25, dc22, dc29, dcOla, dc30, dc31, dc33, dc34]},
 {
   id: 5, title: 'LEBRAND', content: (
     <div className="flex flex-wrap">
@@ -577,7 +592,7 @@ export const stillProjects = [
   </div>
 
 </div>
-  ), additionalImages: [lebrand3, lebrand4, lebrand5 , lebrand8, lebrand10, lebrand6, lebrand7, lebrand2,lebrand13, lebrand12]
+  ), additionalImages: [lebrand2, lebrandRozmiar1, lebrandRozmiar2, lebrandRozmiar6, lebrandRozmiar3, lebrand6, lebrandRozmiar52, lebrand10,lebrand11, lebrandRozmiar7, lebrand12]
 },
 { id: 6, title: 'HOLES', content: (
   <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-screen items-center justify-center">
@@ -643,7 +658,7 @@ export const stillProjects = [
   {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
   <div className="hidden sm:block sm:w-1/2 h-[100vh] ">
     <Image 
-      src={szczylXtatiana4} 
+      src={szczylXtatiana10} 
       className="w-full h-full object-cover object-center" 
       alt="en2" 
       loading="lazy" 
@@ -708,7 +723,7 @@ export const stillProjects = [
 
 </div>
 
-), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave8, ave9, ave10, ave11, ave12, ave13, ave14]
+), additionalImages: [ ave1, ave2, ave3, ave4, ave5, ave6, ave7, ave9, ave8, ave10, ave14, ave11, ave12, ave13]
 },
 { id: 11, title: 'NEWONCE MAANAM', content: (
   <div className="flex sm:h-screen h-auto">
@@ -840,13 +855,13 @@ export const stillProjects = [
       loading="lazy" 
     />
   </div>
-  ), additionalImages: [new_turczi1, new_turczi2, new_turczi3, new_turczi4, new_turczi5, new_turczi6, new_turczi7, new_turczi8, new_turczi9, new_turczi10, new_turczi11, new_turczi12, new_turczi13]
+  ), additionalImages: [, new_turczi2, new_turczi3, new_turczi4, new_turczi5, new_turczi6, new_turczi7, new_turczi8, new_turczi9, new_turczi10, new_turczi11, new_turczi12, new_turczi13]
 }, { id: 16, title: 'ANASTAZJA', content: (
     <div>
-  <div className="flex justify-center w-screen">
+  <div className="flex justify-center w-screen pointer-events-none">
     <Image 
       src={ANA} 
-      className="w-full sm:w-6/6 h-auto object-cover object-center" 
+      className="w-full sm:w-6/6 h-auto object-cover object-center pointer-events-none" 
       alt="pic1" 
       loading="lazy" 
     />
@@ -856,8 +871,8 @@ export const stillProjects = [
    { id: 17, title: 'VATOS LANOS REVS', content: (
     <div className="flex justify-center w-screen">
     <Image 
-      src={vatos11} 
-      className="w-full sm:w-5/6 h-auto object-cover object-center" 
+      src={VatosLanos2} 
+      className="w-full sm:w-6/6 h-auto object-cover object-center" 
       alt="pic1" 
       loading="lazy" 
     />

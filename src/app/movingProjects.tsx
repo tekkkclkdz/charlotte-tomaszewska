@@ -36,6 +36,10 @@ import REVS2 from "./../../public/GIFY_nowe/REVS - Vatos Lanos-high.gif";
 import HIPHOPKRYTA from "./../../public/GIFY_nowe/SZCZYL - Hiphopkryta-high.gif";
 import WIELKIEMIASTA from "./../../public/GIFY_nowe/SZCZYL - Wielkie Miasta-high.gif";
 
+import Reebok3 from "./../../public/REEBOKReedefine-high.gif"
+
+import STONE2 from "./../../public/STONE - Queen-high (5).gif"
+
 
 export const projects = [
     {
@@ -210,7 +214,7 @@ export const projects = [
         id: 4, title: 'STONE - QUEEN', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={STONE}
+                    src={STONE2}
                     className="w-full sm:w-11/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"
@@ -959,7 +963,7 @@ export const projects = [
         id: 22, title: 'REEBOK #REEDEFINE', content: (
             <div className="flex justify-center w-screen">
                 <Image
-                    src={REEBOK}
+                    src={Reebok3}
                     className="w-full sm:w-7/12 h-auto object-cover object-center"
                     alt="pic1"
                     loading="lazy"

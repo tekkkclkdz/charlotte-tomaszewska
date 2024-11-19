@@ -69,7 +69,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
         <p className="text-4xl text-black font-light">rotate your phone</p>
       </div>
       <NavBar stillOrMoving={2} intro={1} />
-      <ContactBioBar intro={1}/>
+      <ContactBioBar intro={1} underline={0}/>
       <div className='bg-white h-14'>
 
       </div>

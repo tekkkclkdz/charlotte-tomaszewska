@@ -54,7 +54,9 @@ export default function ProjectDetail({ params }: { params: Params }) {
     return <div>Projekt nie został znaleziony.</div>;
   }
 
-  const additionalImages = project.additionalImages?.filter((pic): pic is ImageType => pic != null) || [];
+  const additionalImages: ImageType[] = (project.additionalImages || []).filter(
+    (pic): pic is ImageType => !!pic && 'src' in pic && 'width' in pic && 'height' in pic
+  );
 
   return (
     <div className="text-center bg-white">

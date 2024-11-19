@@ -38,10 +38,10 @@ import  { stillProjects }  from "./stillProjects"
 
 const Page = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-black'>
       <div className='bg-white h-16 w-full'></div>
       <NavBar stillOrMoving={0} intro={0} />
-      <ContactBioBar intro={0}/> {/* Dodajemy komponent ContactBioBar */}
+      <ContactBioBar intro={0} underline={0}/> {/* Dodajemy komponent ContactBioBar */}
       <ProjectContent projects={stillProjects} /> 
       {/* <MovingContent projects={movingProjects} /> */}
       

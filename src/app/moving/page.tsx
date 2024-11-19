@@ -60,6 +60,7 @@ const Page = () => {
                      <p className="text-4xl text-black font-light">rotate your phone</p>
                  </div>
                  <NavBar stillOrMoving={1} intro={1} />
+                
 
                  {/* Render Vimeo videos */}
                  <MovingContent projects={projects} />

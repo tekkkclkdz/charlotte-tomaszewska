@@ -60,13 +60,13 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
         </Element>
       ))}
       <div className="fixed bottom-0 left-0 right-0 mix-blend-difference shadow-md text-center transition-opacity duration-300 ease-in-out">
+        <div className="absolute inset-0 opacity-90 -z-10"></div>
         {activeProject !== null ? (
-          <h2 className=" sm:text-5xl mb-4 font-light mix-blend-difference text-white opacity-100 transition-opacity duration-300">
+          <h2 className="relative text-3xl sm:text-4xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white opacity-100 transition-opacity duration-300">
             {projects.find((p) => p.id === activeProject)?.title}
           </h2>
         ) : (
-          <h2 className="text-5xl font-semibold text-black opacity-0">
-            {/* Empty space when no project is active */}
+          <h2 className="relative text-5xl font-semibold text-black dark:text-white opacity-0">
             &nbsp;
           </h2>
         )}

@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { projects } from '../../../movingProjects';
+import ContactBioBar from '@/app/components/ContactBioBar';
+import NavBar from '@/app/components/NavBar2';
 
 // Define a type for the Project
 interface Project {
@@ -66,8 +68,12 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
       <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'} md:hidden`}>
         <p className="text-4xl text-black font-light">rotate your phone</p>
       </div>
+      <NavBar stillOrMoving={2} intro={1} />
+      <ContactBioBar intro={1}/>
+      <div className='bg-white h-14'>
 
-      <div className="bg-white text-black min-h-screen">
+      </div>
+      <div className="bg-white text-black min-h-screen ">
         {project.videoUrl && <ProjectVideo videoUrl={project.videoUrl} />}
         <div className="p-4 w-full grid font-light grid-cols-1 md:grid-cols-3 gap-4">
           {columnContents.map((column, index) => (

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const ContactBioBar = ({ intro }: { intro: number }) => {
+const ContactBioBar = ({ intro, underline }: { intro: number, underline: number }) => {
   const [showBar, setShowBar] = useState(intro === 1);
 
   useEffect(() => {
@@ -18,9 +18,13 @@ const ContactBioBar = ({ intro }: { intro: number }) => {
     };
   }, [intro]);
 
+  // Zmienna do kontrolowania klasy dla podkreślenia
+  const bioClass = underline === 1 ? "underline" : "";
+  const contactClass = underline === 2 ? "underline" : "";
+
   return (
     <div
-      className={`fixed inset-0 z-10 flex justify-between mix-blend-difference  items-center transition-opacity duration-200 pointer-events-none ${
+      className={`fixed inset-0 z-10 flex justify-between mix-blend-difference items-center transition-opacity duration-200 pointer-events-none ${
         showBar ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -32,7 +36,10 @@ const ContactBioBar = ({ intro }: { intro: number }) => {
         }}
         className="text-white pointer-events-auto"
       >
-        <a href="/biography" className="px-2 text-2xl font-light sm:text-3xl mix-blend-difference hover:underline">
+        <a 
+          href="/biography" 
+          className={`px-2 text-2xl font-light sm:text-3xl mix-blend-difference hover:underline ${bioClass}`}
+        >
           bio
         </a>
       </div>
@@ -44,7 +51,10 @@ const ContactBioBar = ({ intro }: { intro: number }) => {
         }}
         className="text-white pointer-events-auto"
       >
-        <a href="/contact" className="px-2 text-2xl sm:text-3xl font-light hover:underline">
+        <a 
+          href="/contact" 
+          className={`px-2 text-2xl sm:text-3xl font-light hover:underline ${contactClass}`}
+        >
           contact
         </a>
       </div>

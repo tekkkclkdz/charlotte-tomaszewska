@@ -1,4 +1,5 @@
-"use client"
+'use client';
+
 import { useEffect, useState, useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { useMediaQuery } from 'react-responsive';
@@ -12,12 +13,13 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-import { stillProjects } from "./../../../stillProjects";
+import { stillProjects } from './../../../stillProjects';
+import NavBar from '@/app/components/NavBar2'; // Importing NavBar
 
-import NavBar from '@/app/components/NavBar'; // Importing NavBar
-
-import logo from "./../../../../../public/charlotte heart black.png";
+import logo from './../../../../../public/charlotte heart black.png';
 import Link from 'next/link';
+
+import ContactBioBar from '@/app/components/ContactBioBar';
 
 type Params = {
   id: string;
@@ -34,6 +36,7 @@ type ProjectType = {
   title: string;
   content: JSX.Element;
   additionalImages?: ImageType[];
+  credits?: string; // Optional field for credits
 };
 
 export default function ProjectDetail({ params }: { params: Params }) {
@@ -44,42 +47,34 @@ export default function ProjectDetail({ params }: { params: Params }) {
   const project = stillProjects.find((project) => project.id === parseInt(id, 10));
 
   const isGif = (pic: ImageType) => pic.src.endsWith('.gif');
-  
-  // Function to determine if the image is horizontal
+
   const isHorizontal = (pic: ImageType) => pic.width > pic.height;
 
   if (!project) {
     return <div>Projekt nie został znaleziony.</div>;
   }
 
-  // Safely access additionalImages and filter out undefined entries
   const additionalImages = project.additionalImages?.filter((pic): pic is ImageType => pic != null) || [];
 
   return (
-    <div className="p-4 text-center bg-white">
-      {/* Container for Navbar and Logo */}
-      <div className="sticky top-0 mix-blend-difference z-50 ">
+    <div className="text-center bg-white">
+      <div className="sticky top-0 mix-blend-difference z-50 h-8 mb-5">
         <NavBar stillOrMoving={0} intro={1} />
+        <ContactBioBar intro={1} underline={0}/>
       </div>
-      <div className="flex justify-center">
-        <Link href={"/"}>
-          <Image src={logo} alt="logo" width={120} height={120} />
-        </Link>
-      </div>
-      {/* Project Content */}
+
       <div className="w-full h-full left-0 top-0 border-none shadow-none" suppressHydrationWarning={true}>
-        {/* Grid container with conditional width using sm: classes */}
         <div className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto`}>
           {additionalImages.map((pics, idx) => (
             <div
               key={pics.src}
-              className={isHorizontal(pics) ? 'col-span-2' : 'col-span-1'}
+              className={isHorizontal(pics) ? 'col-span-2 px-2 sm:px-0' : 'col-span-1'}
             >
               <Image
                 src={pics.src}
                 alt="placeholder"
                 loading="lazy"
-                className="transition duration-150 hover:opacity-75 cursor-pointer my-2 border-none w-full"
+                className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full"
                 width={pics.width}
                 height={pics.height}
                 onClick={() => {
@@ -97,7 +92,6 @@ export default function ProjectDetail({ params }: { params: Params }) {
             }
           }}
           speed={500}
-          plugins={[lgZoom, lgThumbnail]}
           dynamic
           download={false}
           dynamicEl={additionalImages.map((allImg) => ({
@@ -105,6 +99,22 @@ export default function ProjectDetail({ params }: { params: Params }) {
           }))}
         />
       </div>
+
+      <div className="flex justify-center">
+        <Link href={'/'}>
+          <Image src={logo} alt="logo" width={140} height={140} />
+        </Link>
+      </div>
+      <div className='h-20 bg-white'/>
+
+     
+
+      {/* Display credits at the bottom */}
+      {project.credits && (
+        <div className="z-50 fixed bottom-0 left-0 w-full sm:px-0 px-4 text-2xl sm:text-4xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+          {project.credits}
+        </div>
+      )}
     </div>
   );
 }

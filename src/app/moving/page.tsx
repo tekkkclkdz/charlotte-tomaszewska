@@ -64,7 +64,7 @@ const Page = () => {
 
                  {/* Render Vimeo videos */}
                  <MovingContent projects={projects} />
-                 <ContactBioBar intro={1}/>
+                 <ContactBioBar intro={1} underline={0}/>
                  
              </div>
     );

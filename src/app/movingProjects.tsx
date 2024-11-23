@@ -433,7 +433,7 @@ export const projects = [
             <div>
                 <div className="flex justify-center  z-50">
         
-          <Image src={logo} alt="logo" width={200} height={200} />
+          <Image src={logo} alt="logo" width={350} height={350} />
     
       </div>
       <div className='bg-white h-10'/>

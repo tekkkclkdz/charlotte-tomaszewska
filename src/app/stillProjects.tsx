@@ -1190,24 +1190,23 @@ export const stillProjects = [
   },
   {
     id: 20, title: 'DOUBLEDARE', content: (
-      <div className=" grid grid-flow-row justify-center items-center w-screen h-auto sm:h-screen">
+      <div className="grid grid-flow-row justify-center items-center w-screen h-auto sm:h-screen">
   <Link href="/pages/still/20" legacyBehavior>
-    <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    <div className="w-full h-auto sm:h-screen flex justify-center items-center">
       <Image
         src={duble_dare_okladka}
-        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto mb-8"
+        className="w-full h-auto sm:h-screen max-w-full object-cover object-center cursor-pointer mb-8"
         alt="pic1"
         loading="lazy"
       />
     </div>
   </Link>
-  <div className="flex justify-center  z-50">
-        <Link href={'/'}>
-          <Image src={logo} alt="logo" width={200} height={200} />
-        </Link>
-      </div>
-      <div className='bg-white h-10'/>
- 
+  <div className="flex justify-center z-50">
+    <Link href={'/'}>
+      <Image src={logo} alt="logo" width={350} height={350} />
+    </Link>
+  </div>
+  <div className="bg-white" />
 </div>
     ), additionalImages: [duble_dare_okladka, doubl1, doubl2, doubl3, doubl4],
     credits: 'photographed by mateusz stankiewicz, styled by charlotte tomaszewska'

@@ -48,9 +48,14 @@ const Page = () => {
       {/* <MovingContent projects={movingProjects} /> */}
       
       {/* <BottomTitles projects={projects} moving={0}/> */}
-      
+      <div>
+                <div className="flex justify-center  z-50">
+        
           <Image src={logo} alt="logo" width={200} height={200} />
-       
+    
+      </div>
+      <div className='bg-white h-10'/>
+            </div>
  
     </div>
   );

@@ -75,7 +75,7 @@ const NavBar = ({
 
       {/* Sticky "still | moving" text */}
       <div
-  className="sticky top-0 z-50 py-2 ml-[1.6rem] w-full bg-transparent mix-blend-difference text-lg sm:text-3xl transition-opacity duration-300"
+  className="sticky top-0 z-50 py-2 ml-[1.6rem] w-full bg-transparent mix-blend-difference text-sm sm:text-2xl transition-opacity duration-300"
   suppressHydrationWarning={true}
 >
   <div className="flex items-center justify-center text-white">

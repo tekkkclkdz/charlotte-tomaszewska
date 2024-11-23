@@ -54,9 +54,17 @@ export default function ProjectDetail({ params }: { params: Params }) {
     return <div>Projekt nie został znaleziony.</div>;
   }
 
-  const additionalImages: ImageType[] = (project.additionalImages || []).filter(
-    (pic): pic is ImageType => !!pic && 'src' in pic && 'width' in pic && 'height' in pic
-  );
+  type ImageType = StaticImageData;
+
+  const additionalImages: ImageType[] = (project.additionalImages || [])
+  .filter((pic): pic is StaticImageData => !!pic) // Usuwa undefined
+  .map((pic) => ({
+    src: typeof pic === 'object' && 'src' in pic ? pic.src : '',
+    width: pic?.width || 0,
+    height: pic?.height || 0,
+  }))
+  .filter((img): img is ImageType => img.src !== '');
+
 
   return (
     <div className="text-center bg-white">

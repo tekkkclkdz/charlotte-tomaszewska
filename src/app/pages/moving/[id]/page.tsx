@@ -4,6 +4,10 @@ import React, { useEffect, useState } from 'react';
 import { projects } from '../../../movingProjects';
 import ContactBioBar from '@/app/components/ContactBioBar';
 import NavBar from '@/app/components/NavBar2';
+import Link from 'next/link';
+import Image from 'next/image';
+import logo from './../../../../../public/charlotte heart black.png';
+
 
 // Define a type for the Project
 interface Project {
@@ -16,7 +20,7 @@ const ProjectVideo = ({ videoUrl }: { videoUrl: string }) => (
   <div className="w-full flex justify-center items-center">
     <iframe
       src={videoUrl}
-      className="w-full h-[calc(100vh-60px)] md:h-[80vh]"
+      className="w-full h-[calc(100vh-60px)] md:h-[87vh]"
       frameBorder="0"
       allow="autoplay; fullscreen"
       allowFullScreen
@@ -50,19 +54,6 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
   if (!project) return <p>Loading project...</p>;
 
-  // Split credits into lines
-  const creditsLines: string[] = project.credits.split('\n').map(line => line.trim());
-  const columns = 3;
-  const baseLinesPerColumn = Math.floor(creditsLines.length / columns);
-  const extraLines = creditsLines.length % columns;
-
-  // Distribute lines across columns
-  const columnContents = [
-    creditsLines.slice(0, baseLinesPerColumn + (extraLines > 0 ? 1 : 0)),
-    creditsLines.slice(baseLinesPerColumn + (extraLines > 0 ? 1 : 0), (baseLinesPerColumn * 2) + (extraLines > 1 ? 2 : 1)),
-    creditsLines.slice((baseLinesPerColumn * 2) + (extraLines > 1 ? 2 : 1))
-  ];
-
   return (
     <div className='bg-white min-h-screen'>
       <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'} md:hidden`}>
@@ -75,16 +66,25 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
       </div>
       <div className="bg-white text-black min-h-screen ">
         {project.videoUrl && <ProjectVideo videoUrl={project.videoUrl} />}
-        <div className="p-4 w-full grid font-light grid-cols-1 md:grid-cols-3 gap-4">
-          {columnContents.map((column, index) => (
-            <div key={index} className="col-span-1">
-              {column.map((line: string, lineIndex: number) => (
-                <p key={lineIndex} className="text-sm">{line}</p>
-              ))}
-            </div>
-          ))}
-        </div>
+        <div className="flex justify-center">
+        <Link href={'/'}>
+          <Image src={logo} alt="logo" width={200} height={200} />
+        </Link>
       </div>
+      <div className='bg-white'/>
+      </div>
+
+      
+
+     
+
+      {project.credits && (
+  <div className="z-50 text-center fixed bottom-0 left-1/2 transform -translate-x-1/2  sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+    {project.credits}
+  </div>
+
+)}
+    <div className='h-8'></div>
     </div>
   );
 };

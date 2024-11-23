@@ -61,7 +61,7 @@ export default function ProjectDetail({ params }: { params: Params }) {
   return (
     <div className="text-center bg-white">
       <div className="sticky top-0 mix-blend-difference z-50 h-8 mb-5">
-        <NavBar stillOrMoving={0} intro={1} />
+        <NavBar stillOrMoving={2} intro={1} />
         <ContactBioBar intro={1} underline={0}/>
       </div>
 
@@ -113,10 +113,15 @@ export default function ProjectDetail({ params }: { params: Params }) {
 
       {/* Display credits at the bottom */}
       {project.credits && (
-        <div className="z-50 fixed bottom-0 left-0 w-full sm:px-0 px-4 text-2xl sm:text-4xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
-          {project.credits}
-        </div>
-      )}
+  <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+    {project.credits}
+  </div>
+)}
     </div>
   );
 }
+
+
+
+
+

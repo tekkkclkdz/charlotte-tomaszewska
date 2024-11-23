@@ -32,6 +32,8 @@ import JAN1 from './../../public/still/JAN_F_CHODOROWICZ/05.jpg'
 import RES1 from "./../../public/still/rest_is_rust/jpeg-optimizer_01-kopia 2.jpg"
 import RES2 from "./../../public/still/rest_is_rust/jpeg-optimizer_8b.jpg"
 
+import logo from "./../../public/2_0013-min.webp"
+
 import  { stillProjects }  from "./stillProjects"
 
 
@@ -46,7 +48,10 @@ const Page = () => {
       {/* <MovingContent projects={movingProjects} /> */}
       
       {/* <BottomTitles projects={projects} moving={0}/> */}
-      <div className='bg-white w-full h-full' />
+      
+          <Image src={logo} alt="logo" width={200} height={200} />
+       
+ 
     </div>
   );
 };

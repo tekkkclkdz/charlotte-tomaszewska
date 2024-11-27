@@ -35,6 +35,9 @@ import RES2 from "./../../public/still/rest_is_rust/jpeg-optimizer_8b.jpg"
 import logo from "./../../public/2_0013-min.webp"
 
 import  { stillProjects }  from "./stillProjects"
+import Footer from './components/Footer';
+
+
 
 
 
@@ -44,18 +47,16 @@ const Page = () => {
       <div className='bg-white h-16 w-full'></div>
       <NavBar stillOrMoving={0} intro={0} />
       <ContactBioBar intro={0} underline={0}/> {/* Dodajemy komponent ContactBioBar */}
-      <ProjectContent projects={stillProjects} /> 
+    
+        <ProjectContent projects={stillProjects} /> 
+   
+    
+      
       {/* <MovingContent projects={movingProjects} /> */}
       
       {/* <BottomTitles projects={projects} moving={0}/> */}
-      <div>
-                <div className="flex justify-center  z-50">
-        
-          <Image src={logo} alt="logo" width={200} height={200} />
     
-      </div>
-      <div className='bg-white h-10'/>
-            </div>
+               
  
     </div>
   );

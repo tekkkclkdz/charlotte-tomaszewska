@@ -103,19 +103,18 @@ export default function ProjectDetail() {
     ></iframe>
   </div>
 
+  {project.credits && (
+  <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+    {project.credits}
+  </div>
+)}
+
+      {/* Logo bezpośrednio pod ostatnim zdjęciem */}
       <div className="flex justify-center">
         <Link href={'/'}>
-          <Image src={logo} alt="logo" width={140} height={140} />
+          <Image src={logo} alt="logo" width={140} height={140} className='mb-2'/>
         </Link>
       </div>
-      <div className="h-20 bg-white" />
-
-      {/* Display credits at the bottom */}
-      {project.credits && (
-        <div className="z-50 fixed  bottom-0 left-0 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
-          {project.credits}
-        </div>
-      )}
     </div>
   );
 }

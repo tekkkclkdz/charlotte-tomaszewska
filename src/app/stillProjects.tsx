@@ -163,6 +163,13 @@ import arch12 from "./../../public/StillProjects/archives_future_webp/12_con.web
 import arch13 from "./../../public/StillProjects/archives_future_webp/13_con.webp";
 import arch14 from "./../../public/StillProjects/archives_future_webp/14_con.webp";
 
+
+
+import archives8 from "./../../public/StillProjects/archives_future_webp/archives8.jpg";
+import archives9 from "./../../public/StillProjects/archives_future_webp/archives9.jpg";
+import archives10 from "./../../public/StillProjects/archives_future_webp/archives10.jpg";
+import archives11 from "./../../public/StillProjects/archives_future_webp/archives11.jpg";
+
 import cap1 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (1)_con.webp";
 import cap2 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (2)_con.webp";
 import cap3 from "./../../public/StillProjects/CAP_planeta_webp/PLANETA (3)_con.webp";
@@ -490,7 +497,7 @@ import grajper_okladka from "./../../public/still copy/mikolaj_zurek.jpg"
 
 import cap_planeta_gif_okladka from "./../../public/still copy/poptown_1.gif"
 
-import vatos_okladka from "./../../public/still copy/VATOS_LANOS_1.gif"
+import vatos_okladka from "./../../public/still copy/VATOS_LANOS_1-ezgif.com-crop.gif"
 
 import duble_dare_okladka from "./../../public/still copy/DOUBLE_DARE_1.jpg"
 
@@ -541,11 +548,47 @@ import newonce_test_3 from "./../../public/newonce_test/6_done_con.webp"
 import newonce_test_4 from "./../../public/newonce_test/IMG_20230627_134348_00_079copy_1_1_1-ezgif.com-video-to-gif-converter.gif"
 import newonce_test_5 from "./../../public/newonce_test/NEWONCE_1.gif"
 
+import Chodorowicz_okladka1 from "./../../public/chodorowicz_1.jpg"
+import Chodorowicz_okladka2 from "./../../public/chodorowicz_2.jpg"
+import Chodorowicz_okladka3 from "./../../public/chodorowicz_3.jpg"
+
+
+import nature_okladka1 from "./../../public/Y39823_con.webp"
+import nature_okladka2 from "./../../public/_291028910_con.webp"
+
+
+
+
+
 import logo from "./../../public/char 05 black.jpg"
 
 
 
+import human1 from "./../../public/human_top/human1.jpg"
+import human2 from "./../../public/human_top/human2.jpg"
+import human3 from "./../../public/human_top/human3.jpg"
+import human4 from "./../../public/human_top/human4.jpg"
+import human5 from "./../../public/human_top/human5.jpg"
+import human6 from "./../../public/human_top/human6.jpg"
+import human7 from "./../../public/human_top/human7.jpg"
+import human8 from "./../../public/human_top/human8.jpg"
+import human9 from "./../../public/human_top/human9.jpg"
+import human10 from "./../../public/human_top/human10.jpg"
+import human11 from "./../../public/human_top/human11.jpg"
+import human12 from "./../../public/human_top/human12.jpg"
+import human13 from "./../../public/human_top/human13.jpg"
+import human14 from "./../../public/human_top/human14.jpg"
 
+
+import nature1 from "./../../public/nature_top/nature1_con.webp"
+import nature2 from "./../../public/nature_top/nature2_con.webp"
+import nature3 from "./../../public/nature_top/nature3_con.webp"
+import nature4 from "./../../public/nature_top/nature4_con.webp"
+import nature5 from "./../../public/nature_top/nature5_con.webp"
+import nature6 from "./../../public/nature_top/nature6_con.webp"
+import nature7 from "./../../public/nature_top/nature7_con.webp"
+import nature8 from "./../../public/nature_top/nature8_con.webp"
+import nature9 from "./../../public/nature_top/nature9_con.webp"
 
 
 
@@ -597,7 +640,7 @@ export const stillProjects = [
 
       <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
         <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-          <Link href="/pages/still/2" legacyBehavior>
+          <Link href="/LOVE" legacyBehavior>
             <Image
               src={antoninaPopy_resized}
               className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
@@ -640,12 +683,12 @@ export const stillProjects = [
         </div>
       </div>
 
-    ), additionalImages: [arch1, arch2, arch4, arch5, arch6, arch8, arch9, arch3, arch7, arch10, arch11, arch12, arch13, arch14],
+    ), additionalImages: [arch1, arch2, arch4, arch5, arch6, arch8, arch9, archives8, archives9, archives10, archives11, arch12, arch13, arch14],
     credits: 'photographed by mati grzelak, styled by charlotte tomaszewska'
   },
   {
     id: 4, title: 'DOCUMENT JOURNAL ’SLAVA UKRAINIE’', content: (
-      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-screen items-center justify-center gap-8 px-8">
+      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-center py-2 gap-2 px-2">
 
       {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
       <div className="w-full lg:w-1/3 hidden lg:block">
@@ -728,7 +771,7 @@ export const stillProjects = [
         <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
           <Link href={`/pages/still/6`} legacyBehavior>
             <Image
-              src={Kura3}
+              src={nature_okladka1}
               className="w-full sm:h-full object-cover object-center cursor-pointer"
               alt="en1"
               loading="lazy"
@@ -740,7 +783,7 @@ export const stillProjects = [
         <div className="hidden sm:block sm:w-1/2 h-[100vh]">
           <Link href={`/pages/still/6`} legacyBehavior>
             <Image
-              src={Kura4}
+              src={nature_okladka2}
               className="w-full h-full object-cover object-center cursor-pointer"
               alt="en2"
               loading="lazy"
@@ -750,14 +793,14 @@ export const stillProjects = [
         </div>
       </div>
 
-    ), additionalImages: [Kura1, Kura2, Kura3, Kura6, Kura4, Kura5, Kura8, Kura7],
+    ), additionalImages: [nature1, nature2, nature3, nature4, nature5, nature6, nature7, nature8],
     credits: 'photographed by karol gustav, styling by charlotte tomaszewska'
 
   },
   {
     id: 7, title: 'HOLES', content: (
 
-      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-screen items-center justify-center gap-8 px-8">
+      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-center py-2 gap-2 px-2">
 
   {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
   <div className="w-full lg:w-1/3 hidden lg:block">
@@ -816,7 +859,7 @@ export const stillProjects = [
           </Link>
         </div>
       </div>
-    ), additionalImages: [human_webp1, human_webp2, human_webp3, human_webp4, human_webp5, human_webp6, human_webp7, human_webp8, human_webp9, human_webp10, human_webp11, human_webp12, human_webp13, human_webp14],
+    ), additionalImages: [human1, human2, human3, human4, human5, human6, human7, human8, human9, human10, human11, human12, human13, human14],
     credits: 'photographed by krzysztof powierza, directed by grajper, creative concept, art direction & styling by charlotte tomaszewska'
   },
   {
@@ -920,7 +963,7 @@ export const stillProjects = [
     credits: 'photographed by alberto polo ianez, styled by charlotte tomaszewska'
   },
   {
-    id: 12, title: `NEWONCE ’WARSZAWA 2020’`, content: (
+    id: 12, title: `NEWONCE WARSZAWA 2020`, content: (
       <div className="flex flex-wrap">
   {/* Pierwsze zdjęcie - widoczne tylko na większych ekranach */}
   <div className="hidden sm:block sm:w-1/2 h-[100vh]">
@@ -1168,20 +1211,44 @@ export const stillProjects = [
     credits: 'photographed & directed by tatiana & karol, styled by charlotte tomaszewska'
   },
   {
-    id: 19, title: 'JAN_F_CHODOROWICZ', content: (
-      <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    id: 19, title: 'JAN F CHODOROWICZ', content: (
+      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-center py-2 gap-2 px-2">
 
-    <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-    <Link href="/pages/still/19" legacyBehavior>
+  {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
+  <div className="w-full lg:w-1/3 hidden lg:block">
+    <Link href="/holes" legacyBehavior>
       <Image
-        src={JAN22}
-        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+        src={Chodorowicz_okladka1}
+        className="w-full h-auto object-cover object-center cursor-pointer"
         alt="pic1"
         loading="lazy"
       />
     </Link>
-      
-    </div>
+  </div>
+
+  {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
+  <div className="w-full lg:w-1/3 hidden lg:block">
+    <Link href="/holes" legacyBehavior>
+      <Image
+        src={Chodorowicz_okladka2}
+        className="w-full h-auto object-cover object-center cursor-pointer"
+        alt="pic2"
+        loading="lazy"
+      />
+    </Link>
+  </div>
+
+  {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
+  <div className="w-full lg:w-1/3">
+    <Link href="/holes" legacyBehavior>
+      <Image
+        src={Chodorowicz_okladka3}
+        className="w-full h-auto object-cover object-center cursor-pointer"
+        alt="pic3"
+        loading="lazy"
+      />
+    </Link>
+  </div>
 
 </div>
 
@@ -1201,12 +1268,7 @@ export const stillProjects = [
       />
     </div>
   </Link>
-  <div className="flex justify-center z-50">
-    <Link href={'/'}>
-      <Image src={logo} alt="logo" width={350} height={350} />
-    </Link>
-  </div>
-  <div className="bg-white" />
+  
 </div>
     ), additionalImages: [duble_dare_okladka, doubl1, doubl2, doubl3, doubl4],
     credits: 'photographed by mateusz stankiewicz, styled by charlotte tomaszewska'

@@ -47,6 +47,8 @@ import Reebok3 from "./../../public/REEBOKReedefine-high.gif"
 
 import STONE2 from "./../../public/STONE - Queen-high (5).gif"
 
+import YES from "./../../public/YES-ezgif.com-optimize.gif"
+
 
 export const projects = [
     {
@@ -57,7 +59,7 @@ export const projects = [
                         src={BRODKA}
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
                         alt="pic1"
-                        loading="lazy"
+                        priority
                     />
                 </div>
             </div>
@@ -72,7 +74,7 @@ export const projects = [
                         src={ADIDAS}
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
                         alt="pic1"
-                        loading="lazy"
+                        priority
                     />
                 </div>
             </div>
@@ -171,7 +173,23 @@ export const projects = [
         `
     },
     {
-        id: 9, title: 'WINDOWSEN', content: (
+        id: 9, title: 'YES', content: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <Image
+                        src={YES}
+                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        alt="pic1"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        ), videoUrl: 'https://player.vimeo.com/video/647758815',
+        credits: `directed by grajper, styled by charlotte Tomaszewska
+        `
+    },
+    {
+        id: 10, title: 'WINDOWSEN', content: (
            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -186,7 +204,7 @@ export const projects = [
         credits: `directed by grajper, art direction by grajper & charlotte tomaszewska`
     },
     {
-        id: 10, title: 'CICHO', content: (
+        id: 11, title: 'CICHO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -201,7 +219,7 @@ export const projects = [
         credits: `directed by marcin pucyk, styled by charlotte tomaszewska`
     },
     {
-        id: 11, title: 'MARIA PESZEK', content: (
+        id: 12, title: 'MARIA PESZEK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -216,7 +234,7 @@ export const projects = [
         credits: 'directed by grajper, styled by charlotte tomaszewska'
     },
     {
-        id: 12, title: 'I.M.', content: (
+        id: 13, title: 'I.M.', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -231,7 +249,7 @@ export const projects = [
         credits: `directed by marta mach, styled by charlotte tomaszewska`
     },
     {
-        id: 13, title: 'SZCZYL', content: (
+        id: 14, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -246,7 +264,7 @@ export const projects = [
         credits: 'directed by andrzej stepouois, styled by charlotte tomaszewska'
     },
     {
-        id: 14, title: 'IKEA', content: (
+        id: 15, title: 'IKEA', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -285,7 +303,7 @@ export const projects = [
     //     `
     // },
     {
-        id: 15, title: 'HANIA RANI X DOBRAWA CHOCHER', content: (
+        id: 16, title: 'HANIA RANI X DOBRAWA CHOCHER', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -300,7 +318,7 @@ export const projects = [
         credits: `directed by mateusz miszczynski, styled by charlotte tomaszewska`
     },
     {
-        id: 16, title: 'BASS ASTRAL X IGO', content: (
+        id: 17, title: 'BASS ASTRAL X IGO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -315,7 +333,7 @@ export const projects = [
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
     {
-        id: 17, title: 'TYMBARK', content: (
+        id: 18, title: 'TYMBARK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -330,7 +348,7 @@ export const projects = [
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
     {
-        id: 18, title: 'KUKON X DARIA ZAWIALOW', content: (
+        id: 19, title: 'KUKON X DARIA ZAWIALOW', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -345,7 +363,7 @@ export const projects = [
         credits: 'directed & dop by Nikodem marek, styled by charlotte tomaszewska'
     },
     {
-        id: 19, title: 'IFOLOR', content: (
+        id: 20, title: 'IFOLOR', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -361,7 +379,7 @@ export const projects = [
     },
 
     {
-        id: 20, title: 'MAVERICK SABRE', content: (
+        id: 21, title: 'MAVERICK SABRE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -376,7 +394,7 @@ export const projects = [
         credits: `directed by grajper, fans styled by charlotte tomaszewska`
     },
     {
-        id: 21, title: 'REEBOK', content: (
+        id: 22, title: 'REEBOK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <Image
@@ -391,7 +409,7 @@ export const projects = [
         credits: `directed by tatiana & karol, styled by charlotte tomaszewska`
     },
     {
-        id: 22, title: 'SZCZYL', content: (
+        id: 23, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
@@ -428,19 +446,5 @@ export const projects = [
     //     Starring: Angie, Luiza, Hipek, Natalia
     //     `
     // },
-    {
-        id: 23, title: 'SZCZYL', content: (
-            <div>
-                <div className="flex justify-center  z-50">
-        
-          <Image src={logo} alt="logo" width={350} height={350} />
-    
-      </div>
-      <div className='bg-white h-10'/>
-            </div>
-            
-        ), videoUrl: '',
-        credits: ''
-    },
 ];
 

@@ -10,7 +10,7 @@ type Project = {
   id: number;
   title: string;
   content: JSX.Element;
-  credits: string;
+  credits: string | JSX.Element;
 };
 
 type ProjectsArray = Project[];

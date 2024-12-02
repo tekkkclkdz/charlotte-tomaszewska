@@ -591,6 +591,29 @@ import nature8 from "./../../public/nature_top/nature8_con.webp"
 import nature9 from "./../../public/nature_top/nature9_con.webp"
 
 
+import anastazja_okladka1 from "./../../public/anastazja_1.jpg"
+import anastazja_okladka2 from "./../../public/anastazja_2.jpg"
+
+
+
+import future1 from "./../../public/Newonce_future_1_con.webp"
+import future4 from "./../../public/Newonce_future_4_con.webp"
+import future5 from "./../../public/Newonce_future_5_con.webp"
+
+
+import capPlaneta4 from "./../../public/cap_planeta_4_con.webp"
+import capPlaneta5 from "./../../public/cap_planeta_5_con.webp"
+import capPlaneta6 from "./../../public/cap_planeta_6_con.webp"
+import capPlaneta7 from "./../../public/cap_planeta_7_con.webp"
+
+
+import warszawa8 from "./../../public/warszawa_8_con.webp"
+import warszawa13 from "./../../public/warszawa_13_con.webp"
+
+
+import vatosGif from "./../../public/vatos_lanos.gif"
+
+
 
 
 
@@ -603,15 +626,12 @@ export const stillProjects = [
           <div className="flex items-center w-full md:w-1/2 md:h-full">
             <div className="w-full flex justify-center h-full">
               <Link href={`/pages/still/1`} legacyBehavior>
-
                 <Image
                   src={REST3}
                   className="w-full h-full object-cover cursor-pointer"
                   alt="pic1"
                   loading="lazy"
                 />
-
-
               </Link>
 
             </div>
@@ -688,46 +708,44 @@ export const stillProjects = [
   },
   {
     id: 4, title: 'DOCUMENT JOURNAL ’SLAVA UKRAINIE’', content: (
-      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-center py-2 gap-2 px-2">
+      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-between gap-4 px-4 lg:px-8">
 
-      {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
-      <div className="w-full lg:w-1/3 hidden lg:block">
-        <Link href="/DocumentJournal" legacyBehavior>
-          <Image
-            src={journal_okladka_1}
-            className="w-full h-auto object-cover object-center cursor-pointer"
-            alt="pic1"
-            loading="lazy"
-          />
-        </Link>
-      </div>
-    
-      {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
-      <div className="w-full lg:w-1/3 hidden lg:block">
-        <Link href="/DocumentJournal" legacyBehavior>
-          <Image
-            src={journal_okladka_3}
-            className="w-full h-auto object-cover object-center cursor-pointer"
-            alt="pic2"
-            loading="lazy"
-          />
-        </Link>
-      </div>
-    
-      {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
-      <div className="w-full lg:w-1/3">
-        <Link href="/DocumentJournal" legacyBehavior>
-          <Image
-            src={journal_okladka_2}
-            className="w-full h-auto object-cover object-center cursor-pointer"
-            alt="pic3"
-            loading="lazy"
-          />
-        </Link>
-      </div>
-    
-    </div>
+  {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
+  <div className="w-full lg:w-[calc(33.333%-1rem)] hidden lg:block">
+    <Link href="/DocumentJournal" legacyBehavior>
+      <Image
+        src={journal_okladka_1}
+        className="w-full h-auto object-cover object-center cursor-pointer"
+        alt="pic1"
+        loading="lazy"
+      />
+    </Link>
+  </div>
 
+  {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
+  <div className="w-full lg:w-[calc(33.333%-1rem)] hidden lg:block">
+    <Link href="/DocumentJournal" legacyBehavior>
+      <Image
+        src={journal_okladka_3}
+        className="w-full h-auto object-cover object-center cursor-pointer"
+        alt="pic2"
+        loading="lazy"
+      />
+    </Link>
+  </div>
+
+  {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
+  <div className="w-full lg:w-[calc(33.333%-1rem)]">
+    <Link href="/DocumentJournal" legacyBehavior>
+      <Image
+        src={journal_okladka_2}
+        className="w-full h-auto object-cover object-center cursor-pointer"
+        alt="pic3"
+        loading="lazy"
+      />
+    </Link>
+  </div>
+</div>
     ), additionalImages: [DJ1, dc1, dc4, dc5, dc8, dc10, dc11, dc12, dc15, dc16, dc19, dc20, dc29, dcOla, dc30, dc31, dc33, dc34, dc25, dc22],
     credits: 'photographed by maksym rudnik, creative concept & art direction charlotte tomaszewska'
   },
@@ -800,10 +818,10 @@ export const stillProjects = [
   {
     id: 7, title: 'HOLES', content: (
 
-      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-center py-2 gap-2 px-2">
+      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-between gap-4 px-4 lg:px-8">
 
   {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
-  <div className="w-full lg:w-1/3 hidden lg:block">
+  <div className="w-full lg:w-[calc(33.333%-1rem)] hidden lg:block">
     <Link href="/holes" legacyBehavior>
       <Image
         src={holes_okladka1}
@@ -815,7 +833,7 @@ export const stillProjects = [
   </div>
 
   {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
-  <div className="w-full lg:w-1/3 hidden lg:block">
+  <div className="w-full lg:w-[calc(33.333%-1rem)] hidden lg:block">
     <Link href="/holes" legacyBehavior>
       <Image
         src={holes_okladka2}
@@ -827,7 +845,7 @@ export const stillProjects = [
   </div>
 
   {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
-  <div className="w-full lg:w-1/3">
+  <div className="w-full lg:w-[calc(33.333%-1rem)]">
     <Link href="/holes" legacyBehavior>
       <Image
         src={holes_okladka3}
@@ -837,7 +855,6 @@ export const stillProjects = [
       />
     </Link>
   </div>
-
 </div>
 
 
@@ -860,7 +877,11 @@ export const stillProjects = [
         </div>
       </div>
     ), additionalImages: [human1, human2, human3, human4, human5, human6, human7, human8, human9, human10, human11, human12, human13, human14],
-    credits: 'photographed by krzysztof powierza, directed by grajper, creative concept, art direction & styling by charlotte tomaszewska'
+    credits: (
+      <div>
+        photographed by krzysztof powierza, directed by grajper <br></br> creative concept, art direction & styling by charlotte tomaszewska
+      </div>
+      )
   },
   {
     id: 9, title: 'SZCZYL', content: (
@@ -868,24 +889,29 @@ export const stillProjects = [
         {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
         <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
           {/* <Link href={`/pages/still/8`} legacyBehavior> */}
+          <Link href="/pages/still/9" legacyBehavior>
             <Image
               src={szczyl_okladka_1}
-              className="w-full h-auto sm:h-full object-cover object-center"
+              className="w-full h-auto sm:h-full object-cover object-center cursor-pointer"
               alt="en1"
               loading="lazy"
             />
+          </Link>
+            
           {/* </Link> */}
         </div>
 
         {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
         <div className="hidden sm:block sm:w-1/2 h-[100vh]">
           {/* <Link href={`/pages/still/8`} legacyBehavior> */}
+          <Link href="/pages/still/9" legacyBehavior>
             <Image
               src={szczyl_okladka_2}
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center cursor-pointer"
               alt="en2"
               loading="lazy"
             />
+          </Link>
           {/* </Link> */}
           <div className="h-24 bg-white"></div>
         </div>
@@ -1003,7 +1029,7 @@ export const stillProjects = [
   </div>
 </div>
 
-    ), additionalImages: [  budowa12, budowa6, budowa14, budowa11, budowa8, budowa4, budowa15, budowa7, budowa9, budowa16, budowa5, budowa3, budowa10, budowa13, budowa18 ],
+    ), additionalImages: [  budowa12, budowa6, budowa14, budowa11, budowa8, budowa4, budowa15, warszawa8, budowa9, budowa16, budowa5, budowa3, warszawa13, budowa13, budowa18 ],
     credits: ['photographed by yan wasiuchnik, creative concept, art direction & styling by charlotte tomaszewska']
   },
   {
@@ -1064,7 +1090,7 @@ export const stillProjects = [
   </div>
 </div>
 
-    ), additionalImages: [cap1, cap2, cap3, cap4, cap5, cap7, cap8, cap9, cap10],
+    ), additionalImages: [cap1, cap2, cap3, capPlaneta4, capPlaneta5, capPlaneta6, capPlaneta7, cap9, cap10],
     credits: 'photographed by lukasz kus, creative concept, art direction & styling by charlotte tomaszewska'
   },
   {
@@ -1128,8 +1154,8 @@ export const stillProjects = [
         </div>
 
       </div>
-    ), additionalImages: [newonce_test_2, NO7, NO8, newonce_test_3, newonce_test_1, NO9],
-    mobileImages: [newonce_test_2, NO7, newonce_test_3, NO8, newonce_test_1, NO9],
+    ), additionalImages: [future1, NO7, NO8, future4, future5, NO9],
+    mobileImages: [future1, NO7, future4, NO8, future5, NO9],
     credits: 'photographed  & creative concept max gronowski, art direction & styling by charlotte tomaszewska'
   }, {
     id: 16, title: 'NEWONCE WARSZAWA TURCZI', content: (
@@ -1169,7 +1195,7 @@ export const stillProjects = [
       <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
         <Link href={`/pages/still/17`} legacyBehavior>
           <Image
-            src={anastazja_okladka_1}
+            src={anastazja_okladka1}
             className="w-full sm:h-full object-cover object-center cursor-pointer"
             alt="en1"
             loading="lazy"
@@ -1181,7 +1207,7 @@ export const stillProjects = [
       <div className="hidden sm:block sm:w-1/2 h-[100vh]">
         <Link href={`/pages/still/17`} legacyBehavior>
           <Image
-            src={anastazja_okladka_2}
+            src={anastazja_okladka2}
             className="w-full h-full object-cover object-center cursor-pointer"
             alt="en2"
             loading="lazy"
@@ -1199,7 +1225,7 @@ export const stillProjects = [
   <Link href="/VatosLanos" legacyBehavior>
     <div className="w-full sm:w-[100%] sm:h-full h-auto flex justify-center items-center">
       <Image
-        src={vatos_okladka}
+        src={vatosGif}
         className="w-full h-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
         alt="pic1"
         loading="lazy"
@@ -1212,11 +1238,11 @@ export const stillProjects = [
   },
   {
     id: 19, title: 'JAN F CHODOROWICZ', content: (
-      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-center py-2 gap-2 px-2">
+      <div className="flex flex-wrap lg:flex-nowrap h-auto lg:h-auto items-center justify-between gap-4 px-4 lg:px-8">
 
   {/* Pierwsze zdjęcie (widoczne tylko na komputerze) */}
-  <div className="w-full lg:w-1/3 hidden lg:block">
-    <Link href="/holes" legacyBehavior>
+  <div className="w-full lg:w-[calc(33.333%-1rem)] hidden lg:block">
+    <Link href="/pages/still/19" legacyBehavior>
       <Image
         src={Chodorowicz_okladka1}
         className="w-full h-auto object-cover object-center cursor-pointer"
@@ -1227,8 +1253,8 @@ export const stillProjects = [
   </div>
 
   {/* Drugie zdjęcie (widoczne tylko na komputerze) */}
-  <div className="w-full lg:w-1/3 hidden lg:block">
-    <Link href="/holes" legacyBehavior>
+  <div className="w-full lg:w-[calc(33.333%-1rem)] hidden lg:block">
+    <Link href="/pages/still/19" legacyBehavior>
       <Image
         src={Chodorowicz_okladka2}
         className="w-full h-auto object-cover object-center cursor-pointer"
@@ -1239,8 +1265,8 @@ export const stillProjects = [
   </div>
 
   {/* Trzecie zdjęcie (widoczne na mobilkach i komputerach) */}
-  <div className="w-full lg:w-1/3">
-    <Link href="/holes" legacyBehavior>
+  <div className="w-full lg:w-[calc(33.333%-1rem)]">
+    <Link href="/pages/still/19" legacyBehavior>
       <Image
         src={Chodorowicz_okladka3}
         className="w-full h-auto object-cover object-center cursor-pointer"

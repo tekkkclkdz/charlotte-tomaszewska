@@ -40,10 +40,12 @@ const NavBar = ({
   }, []);
 
   const handleLogoClick = () => {
-    // Scroll to the first project (next screen height)
+    const isMobile = window.innerWidth <= 768; // Ustal rozmiar mobilny
+    const scrollFactor = isMobile ? 1.09 : 1.105; // Wartość zależna od urządzenia
+    
     window.scrollTo({
-      top: window.innerHeight * 1.09, // Scroll to the height of the screen
-      behavior: "smooth", // Smooth scrolling
+      top: window.innerHeight * scrollFactor, // Obliczenie pozycji
+      behavior: "smooth", // Płynne przewijanie
     });
   };
 
@@ -66,7 +68,7 @@ const NavBar = ({
             <Image
               src={logo2}
               alt="Logo"
-              className="transition-opacity opacity-0 duration-[2s] w-[60%] sm:w-[37%] mb-40"
+              className="transition-opacity opacity-0 duration-[2s] w-[60%] sm:w-[37%] mb-32"
               onLoadingComplete={(image) => image.classList.remove("opacity-0")}
             />
           </div>
@@ -75,21 +77,21 @@ const NavBar = ({
 
       {/* Sticky "still | moving" text */}
       <div
-  className="sticky top-0 z-50 py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300"
-  suppressHydrationWarning={true}
->
-  <div className="flex items-center justify-center text-white">
-    <div className="flex items-center gap-2">
-      <Link href="/" passHref>
-        <h1 className={stillStyle}>still</h1>
-      </Link>
-      <span>|</span>
-      <Link href="/moving" passHref>
-        <h2 className={movingStyle}>moving</h2>
-      </Link>
-    </div>
-  </div>
-</div>
+        className="sticky top-0 z-50 py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300"
+        suppressHydrationWarning={true}
+      >
+        <div className="flex items-center justify-center text-white">
+          <div className="flex items-center gap-2">
+            <Link href="/" passHref>
+              <h1 className={stillStyle}>still</h1>
+            </Link>
+            <span>|</span>
+            <Link href="/moving" passHref>
+              <h2 className={movingStyle}>moving</h2>
+            </Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

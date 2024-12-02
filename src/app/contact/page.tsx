@@ -10,13 +10,23 @@ const Page = () => {
   return (
     <div>
       <NavBar stillOrMoving={2} intro={1} />
-      <ContactBioBar intro={1} underline={2}/>
+      <ContactBioBar intro={1} underline={2} />
 
       <div className="flex flex-col items-center justify-center h-screen bg-black text-white">
         {/* Container for the text */}
         <div className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-2xl font-light">charlotte.tomaszewska@gmail.com</h1>
-          <Link href="https://www.instagram.com/charlottetomas/" className="text-white text-2xl py-12 font-light hover:underline">
+          <Link
+            href="mailto:charlotte.tomaszewska@gmail.com"
+            className="text-white text-2xl font-light hover:underline"
+          >
+            charlotte.tomaszewska@gmail.com
+          </Link>
+          <Link
+            href="https://www.instagram.com/charlottetomas/"
+            className="text-white text-2xl py-12 font-light hover:underline"
+            target="_blank" // Otwórz w nowej karcie
+            rel="noopener noreferrer" // Bezpieczny link
+          >
             @charlottetomas
           </Link>
           <h1 className="text-2xl font-light">+48 692 209 198</h1>

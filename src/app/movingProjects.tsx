@@ -49,6 +49,8 @@ import STONE2 from "./../../public/STONE - Queen-high (5).gif"
 
 import YES from "./../../public/YES-ezgif.com-optimize.gif"
 
+import CICHO2 from "./../../public/CICHO_QUIET_2-ezgif.com-optimize.gif"
+
 
 export const projects = [
     {
@@ -154,7 +156,7 @@ export const projects = [
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/450786928',
-        credits: `directed by grajper, creative concept, art direction & styling by charlotte tomaszewska`
+        credits: (<div>directed by grajper <br></br> creative concept, art direction & styling by charlotte tomaszewska</div>)
     },
     {
         id: 8, title: 'HOME', content: (
@@ -185,7 +187,7 @@ export const projects = [
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/647758815',
-        credits: `directed by grajper, styled by charlotte Tomaszewska
+        credits: `directed by grajper, styled by charlotte tomaszewska
         `
     },
     {
@@ -208,7 +210,7 @@ export const projects = [
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                     <Image
-                        src={CICHO}
+                        src={CICHO2}
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
                         alt="pic1"
                         loading="lazy"
@@ -360,7 +362,7 @@ export const projects = [
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1024318254',
-        credits: 'directed & dop by Nikodem marek, styled by charlotte tomaszewska'
+        credits: 'directed & dop by nikodem marek, styled by charlotte tomaszewska'
     },
     {
         id: 20, title: 'IFOLOR', content: (

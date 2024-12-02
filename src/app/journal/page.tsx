@@ -14,19 +14,11 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-import pic1 from "./../../../public/journal/01.jpg"
-import pic2 from "./../../../public/journal/02.jpg"
-import pic3 from "./../../../public/journal/03.jpg"
-import pic4 from "./../../../public/journal/04.jpg"
-import pic5 from "./../../../public/journal/05.jpg"
-import pic6 from "./../../../public/journal/06.jpg"
-import pic7 from "./../../../public/journal/07.jpg"
-import pic8 from "./../../../public/journal/08.jpg"
-import pic9 from "./../../../public/journal/09.jpg"
+import Ivan_pic from "./../../../public/Document_renamed/Ivan_pic.webp"
 
 
 const pictures = [
-  pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic9, pic8,
+  
 ];
 
 export default function Home() {

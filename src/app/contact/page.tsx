@@ -19,7 +19,7 @@ const Page = () => {
             href="mailto:charlotte.tomaszewska@gmail.com"
             className="text-white text-2xl font-light hover:underline"
           >
-            charlotte.tomaszewska@gmail.com
+            Write me under charlotte.tomaszewska@gmail.com
           </Link>
           <Link
             href="https://www.instagram.com/charlottetomas/"
@@ -27,10 +27,10 @@ const Page = () => {
             target="_blank" // Otwórz w nowej karcie
             rel="noopener noreferrer" // Bezpieczny link
           >
-            @charlottetomas
+            watch me under @charlottetomas
           </Link>
-          <h1 className="text-2xl font-light">+48 692 209 198</h1>
-          <h1 className="text-2xl font-light">+33 749 483 878</h1>
+          <h1 className="text-2xl font-light">Call me under +48 692 209 198</h1>
+          
         </div>
 
         {/* Logo - positioned at the bottom */}

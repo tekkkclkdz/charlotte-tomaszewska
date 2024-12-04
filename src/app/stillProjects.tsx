@@ -1196,7 +1196,7 @@ export const stillProjects = [
         <Link href={`/pages/still/17`} legacyBehavior>
           <Image
             src={anastazja_okladka1}
-            className="w-full sm:h-full object-cover object-center cursor-pointer"
+            className="w-full sm:h-full object-contain object-center cursor-pointer"
             alt="en1"
             loading="lazy"
           />
@@ -1208,7 +1208,7 @@ export const stillProjects = [
         <Link href={`/pages/still/17`} legacyBehavior>
           <Image
             src={anastazja_okladka2}
-            className="w-full h-full object-cover object-center cursor-pointer"
+            className="w-full h-full object-contain object-center cursor-pointer"
             alt="en2"
             loading="lazy"
           />

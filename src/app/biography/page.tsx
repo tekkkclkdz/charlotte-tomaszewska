@@ -15,11 +15,15 @@ const Page = () => {
         {/* Container for the text */}
         <div className="flex flex-col items-center justify-center text-center h-full mt-8 sm:mt-40">
           <p className="text-sm sm:text-2xl font-light">
-            Working in the fashion and film industry, for over a <br />
-            decade, I have learned that the image or the outfit <br />
-            may tell you a certain story. I believe that while selling <br />
-            clothes, we can make people dialogue with each <br />
-            other. Especially nowadays, when it is so needful…
+            Hey Love, <br/>
+            One sentence about me? <br/>
+
+            A Montreal-born, Warsaw-raised, Paris-based stylist – available to travel worldwide – <br/> with a love and appreciation for bold fashion and personal cinematic voices. <br/>
+
+            But is it even possible to capture the essence of a person in just one sentence? <br/>
+
+
+            For more sentences feel free to reach out
           </p>
         </div>
 

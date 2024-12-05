@@ -57,70 +57,62 @@ export default function ProjectDetail() {
         suppressHydrationWarning={true}
       >
         <div className="grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto">
-          {additionalImages.map((pics, idx) => {
-            const aspectRatio = pics.width / pics.height;
-            return (
-              <div
-                key={pics.src}
-                className={isHorizontal(pics) ? 'col-span-2 px-2 sm:px-0' : 'col-span-1'}
-              >
-                <div
-                  style={{
-                    width: '100%',
-                    height: '100vh',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}
-                >
-                  <Image
-                    src={pics.src}
-                    alt="placeholder"
-                    loading="lazy"
-                    className="transition duration-150 hover:opacity-75 cursor-pointer border-none"
-                    width={pics.width}
-                    height={pics.height}
-                    style={{
-                      maxHeight: '100vh', // Ensure it never exceeds screen height
-                      maxWidth: '100vw', // Ensure it never exceeds screen width
-                      width: aspectRatio > 1 ? 'auto' : '100%', // Horizontal images shrink in height
-                      height: aspectRatio > 1 ? '100%' : 'auto', // Vertical images shrink in width
-                      objectFit: 'contain', // Keeps image fully visible
-                    }}
-                    onClick={() => {
-                      lightboxRef.current?.openGallery(idx);
-                    }}
-                  />
-                </div>
-              </div>
-            );
-          })}
+  {additionalImages.map((pics, idx) => {
+    const aspectRatio = pics.width / pics.height;
+    return (
+      <div
+        key={pics.src}
+        className={isHorizontal(pics) ? 'col-span-2 px-2 sm:px-0' : 'col-span-1'}
+      >
+        {/* Dodanie odstępów między zdjęciami */}
+        <div className="py-0">
+          <div className="w-full h-auto flex justify-center items-center">
+            <Image
+              src={pics.src}
+              alt="placeholder"
+              loading="lazy"
+              className="transition duration-150 hover:opacity-75 cursor-pointer border-none max-h-screen max-w-screen object-contain"
+              width={pics.width}
+              height={pics.height}
+              style={{
+                width: aspectRatio > 1 ? 'auto' : '100%',
+                height: aspectRatio > 1 ? '100%' : 'auto',
+              }}
+              onClick={() => {
+                lightboxRef.current?.openGallery(idx);
+              }}
+            />
+          </div>
         </div>
+      </div>
+    );
+  })}
+</div>
 
-        <LightGalleryComponent
-          onInit={(ref) => {
-            if (ref) {
-              lightboxRef.current = ref.instance;
-            }
-          }}
-          speed={500}
-          dynamic
-          download={false}
-          dynamicEl={additionalImages.map((allImg) => ({
-            src: allImg.src,
-          }))}
-        />
+<LightGalleryComponent
+  onInit={(ref) => {
+    if (ref) {
+      lightboxRef.current = ref.instance;
+    }
+  }}
+  speed={500}
+  dynamic
+  download={false}
+  dynamicEl={additionalImages.map((allImg) => ({
+    src: allImg.src,
+  }))}
+/>
       </div>
       {project.credits && (
-  <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
-    {project.credits}
-  </div>
-)}
+        <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+          {project.credits}
+        </div>
+      )}
 
       {/* Logo bezpośrednio pod ostatnim zdjęciem */}
       <div className="flex justify-center">
         <Link href={'/'}>
-          <Image src={logo} alt="logo" width={140} height={140} className='mb-2'/>
+          <Image src={logo} alt="logo" width={140} height={140} className='mb-2' />
         </Link>
       </div>
     </div>

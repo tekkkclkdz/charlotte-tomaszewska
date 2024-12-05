@@ -72,17 +72,15 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
 
       {/* Sekcja obrazka pod ostatnim projektem */}
       <div
-        ref={bottomRef}
-        className="relative flex items-center justify-center bg-white mb-16"
-      >
-        <Image
-          src={logo}
-          alt="Logo"
-          width={300}
-          height={300}
-          className=""
-        />
-      </div>
+  ref={bottomRef}
+  className="relative flex items-center justify-center bg-white mb-16 sm:mb-16"
+>
+  <Image
+    src={logo}
+    alt="Logo"
+    className="w-28 h-28 sm:w-40 sm:h-40 lg:w-72 lg:h-72" // Zmienione klasy rozmiarów
+  />
+</div>
 
       {/* Tytuł aktywnego projektu */}
       <div className="fixed bottom-0 left-0 right-0 mix-blend-difference shadow-md text-center transition-opacity duration-300 ease-in-out">

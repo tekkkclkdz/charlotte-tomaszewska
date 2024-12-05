@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='!scroll-smooth dark overflow-x-hidden' suppressHydrationWarning={true}>
+    <html lang="en" className='!scroll-smooth dark overflow-x-hidden bg-white' suppressHydrationWarning={true}>
       <body className="bg-white" >
   {children}
 </body>

@@ -15,11 +15,13 @@ const Page = () => {
       <div className="flex flex-col items-center justify-center h-screen bg-black text-white">
         {/* Container for the text */}
         <div className="flex flex-col items-center justify-center text-center">
+
+        <h1 className="text-2xl font-light py-12">call me under +48 692 209 198</h1>
           <Link
             href="mailto:charlotte.tomaszewska@gmail.com"
             className="text-white text-2xl font-light hover:underline"
           >
-            Write me under charlotte.tomaszewska@gmail.com
+            write me under charlotte.tomaszewska@gmail.com
           </Link>
           <Link
             href="https://www.instagram.com/charlottetomas/"
@@ -29,7 +31,7 @@ const Page = () => {
           >
             watch me under @charlottetomas
           </Link>
-          <h1 className="text-2xl font-light">Call me under +48 692 209 198</h1>
+          
           
         </div>
 

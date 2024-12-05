@@ -917,7 +917,7 @@ export const stillProjects = [
         </div>
       </div>
 
-    ), additionalImages: [szczylXtatiana1, szczylXtatiana2, szczyl_podmiana, szczylXtatiana4, szczylXtatiana5, szczylXtatiana7, szczylXtatiana8, szczylXtatiana9, szczylXtatiana10, szczylXtatiana6],
+    ), additionalImages: [szczyl_okladka_1, szczyl_okladka_2],
     credits: 'photographed by tatiana & karol, styled by charlotte tomaszewska'
   },
   {

@@ -362,7 +362,7 @@ export const projects = [
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1024318254',
-        credits: 'directed & dop by nikodem marek, styled by charlotte tomaszewska'
+        credits: 'directed by nikodem marek, styled by charlotte tomaszewska'
     },
     {
         id: 20, title: 'IFOLOR', content: (

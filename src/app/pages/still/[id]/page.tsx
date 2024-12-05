@@ -74,41 +74,43 @@ export default function ProjectDetail({ params }: { params: Params }) {
       </div>
 
       <div className="w-full h-full left-0 top-0 border-none shadow-none" suppressHydrationWarning={true}>
-        <div className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto`}>
-          {additionalImages.map((pics, idx) => (
-            <div
-              key={pics.src}
-              className={isHorizontal(pics) ? 'col-span-2 px-2 sm:px-0' : 'col-span-1'}
-            >
-              <Image
-                src={pics.src}
-                alt="placeholder"
-                loading="lazy"
-                className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full"
-                width={pics.width}
-                height={pics.height}
-                onClick={() => {
-                  lightboxRef.current?.openGallery(idx);
-                }}
-              />
-            </div>
-          ))}
+  <div className="grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto px-2">
+    {additionalImages.map((pics, idx) => (
+      <div
+        key={pics.src}
+        className={`col-span-1 px-0 sm:px-0`}
+      >
+        <div className="w-full max-w-[calc(100%-1rem)] mx-auto">
+          <Image
+            src={pics.src}
+            alt="placeholder"
+            loading="lazy"
+            className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full object-contain"
+            width={pics.width}
+            height={pics.height}
+            onClick={() => {
+              lightboxRef.current?.openGallery(idx);
+            }}
+          />
         </div>
-
-        <LightGalleryComponent
-          onInit={(ref) => {
-            if (ref) {
-              lightboxRef.current = ref.instance;
-            }
-          }}
-          speed={500}
-          dynamic
-          download={false}
-          dynamicEl={additionalImages.map((allImg) => ({
-            src: allImg.src,
-          }))}
-        />
       </div>
+    ))}
+  </div>
+
+  <LightGalleryComponent
+    onInit={(ref) => {
+      if (ref) {
+        lightboxRef.current = ref.instance;
+      }
+    }}
+    speed={500}
+    dynamic
+    download={false}
+    dynamicEl={additionalImages.map((allImg) => ({
+      src: allImg.src,
+    }))}
+  />
+</div>
 
       {project.credits && (
                 <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">

@@ -234,12 +234,16 @@ export const projects = [
         id: 10, title: 'WINDOWSEN', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image
-                        src={WINDOWSEN}
+                <video
+                        src="/videos/WINDOWSEN.webm"
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
-                        alt="pic1"
-                        loading="lazy"
-                    />
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1016725466',
@@ -306,12 +310,16 @@ export const projects = [
         id: 14, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image
-                        src={WIELKIEMIASTA2}
+                <video
+                        src="/videos/SZCZYL1.webm"
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
-                        alt="pic1"
-                        loading="lazy"
-                    />
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>  
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1028107804',

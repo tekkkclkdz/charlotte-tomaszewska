@@ -2,72 +2,56 @@
 
 import React, { useState, useEffect } from 'react';
 import NavBar from './../components/NavBar';
-import BottomTitles from './../components/BottomTittles';
 import MovingContent from './../components/MovingContent';
 import ContactBioBar from '../components/ContactBioBar';
-
 import { projects } from './../../app/movingProjects';
 
-const ProjectVideo = ({ videoUrl }: { videoUrl: string }) => {
-    return (
-        <div className="w-full flex justify-center items-center">
-            <iframe
-                src={videoUrl}
-                className="w-full h-[calc(100vh-60px)] md:h-[80vh]" // Responsive height adjustments
-                frameBorder="0"
-                allow="autoplay; fullscreen"
-                allowFullScreen
-                loading="lazy"
-                style={{ aspectRatio: '16/9' }} // Maintain aspect ratio
-            ></iframe>
-        </div>
-    );
-};
-
 const Page = () => {
-    const [showRotateScreen, setShowRotateScreen] = useState(true);
+  const [showRotateScreen, setShowRotateScreen] = useState(false);
 
-    useEffect(() => {
-        const handleOrientationChange = () => {
-            if (window.innerWidth > window.innerHeight) {
-                setShowRotateScreen(false);
-            } else {
-                setShowRotateScreen(true);
-            }
-        };
+  useEffect(() => {
+    const updateOrientation = () => {
+      if (window.innerWidth > window.innerHeight) {
+        setShowRotateScreen(false);
+        document.documentElement.classList.remove('overflow-hidden'); // Włącz scrollowanie
+      } else {
+        setShowRotateScreen(true);
+        document.documentElement.classList.add('overflow-hidden'); // Wyłącz scrollowanie
+      }
+    };
 
-        handleOrientationChange(); // Initial check
+    // Początkowa detekcja
+    updateOrientation();
 
-        const resizeListener = () => {
-            if (!showRotateScreen && window.innerWidth < window.innerHeight) {
-                setShowRotateScreen(true);
-            }
-        };
+    // Nasłuchiwanie zmiany orientacji
+    window.addEventListener('orientationchange', updateOrientation);
 
-        window.addEventListener('resize', resizeListener);
+    // Fallback dla resize w razie braku orientationchange
+    window.addEventListener('resize', updateOrientation);
 
-        return () => {
-            window.removeEventListener('resize', resizeListener);
-        };
-    }, [showRotateScreen]);
+    return () => {
+      window.removeEventListener('orientationchange', updateOrientation);
+      window.removeEventListener('resize', updateOrientation);
+    };
+  }, []);
 
-    return (
-     
-             
-       
-             <div className='bg-white'>
-                 <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'} md:hidden`}>
-                     <p className="text-4xl text-black font-light">rotate your phone</p>
-                 </div>
-                 <NavBar stillOrMoving={1} intro={1} />
-                
+  return (
+    <div className="bg-white">
+      {/* Komunikat "Rotate your phone" */}
+      <div
+        className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${
+          showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        } md:hidden`}
+      >
+        <p className="text-4xl text-black font-light">rotate your phone</p>
+      </div>
 
-                 {/* Render Vimeo videos */}
-                 <MovingContent projects={projects} />
-                 <ContactBioBar intro={1} underline={0}/>
-                 
-             </div>
-    );
+      {/* Główna zawartość */}
+      <NavBar stillOrMoving={1} intro={1} />
+      <MovingContent projects={projects} />
+      <ContactBioBar intro={1} underline={0} />
+    </div>
+  );
 };
 
 export default Page;

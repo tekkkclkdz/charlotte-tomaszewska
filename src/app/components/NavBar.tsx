@@ -41,7 +41,7 @@ const NavBar = ({
 
   const handleLogoClick = () => {
     const isMobile = window.innerWidth <= 768; // Ustal rozmiar mobilny
-    const scrollFactor = isMobile ? 1.09 : 1.105; // Wartość zależna od urządzenia
+    const scrollFactor = isMobile ? 1.09 : 1.172; // Wartość zależna od urządzenia
     
     window.scrollTo({
       top: window.innerHeight * scrollFactor, // Obliczenie pozycji

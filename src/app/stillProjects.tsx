@@ -1194,24 +1194,24 @@ export const stillProjects = [
       {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
       <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
         <Link href={`/pages/still/17`} legacyBehavior>
-          <Image
-            src={anastazja_okladka1}
-            className="w-full sm:h-full object-contain object-center cursor-pointer"
-            alt="en1"
-            loading="lazy"
-          />
+        <Image
+  src={anastazja_okladka1}
+  className="w-full h-full object-cover cursor-pointer"
+  alt="en2"
+  loading="lazy"
+/>
         </Link>
       </div>
 
       {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
       <div className="hidden sm:block sm:w-1/2 h-[100vh]">
         <Link href={`/pages/still/17`} legacyBehavior>
-          <Image
-            src={anastazja_okladka2}
-            className="w-full h-full object-contain object-center cursor-pointer"
-            alt="en2"
-            loading="lazy"
-          />
+        <Image
+  src={anastazja_okladka2}
+  className="w-full h-full object-cover cursor-pointer"
+  alt="en2"
+  loading="lazy"
+/>
         </Link>
         <div className="h-24 bg-white"></div>
       </div>

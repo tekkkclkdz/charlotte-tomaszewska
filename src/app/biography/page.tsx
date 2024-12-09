@@ -4,10 +4,12 @@ import bio from "./../../../public/StillProjects/biography_charlotte_con.webp";
 import NavBar from '../components/NavBar2';
 import ContactBioBar from '../components/ContactBioBar';
 import logo from "./../../../public/logo_top2.png";
+import Layout from "./layout"
 
 const Page = () => {
   return (
-    <div className='bg-black'>
+    <Layout>
+      <div className='bg-black'>
       <NavBar stillOrMoving={2} intro={1} />
       <ContactBioBar intro={1} underline={1} />
 
@@ -23,7 +25,7 @@ const Page = () => {
             But is it even possible to capture the essence of a person in just one sentence? <br/>
 
 
-            For more sentences feel free to reach out
+            For more sentences feel free to reach out.
           </p>
         </div>
 
@@ -33,6 +35,8 @@ const Page = () => {
         </div>
       </div>
     </div>
+    </Layout>
+    
   );
 };
 

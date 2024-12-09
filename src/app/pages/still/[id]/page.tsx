@@ -75,25 +75,30 @@ export default function ProjectDetail({ params }: { params: Params }) {
 
       <div className="w-full h-full left-0 top-0 border-none shadow-none" suppressHydrationWarning={true}>
       <div className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto px-2`}>
-          {additionalImages.map((pics, idx) => (
-            <div
-              key={pics.src}
-              className={isHorizontal(pics) ? 'col-span-2 px-2 sm:px-0' : 'col-span-1 px-0 sm:px-0'}
-            >
-              <Image
-                src={pics.src}
-                alt="placeholder"
-                loading="lazy"
-                className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full"
-                width={pics.width}
-                height={pics.height}
-                onClick={() => {
-                  lightboxRef.current?.openGallery(idx);
-                }}
-              />
-            </div>
-          ))}
-        </div>
+  {additionalImages.map((pics, idx) => (
+    <div
+      key={pics.src}
+      className={`px-0 sm:px-0 ${
+        isHorizontal(pics) ? 'sm:col-span-2' : 'sm:col-span-1'
+      }`}
+      style={{
+        gridColumn: isMobile && isHorizontal(pics) ? 'span 1' : undefined, // Na mobilnych zdjęcia zajmują całą szerokość
+      }}
+    >
+      <Image
+        src={pics.src}
+        alt="placeholder"
+        loading="lazy"
+        className={`transition duration-150 hover:opacity-75 cursor-pointer border-none w-full h-auto`}
+        width={pics.width}
+        height={pics.height}
+        onClick={() => {
+          lightboxRef.current?.openGallery(idx);
+        }}
+      />
+    </div>
+  ))}
+</div>
 
   <LightGalleryComponent
     onInit={(ref) => {

@@ -4,19 +4,18 @@ import bio from "./../../../public/StillProjects/biography_charlotte_con.webp";
 import NavBar from '../components/NavBar2';
 import ContactBioBar from '../components/ContactBioBar';
 import logo from "./../../../public/logo_top2.png";
-import Layout from "./layout"
+
 
 const Page = () => {
   return (
-    <Layout>
-      <div className='bg-black'>
+    <div className='bg-black'>
       <NavBar stillOrMoving={2} intro={1} />
       <ContactBioBar intro={1} underline={1} />
 
       <div className="flex flex-col items-center justify-center  bg-black text-white h-[calc(100svh)]">
         {/* Container for the text */}
-        <div className="flex flex-col items-center justify-center text-center h-full mt-8 sm:mt-40">
-          <p className="text-sm sm:text-2xl font-light">
+        <div className="flex flex-col items-center justify-center text-center h-full ">
+          <p className="text-xs md:text-1xl lg:text-2xl font-light px-12">
             Hey Love, <br/>
             One sentence about me? <br/>
 
@@ -30,13 +29,11 @@ const Page = () => {
         </div>
 
         {/* Logo */}
-        <div className="flex items-center justify-center mb-4">
-          <Image src={logo} alt="logo" className='w-1/4 sm:w-[12%]' />
-        </div>
+        <div className="fixed bottom-0 w-full flex items-center justify-center">
+        <Image src={logo} alt="logo" className="w-[30%] sm:w-[15%] md:w-[8%] lg:w-[20%]" />
+      </div>
       </div>
     </div>
-    </Layout>
-    
   );
 };
 

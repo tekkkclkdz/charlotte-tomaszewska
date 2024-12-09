@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  
+  scroll-behavior: smooth; /* Upewnij się, że przejścia są płynne */
+  background-color: black; /* Wymusza czarne tło */
+  color: white; /* Ustawienie koloru tekstu */
+}
+
+
+

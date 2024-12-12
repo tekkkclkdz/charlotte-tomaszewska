@@ -7,6 +7,7 @@ import ContactBioBar from '../components/ContactBioBar';
 import { projects } from './../../app/movingProjects';
 
 const Page = () => {
+    
   const [showRotateScreen, setShowRotateScreen] = useState(false);
 
   useEffect(() => {

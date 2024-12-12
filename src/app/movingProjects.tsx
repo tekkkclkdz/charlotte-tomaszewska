@@ -50,6 +50,7 @@ import STONE2 from "./../../public/STONE - Queen-high (5).gif"
 import YES from "./../../public/YES-ezgif.com-optimize.gif"
 
 import CICHO2 from "./../../public/CICHO_QUIET_2-ezgif.com-optimize.gif"
+import Link from "next/link";
 
 
 
@@ -61,7 +62,8 @@ export const projects = [
         id: 1, title: 'BRODKA X IGO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <video
+             
+                <video
                         src="/videos/BRODKA&IGO.webm"
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
                         autoPlay
@@ -71,6 +73,8 @@ export const projects = [
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
+            
+                    
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/932867048',
@@ -506,6 +510,7 @@ export const projects = [
         id: 23, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                
                 <video
                         src="/videos/HIPHOPKRYTA.webm"
                         className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
@@ -516,6 +521,8 @@ export const projects = [
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
+            
+                
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1026792192',

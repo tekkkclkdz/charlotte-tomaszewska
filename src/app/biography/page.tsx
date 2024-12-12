@@ -30,7 +30,7 @@ const Page = () => {
 
         {/* Logo */}
         <div className="fixed bottom-0 w-full flex items-center justify-center">
-        <Image src={logo} alt="logo" className="w-[30%] sm:w-[15%] md:w-[8%] lg:w-[20%]" />
+        <Image src={logo} alt="logo" className="w-[30%] sm:w-[15%] md:w-[8%] lg:w-[15%]" />
       </div>
       </div>
     </div>

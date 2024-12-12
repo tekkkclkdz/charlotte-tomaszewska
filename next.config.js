@@ -22,6 +22,9 @@ const nextConfig = {
   };
   
   module.exports = {
+    experimental: {
+      scrollRestoration: true,
+    },
     async redirects() {
       return [
         {

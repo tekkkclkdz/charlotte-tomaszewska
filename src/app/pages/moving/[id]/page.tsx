@@ -37,6 +37,7 @@ const ProjectVideo = ({ videoUrl }: { videoUrl: string }) => (
 );
 
 const ProjectPage = ({ params }: { params: { id: string } }) => {
+  
   const [showRotateScreen, setShowRotateScreen] = useState(true);
   const [project, setProject] = useState<Project | null>(null);
 

@@ -21,6 +21,9 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
   const [isBottomVisible, setIsBottomVisible] = useState(false);
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const bottomRef = useRef<HTMLDivElement | null>(null);
+  const handleNavigation = () => {
+    sessionStorage.setItem('scrollPosition', String(window.scrollY));
+  };
 
   useEffect(() => {
     // Ustawienie Intersection Observer dla projektów
@@ -87,7 +90,7 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
     <div>
       {projects.map((project, index) => (
         <Element key={project.id} name={`project${project.id}`}>
-          <Link href={`/pages/moving/${project.id}`} passHref>
+           <Link href={`/pages/moving/${project.id}`} passHref > 
             <div
               ref={(el) => (projectRefs.current[index] = el)}
               className="relative flex items-center py-4 justify-center bg-white text-black font-light cursor-pointer z-0 mb-8"
@@ -98,10 +101,10 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
                   <div>{project.content}</div>
                 </div>
               ) : (
-                <div className="text-center text-gray-400">Loading...</div>
+                <div className="text-center text-gray-400 h-screen">Loading...</div>
               )}
             </div>
-          </Link>
+          </Link> 
         </Element>
       ))}
 

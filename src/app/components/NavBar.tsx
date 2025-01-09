@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import logo2 from "./../../../public/logo_top2.png";
 import Link from "next/link";
@@ -11,65 +11,95 @@ const NavBar = ({
   stillOrMoving: number;
   intro: number;
 }) => {
-  const stillStyle = stillOrMoving === 0 
-    ? "underline font-light" 
-    : stillOrMoving === 2 
-    ? "font-light"  // no bold when stillOrMoving is 2
-    : "font-light hover:underline";
+  const [logoClicked, setLogoClicked] = useState(false); // Kontrola koloru napisów
 
-  const movingStyle = stillOrMoving === 1 
-    ? "underline font-light" 
-    : stillOrMoving === 2 
-    ? "font-light"  // no bold when stillOrMoving is 2
-    : "font-light hover:underline";
+  const stillStyle =
+    stillOrMoving === 0
+      ? "underline font-customMedium"
+      : stillOrMoving === 2
+      ? "font-customMedium"
+      : "font-customMedium hover:underline";
 
-  const [showText, setShowText] = useState(true);
+  const movingStyle =
+    stillOrMoving === 1
+      ? "underline font-customMedium"
+      : stillOrMoving === 2
+      ? "font-customMedium"
+      : "font-customMedium hover:underline";
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const threshold = 500;
+    if (stillOrMoving === 0 && intro === 0) {
+      // Disable scrolling initially
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100%";
+      document.documentElement.style.overflow = "hidden";
+      document.documentElement.style.height = "100%";
+    }
 
-      setShowText(scrollPosition < threshold);
-    };
-
-    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      // Cleanup: Ensure scrolling is enabled on component unmount
+      document.body.style.overflow = "";
+      document.body.style.height = "";
+      document.documentElement.style.overflow = "";
+      document.documentElement.style.height = "";
     };
-  }, []);
+  }, [stillOrMoving, intro]);
 
   const handleLogoClick = () => {
-    const isMobile = window.innerWidth <= 768; // Ustal rozmiar mobilny
-    const scrollFactor = isMobile ? 1.09 : 1.172; // Wartość zależna od urządzenia
-    
-    window.scrollTo({
-      top: window.innerHeight * scrollFactor, // Obliczenie pozycji
-      behavior: "smooth", // Płynne przewijanie
-    });
+    if (stillOrMoving === 0 && intro === 0) {
+      // Unlock scrolling
+      document.body.style.overflow = "";
+      document.body.style.height = "";
+      document.documentElement.style.overflow = "";
+      document.documentElement.style.height = "";
+  
+      // Set logo as clicked
+      setLogoClicked(true);
+  
+      // Get the first project element
+      const firstProject = document.getElementById("project1");
+      if (firstProject) {
+        const isMobile = window.innerWidth <= 768; // Check for mobile screens
+        const projectHeight = firstProject.offsetHeight; // Get the height of the project element
+        const windowHeight = window.innerHeight; // Get the height of the browser window
+        const navbarHeight = document.querySelector('nav')?.offsetHeight || 0; // Optional: Adjust if you have a navbar
+  
+        // Calculate the desired scroll position such that the center of the project is in the middle of the screen
+        const projectOffset = firstProject.offsetTop; // The top position of the project element
+        const adjustedPosition = isMobile
+          ? projectOffset - windowHeight / 2 + projectHeight / 2 + navbarHeight // Center the project element vertically
+          : projectOffset; // Align to top on desktop
+  
+        // Scroll to the adjusted position
+        window.scrollTo({
+          top: adjustedPosition,
+          behavior: "smooth",
+        });
+      }
+    }
   };
+  
 
   return (
     <>
       {/* Layer with white background behind everything */}
-      <div className="w-full bg-white fixed top-0 left-0 h-[calc(100svh)] z-0" />
+      {intro === 0 && (
+        <div className="w-full bg-white fixed top-0 left-0 h-[calc(100svh)] z-0" />
+      )}
 
-      {intro !== 1 && (
+      {intro === 0 && stillOrMoving === 0 && (
         <div
-          className={`relative top-0 w-full h-[calc(100svh)] flex flex-col items-center justify-center bg-white text-black transition-opacity duration-300 ${
-            showText ? "opacity-100" : "opacity-0"
-          } z-10`}
+          className={`relative top-0 w-full h-[calc(100svh)] flex flex-col items-center justify-center bg-white text-black z-10`}
         >
           {/* Centered logo */}
           <div
             className="flex items-center justify-center cursor-pointer"
-            onClick={handleLogoClick} // Add click handler
+            onClick={handleLogoClick} // Trigger both actions on click
           >
             <Image
               src={logo2}
               alt="Logo"
-              className="transition-opacity opacity-0 duration-[2s] w-[60%] sm:w-[37%] mb-32"
-              onLoadingComplete={(image) => image.classList.remove("opacity-0")}
+              className="transition-opacity duration-[2s] w-[60%] sm:w-[37%] mb-32 logo"
             />
           </div>
         </div>
@@ -77,21 +107,23 @@ const NavBar = ({
 
       {/* Sticky "still | moving" text */}
       <div
-        className="sticky top-0 z-50 py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300"
-        suppressHydrationWarning={true}
-      >
-        <div className="flex items-center justify-center text-white">
-          <div className="flex items-center gap-2">
-            <Link href="/" passHref>
-              <h1 className={stillStyle}>still</h1>
-            </Link>
-            <span>|</span>
-            <Link href="/moving" passHref>
-              <h2 className={movingStyle}>moving</h2>
-            </Link>
-          </div>
-        </div>
-      </div>
+  className={`sticky top-0 z-50 py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300 ${
+    intro === 1 ? "opacity-100" : ""
+  }`}
+  suppressHydrationWarning={true}
+>
+  <div className="flex items-center justify-center text-white">
+    <div className="flex items-center gap-2">
+      <Link href="/" passHref>
+        <h1 className={stillStyle}>still</h1>
+      </Link>
+      <span>|</span>
+      <Link href="/moving" passHref>
+        <h2 className={movingStyle}>moving</h2>
+      </Link>
+    </div>
+  </div>
+</div>
     </>
   );
 };

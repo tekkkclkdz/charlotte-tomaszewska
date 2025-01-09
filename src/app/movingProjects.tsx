@@ -65,7 +65,7 @@ export const projects = [
              
                 <video
                         src="/videos/BRODKA&IGO.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -86,7 +86,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/ADIDAS-high.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -105,7 +105,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/ME.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -124,7 +124,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/STONE.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -143,7 +143,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/BARBARKA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -162,7 +162,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/SUPERPOWERS-high.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -181,7 +181,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/CAP.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -200,7 +200,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/HOME-high.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -220,7 +220,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/YES.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -240,7 +240,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/WINDOWSEN.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -259,7 +259,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/CICHO.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -278,7 +278,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/MARIAPESZEK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -297,7 +297,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/I.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -316,7 +316,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/SZCZYL1.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -335,7 +335,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/IKEA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -378,7 +378,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/MALA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -397,7 +397,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/BIKINI.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -416,7 +416,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/TYMBARK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -435,7 +435,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/BATMAN.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -454,7 +454,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/IFOLOR.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -474,7 +474,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/MAVERICK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -493,7 +493,7 @@ export const projects = [
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
                         src="/videos/REEBOK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted
@@ -513,7 +513,7 @@ export const projects = [
                 
                 <video
                         src="/videos/HIPHOPKRYTA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                         autoPlay
                         loop
                         muted

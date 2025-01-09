@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Page = () => {
   return (
-    <div className="bg-black text-base sm:text-2xl h-screen flex flex-col overflow-hidden">
+    <div className="bg-black text-base sm:text-2xl h-[100dvh] flex flex-col overflow-hidden">
       {/* Navigation Bar */}
       <NavBar stillOrMoving={2} intro={1} />
 
@@ -15,13 +15,13 @@ const Page = () => {
       <ContactBioBar intro={1} underline={2} />
 
       {/* Main Content */}
-      <div className="flex-grow flex flex-col items-center justify-center text-center">
-        <h1 className="font-light py-12 text-white">
+      <div className="flex-grow flex flex-col items-center justify-center text-center  sm:mt-0">
+        <h1 className="font-customThin py-12 text-white">
           call me under +48 692 209 198
         </h1>
 
         {/* Email link */}
-        <p className="font-light text-white">
+        <p className="font-customThin text-white">
           write me under{' '}
           <span className="block sm:inline">
             <Link
@@ -34,7 +34,7 @@ const Page = () => {
         </p>
 
         {/* Instagram link */}
-        <p className="font-light text-white py-12">
+        <p className="font-customThin text-white py-12">
           watch me under{' '}
           <Link
             href="https://www.instagram.com/charlottetomas/"
@@ -48,7 +48,7 @@ const Page = () => {
       </div>
 
       {/* Sticky Logo */}
-      <div className="fixed bottom-0 w-full flex items-center justify-center">
+      <div className="absolute bottom-3 left-0 right-0 w-full flex items-center justify-center">
         <Image src={logo} alt="logo" className="w-[30%] sm:w-[15%] md:w-[8%] lg:w-[15%]" />
       </div>
     </div>

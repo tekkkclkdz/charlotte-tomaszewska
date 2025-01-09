@@ -56,6 +56,8 @@ import ZoiText2 from "./../../../public/Document_renamed/ZoiText2.webp";
 import ZoiText3 from "./../../../public/Document_renamed/ZoiText3.webp";
 import Zoi_pic from "./../../../public/Document_renamed/Zoi_pic.webp";
 
+import CustomCursor from '../components/CustomCursor';
+
 
 const people = [
   {
@@ -130,9 +132,16 @@ export default function ProjectDetail() {
 
   return (
     <div className="text-center bg-white">
+      <div className="hidden sm:block">
+        <CustomCursor />
+      </div>
       <div className="sticky top-0 mix-blend-difference z-50 h-8 mb-5">
         <NavBar stillOrMoving={2} intro={1} />
         <ContactBioBar intro={1} underline={0} />
+      </div>
+
+      <div className="block sm:hidden text-lg font-customThin text-black mb-4 px-4">
+        <p>click on the text to read more</p>
       </div>
 
       <div className="w-full h-full left-0 top-0 border-none shadow-none">
@@ -156,40 +165,47 @@ export default function ProjectDetail() {
             {people.map((person, index) => (
               <div
                 key={index}
-                className="relative group cursor-pointer"
+                className="relative group cursor-custom"
                 onClick={() => handleImageClick(index)}
               >
                 <Image
                   src={person.texts[currentIndexes[index]]}
                   alt={`${person.name} Text ${currentIndexes[index] + 1}`}
-                  className="w-full h-auto transition-opacity duration-300  group-hover:opacity-50"
+                  className="w-full h-auto "
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black bg-opacity-80">
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black bg-opacity-80">
                   <span className="text-white text-lg">click to read more...</span>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
 
           {/* Ivan - pełna szerokość */}
           <div className="col-span-2">
-            <Image src={ivan.pic} alt="Ivan Picture" className="w-full h-auto" />
-          </div>
-          <div
-            className="col-span-2 relative group cursor-pointer"
-            onClick={handleIvanTextClick}
-          >
-            <Image
-              src={ivan.texts[ivanTextIndex]}
-              alt={`Ivan Text ${ivanTextIndex + 1}`}
-              className="w-full h-auto transition-opacity duration-300 group-hover:opacity-50"
-            />
-            {/* Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black bg-opacity-80">
-              <span className="text-white text-lg">click to read more...</span>
-            </div>
-          </div>
+  <Image 
+    src={ivan.pic} 
+    alt="Ivan Picture" 
+    className="w-full h-auto" 
+  />
+</div>
+<div
+  className="col-span-2 relative group cursor-custom"
+  onClick={handleIvanTextClick}
+>
+  <div className="w-full h-auto overflow-hidden sm:h-screen">
+    <Image
+      src={ivan.texts[ivanTextIndex]}
+      alt={`Ivan Text ${ivanTextIndex + 1}`}
+      className="w-full h-full sm:object-cover object-contain transition-opacity duration-300"
+    />
+  </div>
+</div>
+  {/* Overlay */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    {/* Overlay content can go here if needed */}
+  </div>
+
         </div>
       </div>
 

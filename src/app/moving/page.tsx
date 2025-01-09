@@ -44,7 +44,7 @@ const Page = () => {
           showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         } md:hidden`}
       >
-        <p className="text-4xl text-black font-light">rotate your phone</p>
+        <p className="text-4xl text-black font-customMedium">rotate your phone</p>
       </div>
 
       {/* Główna zawartość */}

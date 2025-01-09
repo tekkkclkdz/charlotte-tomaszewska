@@ -5,6 +5,7 @@ import { Element } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "./../../../public/logo_top.png"; // Ścieżka do obrazka
+import CustomCursor from './CustomCursor';
 
 type Project = {
   id: number;
@@ -88,12 +89,13 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
 
   return (
     <div>
+      <CustomCursor />
       {projects.map((project, index) => (
         <Element key={project.id} name={`project${project.id}`}>
            <Link href={`/pages/moving/${project.id}`} passHref > 
             <div
               ref={(el) => (projectRefs.current[index] = el)}
-              className="relative flex items-center py-4 justify-center bg-white text-black font-light cursor-pointer z-0 mb-8"
+              className="relative flex items-center py-4 justify-center bg-white text-black font-customMedium cursor-pointer z-0 mb-8"
               id={`project${project.id}`}
             >
               {loadedProjects.has(project.id) ? (
@@ -124,11 +126,11 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
       <div className="fixed bottom-0 left-0 right-0 mix-blend-difference shadow-md text-center transition-opacity duration-300 ease-in-out">
         <div className="absolute inset-0 opacity-90 -z-10"></div>
         {activeProject !== null && !isBottomVisible ? (
-          <h2 className="relative text-lg sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white opacity-100 transition-opacity duration-300">
+          <h2 className="relative text-lg sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white opacity-100 transition-opacity duration-300">
             {projects.find((p) => p.id === activeProject)?.title}
           </h2>
         ) : (
-          <h2 className="relative text-5xl font-semibold text-black dark:text-white opacity-0">
+          <h2 className="relative text-5xl font-customMedium text-black dark:text-white opacity-0">
             &nbsp;
           </h2>
         )}

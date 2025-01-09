@@ -8,8 +8,8 @@ const NavBar = ({ stillOrMoving, intro }:{
   stillOrMoving: number;
   intro: number;
 }) => {
-  const stillStyle = stillOrMoving === 0 ? 'underline font-light' : 'font-light hover:underline';
-  const movingStyle = stillOrMoving === 1 ? 'underline font-light' : 'font-light hover:underline';
+  const stillStyle = stillOrMoving === 0 ? 'underline font-customMedium' : 'font-customMedium hover:underline';
+  const movingStyle = stillOrMoving === 1 ? 'underline font-customMedium' : 'font-customMedium hover:underline';
 
   const [showText, setShowText] = useState(true);
 

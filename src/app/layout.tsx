@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import DynamicClassProvider from './components/DynamicClassProvider'; // Importujemy komponent klienta
+import CustomCursor from './components/CustomCursor';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,10 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className=''>
+
+        <body className=''>
+       
         {/* Dynamiczna zmiana klas */}
         <DynamicClassProvider>{children}</DynamicClassProvider>
       </body>
+
+      
     </html>
   );
 }

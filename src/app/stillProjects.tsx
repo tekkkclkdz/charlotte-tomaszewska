@@ -1,5 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+"use client"
+
+
+
+
 
 import DJ1 from './../../public/still/DOCUMENT_JOURNAL/jpeg-optimizer_01.jpg';
 import DJ2 from './../../public/still/DOCUMENT_JOURNAL/jpeg-optimizer_02.jpg';
@@ -614,35 +617,41 @@ import warszawa13 from "./../../public/warszawa_13_con.webp"
 import vatosGif from "./../../public/vatos_lanos.gif"
 
 
+import ana1resize from "./../../public/anastazja1_resize.webp"
+import ana2resize from "./../../public/anastazja2_resize.webp"
+
+
+import Link from 'next/link';
+import Image from 'next/image';
 
 
 
 export const stillProjects = [
   {
     id: 1, title: 'REST IS RUST AND STARDUST', content: (
-      <div className="flex justify-center items-center h-auto md:h-screen">
+      <div className="flex justify-center items-center  h-auto md:h-screen">
         <div className="flex flex-col md:flex-row w-full h-full">
           {/* Pierwsze zdjęcie (widoczne na mobilkach i komputerach) */}
           <div className="flex items-center w-full md:w-1/2 md:h-full">
-            <div className="w-full flex justify-center h-full">
-              <Link href={`/pages/still/1`} legacyBehavior>
-                <Image
-                  src={REST3}
-                  className="w-full h-full object-cover cursor-pointer"
-                  alt="pic1"
-                  loading="lazy"
-                />
-              </Link>
-
-            </div>
-          </div>
+  <div className="w-full flex justify-center h-full group relative ">
+    <Link href="/pages/still/1" legacyBehavior>
+      <Image
+        src={REST3}
+        className="w-full h-full object-cover cursor-custom"
+        alt="pic1"
+        loading="lazy"
+       
+      />
+    </Link>
+  </div>
+</div>
 
           {/* Drugie zdjęcie (widoczne tylko na komputerach) */}
           <div className="items-center w-full md:w-1/2 hidden md:flex md:h-full">
             <Link href={`/pages/still/1`} legacyBehavior>
               <Image
                 src={REST2}
-                className="w-full h-full object-cover cursor-pointer"
+                className="w-full h-full object-cover cursor-custom"
                 alt="pic2"
                 loading="lazy"
               />
@@ -663,7 +672,7 @@ export const stillProjects = [
           <Link href="/LOVE" legacyBehavior>
             <Image
               src={antoninaPopy_resized}
-              className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+              className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
               alt="pic1"
               loading="lazy"
             />
@@ -682,7 +691,7 @@ export const stillProjects = [
           <Link href={`/pages/still/3`} legacyBehavior>
             <Image
               src={archives_okladka_1}
-              className="w-full sm:h-full object-cover object-center cursor-pointer"
+              className="w-full sm:h-full object-cover object-center cursor-custom"
               alt="en1"
               loading="lazy"
             />
@@ -694,7 +703,7 @@ export const stillProjects = [
           <Link href={`/pages/still/3`} legacyBehavior>
             <Image
               src={archives_okladka_2}
-              className="w-full h-full object-cover object-center cursor-pointer"
+              className="w-full h-full object-cover object-center cursor-custom"
               alt="en2"
               loading="lazy"
             />
@@ -715,7 +724,7 @@ export const stillProjects = [
     <Link href="/DocumentJournal" legacyBehavior>
       <Image
         src={journal_okladka_1}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic1"
         loading="lazy"
       />
@@ -727,7 +736,7 @@ export const stillProjects = [
     <Link href="/DocumentJournal" legacyBehavior>
       <Image
         src={journal_okladka_3}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic2"
         loading="lazy"
       />
@@ -739,7 +748,7 @@ export const stillProjects = [
     <Link href="/DocumentJournal" legacyBehavior>
       <Image
         src={journal_okladka_2}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic3"
         loading="lazy"
       />
@@ -757,7 +766,7 @@ export const stillProjects = [
           <Link href={`/pages/still/5`} legacyBehavior>
             <Image
               src={lebrand_okladka_1}
-              className="w-full sm:h-full object-cover object-center cursor-pointer"
+              className="w-full sm:h-full object-cover object-center cursor-custom"
               alt="en1"
               loading="lazy"
             />
@@ -769,7 +778,7 @@ export const stillProjects = [
           <Link href={`/pages/still/5`} legacyBehavior>
             <Image
               src={lebrand_okladka_2}
-              className="w-full h-full object-cover object-center cursor-pointer"
+              className="w-full h-full object-cover object-center cursor-custom"
               alt="en2"
               loading="lazy"
             />
@@ -790,7 +799,7 @@ export const stillProjects = [
           <Link href={`/pages/still/6`} legacyBehavior>
             <Image
               src={nature_okladka1}
-              className="w-full sm:h-full object-cover object-center cursor-pointer"
+              className="w-full sm:h-full object-cover object-center cursor-custom"
               alt="en1"
               loading="lazy"
             />
@@ -802,7 +811,7 @@ export const stillProjects = [
           <Link href={`/pages/still/6`} legacyBehavior>
             <Image
               src={nature_okladka2}
-              className="w-full h-full object-cover object-center cursor-pointer"
+              className="w-full h-full object-cover object-center cursor-custom"
               alt="en2"
               loading="lazy"
             />
@@ -825,7 +834,7 @@ export const stillProjects = [
     <Link href="/holes" legacyBehavior>
       <Image
         src={holes_okladka1}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic1"
         loading="lazy"
       />
@@ -837,7 +846,7 @@ export const stillProjects = [
     <Link href="/holes" legacyBehavior>
       <Image
         src={holes_okladka2}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic2"
         loading="lazy"
       />
@@ -849,7 +858,7 @@ export const stillProjects = [
     <Link href="/holes" legacyBehavior>
       <Image
         src={holes_okladka3}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic3"
         loading="lazy"
       />
@@ -869,7 +878,7 @@ export const stillProjects = [
           <Link href="/Human" legacyBehavior>
             <Image
               src={human_okladka}
-              className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+              className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
               alt="pic1"
               loading="lazy"
             />
@@ -892,7 +901,7 @@ export const stillProjects = [
           <Link href="/pages/still/9" legacyBehavior>
             <Image
               src={szczyl_okladka_1}
-              className="w-full h-auto sm:h-full object-cover object-center cursor-pointer"
+              className="w-full h-auto sm:h-full object-cover object-center cursor-custom"
               alt="en1"
               loading="lazy"
             />
@@ -907,7 +916,7 @@ export const stillProjects = [
           <Link href="/pages/still/9" legacyBehavior>
             <Image
               src={szczyl_okladka_2}
-              className="w-full h-full object-cover object-center cursor-pointer"
+              className="w-full h-full object-cover object-center cursor-custom"
               alt="en2"
               loading="lazy"
             />
@@ -927,7 +936,7 @@ export const stillProjects = [
           <Link href="/pages/still/10" legacyBehavior>
             <Image
               src={grajper_okladka}
-              className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+              className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
               alt="pic1"
               loading="lazy"
             />
@@ -949,7 +958,7 @@ export const stillProjects = [
               <Link href={`/pages/still/11`} legacyBehavior>
                 <Image
                   src={avenue303_okladka_1}
-                  className="w-full h-full object-cover cursor-pointer"
+                  className="w-full h-full object-cover cursor-custom"
                   alt="pic1"
                   loading="lazy"
                 />
@@ -964,7 +973,7 @@ export const stillProjects = [
             <Link href={`/pages/still/11`} legacyBehavior>
               <Image
                 src={avenue303_okladka_2}
-                className="w-full h-full object-cover cursor-pointer"
+                className="w-full h-full object-cover cursor-custom"
                 alt="pic2"
                 loading="lazy"
               />
@@ -977,7 +986,7 @@ export const stillProjects = [
           <Link href={`/pages/still/11`} legacyBehavior>
             <Image
               src={ave1}
-              className="w-full h-auto object-cover cursor-pointer"
+              className="w-full h-auto object-cover cursor-custom"
               alt="pic-mobile"
               loading="lazy"
             />
@@ -996,7 +1005,7 @@ export const stillProjects = [
     <Link href={`/pages/still/12`} legacyBehavior>
       <Image
         src={warszawa_w_budowie_okladka_2}
-        className="w-full h-full object-cover object-center cursor-pointer"
+        className="w-full h-full object-cover object-center cursor-custom"
         alt="en1"
         loading="lazy"
       />
@@ -1008,7 +1017,7 @@ export const stillProjects = [
     <Link href={`/pages/still/12`} legacyBehavior>
       <Image
         src={warszawa_w_budowie_okladka_1}
-        className="w-full h-full object-cover object-center cursor-pointer"
+        className="w-full h-full object-cover object-center cursor-custom"
         alt="en2"
         loading="lazy"
       />
@@ -1021,7 +1030,7 @@ export const stillProjects = [
     <Link href={`/pages/still/12`} legacyBehavior>
       <Image
         src={new_maanam2}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="en3"
         loading="lazy"
       />
@@ -1039,7 +1048,7 @@ export const stillProjects = [
           <Link href="/pages/still/13" legacyBehavior>
             <Image
               src={popTown_okladka}
-              className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+              className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
               alt="l"
               loading="lazy"
             />
@@ -1057,7 +1066,7 @@ export const stillProjects = [
     <Link href={`/pages/still/14`} legacyBehavior>
       <Image
         src={cap74_okladka_1}
-        className="w-full h-full object-cover object-center cursor-pointer"
+        className="w-full h-full object-cover object-center cursor-custom"
         alt="en1"
         loading="lazy"
       />
@@ -1069,7 +1078,7 @@ export const stillProjects = [
     <Link href={`/pages/still/14`} legacyBehavior>
       <Image
         src={cap74_okladka_2}
-        className="w-full h-full object-cover object-center cursor-pointer"
+        className="w-full h-full object-cover object-center cursor-custom"
         alt="en2"
         loading="lazy"
       />
@@ -1082,7 +1091,7 @@ export const stillProjects = [
     <Link href={`/pages/still/14`} legacyBehavior>
       <Image
         src={cap9}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="en3"
         loading="lazy"
       />
@@ -1101,7 +1110,7 @@ export const stillProjects = [
   <Link href="/FutureNostalgia" legacyBehavior>
     <Image
       src={newonce_okladka}
-      className="w-full h-auto max-w-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+      className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
       alt="pic1"
       loading="lazy"
     />
@@ -1118,7 +1127,7 @@ export const stillProjects = [
             <Link href="/FutureNostalgia" legacyBehavior>
               <Image
                 src={NO7}
-                className="w-full h-auto object-cover object-center cursor-pointer"
+                className="w-full h-auto object-cover object-center cursor-custom"
                 alt="pic1"
                 loading="lazy"
               />
@@ -1132,7 +1141,7 @@ export const stillProjects = [
             <Link href="/FutureNostalgia" legacyBehavior>
               <Image
                 src={NO8}
-                className="w-full h-auto object-cover object-center cursor-pointer"
+                className="w-full h-auto object-cover object-center cursor-custom"
                 alt="pic2"
                 loading="lazy"
               />
@@ -1144,7 +1153,7 @@ export const stillProjects = [
             <Link href="/FutureNostalgia" legacyBehavior>
               <Image
                 src={NO9}
-                className="w-full h-auto object-cover object-center cursor-pointer"
+                className="w-full h-auto object-cover object-center cursor-custom"
                 alt="pic3"
                 loading="lazy"
               />
@@ -1158,14 +1167,14 @@ export const stillProjects = [
     mobileImages: [future1, NO7, future4, NO8, future5, NO9],
     credits: 'photographed  & creative concept max gronowski, art direction & styling by charlotte tomaszewska'
   }, {
-    id: 16, title: 'NEWONCE WARSZAWA TURCZI', content: (
+    id: 16, title: 'WARSZAWA W BUDOWIE', content: (
       <div className="flex flex-wrap">
       {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
       <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
         <Link href={`/pages/still/16`} legacyBehavior>
           <Image
             src={newonce_turczi_okladka_1}
-            className="w-full sm:h-full object-cover object-center cursor-pointer"
+            className="w-full sm:h-full object-cover object-center cursor-custom"
             alt="en1"
             loading="lazy"
           />
@@ -1177,7 +1186,7 @@ export const stillProjects = [
         <Link href={`/pages/still/16`} legacyBehavior>
           <Image
             src={newonce_turczi_okladka_2}
-            className="w-full h-full object-cover object-center cursor-pointer"
+            className="w-full h-full object-cover object-center cursor-custom"
             alt="en2"
             loading="lazy"
           />
@@ -1195,8 +1204,8 @@ export const stillProjects = [
       <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
         <Link href={`/pages/still/17`} legacyBehavior>
         <Image
-  src={anastazja_okladka1}
-  className="w-full h-full object-cover cursor-pointer"
+  src={ana1resize}
+  className="w-full h-full object-cover cursor-custom"
   alt="en2"
   loading="lazy"
 />
@@ -1207,8 +1216,8 @@ export const stillProjects = [
       <div className="hidden sm:block sm:w-1/2 h-[100vh]">
         <Link href={`/pages/still/17`} legacyBehavior>
         <Image
-  src={anastazja_okladka2}
-  className="w-full h-full object-cover cursor-pointer"
+  src={ana2resize}
+  className="w-full h-full object-cover cursor-custom"
   alt="en2"
   loading="lazy"
 />
@@ -1226,7 +1235,7 @@ export const stillProjects = [
     <div className="w-full sm:w-[100%] sm:h-full h-auto flex justify-center items-center">
       <Image
         src={vatosGif}
-        className="w-full h-full object-cover object-center cursor-pointer sm:h-full sm:w-auto"
+        className="w-full h-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
         alt="pic1"
         loading="lazy"
       />
@@ -1245,7 +1254,7 @@ export const stillProjects = [
     <Link href="/pages/still/19" legacyBehavior>
       <Image
         src={Chodorowicz_okladka1}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic1"
         loading="lazy"
       />
@@ -1257,7 +1266,7 @@ export const stillProjects = [
     <Link href="/pages/still/19" legacyBehavior>
       <Image
         src={Chodorowicz_okladka2}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic2"
         loading="lazy"
       />
@@ -1269,7 +1278,7 @@ export const stillProjects = [
     <Link href="/pages/still/19" legacyBehavior>
       <Image
         src={Chodorowicz_okladka3}
-        className="w-full h-auto object-cover object-center cursor-pointer"
+        className="w-full h-auto object-cover object-center cursor-custom"
         alt="pic3"
         loading="lazy"
       />
@@ -1288,7 +1297,7 @@ export const stillProjects = [
     <div className="w-full h-auto sm:h-screen flex justify-center items-center">
       <Image
         src={duble_dare_okladka}
-        className="w-full h-auto sm:h-screen max-w-full object-cover object-center cursor-pointer mb-8"
+        className="w-full h-auto sm:h-screen max-w-full object-cover object-center cursor-custom mb-8"
         alt="pic1"
         loading="lazy"
       />

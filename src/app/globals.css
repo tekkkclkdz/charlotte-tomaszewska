@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PPNeueMontreal-Medium'; /* Replace with your font's name */
+  src: url('/fonts/NeueMedium.otf') format('opentype');
+  font-weight: 530; /* Adjust as needed */
+  font-style: normal;  /* Adjust as needed */
+}
+
+@font-face {
+  font-family: 'NeueMontrealThin';
+  src: url('/fonts/NeueThin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -22,19 +37,37 @@ body {
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
+    ),
     rgb(var(--background-start-rgb));
+  isolation: isolate; /* Ensure blending works */
+  margin: 0;
+  padding: 0;
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference; /* The key property */
+  font-size: 14px;
+  color: white; /* Initial color for blending */
+  font-family: Arial, sans-serif;
+  transition: opacity 0.1s ease, transform 10s ease; /* Smooth transitions */
+  opacity: 0; /* Hidden by default */
+}
+
+.cursor-active {
+  opacity: 1; /* Make the cursor visible when active */
+}
+
+.cursor-custom {
+  cursor: none;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  
-  scroll-behavior: smooth; /* Upewnij się, że przejścia są płynne */
-  background-color: black; /* Wymusza czarne tło */
-  color: white; /* Ustawienie koloru tekstu */
+  scroll-behavior: smooth;
 }
-
-
-

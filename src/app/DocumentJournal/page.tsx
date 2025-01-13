@@ -210,7 +210,7 @@ export default function ProjectDetail() {
       </div>
 
      
-  <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+  <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white">
   photographed by maksym rudnik, creative concept & art direction charlotte tomaszewska
   </div>
 

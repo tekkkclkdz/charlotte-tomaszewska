@@ -80,7 +80,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
   <div
     className="z-40 text-center fixed bottom-0 left-1/2 transform mb-1 -translate-x-1/2 px-4 lg:px-0 
       text-2xl sm:text-lg py-2 lg:text-2xl font-light mix-blend-difference text-black dark:text-white 
-      whitespace-nowrap overflow-hidden text-ellipsis"
+      whitespace-nowrap overflow-hidden text-ellipsis font-customMedium"
   >
     {project.credits}
   </div>

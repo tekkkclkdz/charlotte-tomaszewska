@@ -54,7 +54,7 @@ const ContactBioBar = ({ intro, underline }: { intro: number; underline: number 
       >
         <a
           href="/biography"
-          className={`px-2 text-lg font-customMedium sm:text-2xl mix-blend-difference hover:underline ${bioClass}`}
+          className={` px-2  font-customMedium text-lg sm:text-lg  md:text-lg lg:text-2xl mix-blend-difference hover:underline ${bioClass}`}
         >
           bio
         </a>
@@ -72,7 +72,7 @@ const ContactBioBar = ({ intro, underline }: { intro: number; underline: number 
       >
         <a
           href="/contact"
-          className={`px-2 text-lg sm:text-2xl font-customMedium hover:underline ${contactClass}`}
+          className={`px-2 text-lg sm:text-lg md:text-lg lg:text-2xl font-customMedium  hover:underline ${contactClass}`}
         >
           contact
         </a>

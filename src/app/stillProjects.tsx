@@ -1167,7 +1167,7 @@ export const stillProjects = [
     mobileImages: [future1, NO7, future4, NO8, future5, NO9],
     credits: 'photographed  & creative concept max gronowski, art direction & styling by charlotte tomaszewska'
   }, {
-    id: 16, title: 'WARSZAWA W BUDOWIE', content: (
+    id: 16, title: 'WARSZAWA 2020', content: (
       <div className="flex flex-wrap">
       {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
       <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
@@ -1201,7 +1201,7 @@ export const stillProjects = [
     id: 17, title: 'ANASTAZJA', content: (
       <div className="flex flex-wrap">
       {/* Pierwsze zdjęcie (widoczne na mobilkach i większych ekranach) */}
-      <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
+      <div className="hidden sm:block sm:w-1/2 h-[100vh] ">
         <Link href={`/pages/still/17`} legacyBehavior>
         <Image
   src={ana1resize}
@@ -1213,7 +1213,7 @@ export const stillProjects = [
       </div>
 
       {/* Drugie zdjęcie (widoczne tylko na większych ekranach) */}
-      <div className="hidden sm:block sm:w-1/2 h-[100vh]">
+      <div className="w-full sm:w-1/2 sm:h-[100vh] h-auto">
         <Link href={`/pages/still/17`} legacyBehavior>
         <Image
   src={ana2resize}

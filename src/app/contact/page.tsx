@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Page = () => {
   return (
-    <div className="bg-black text-base sm:text-2xl h-[100dvh] flex flex-col overflow-hidden">
+    <div className="bg-black text-base md:text-1xl lg:text-2xl h-[100dvh] flex flex-col overflow-hidden">
       {/* Navigation Bar */}
       <NavBar stillOrMoving={2} intro={1} />
 

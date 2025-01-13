@@ -113,7 +113,7 @@ const NavBar = ({
   suppressHydrationWarning={true}
 >
   <div className="flex items-center justify-center text-white">
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 text-lg sm:text-lg md:text-lg lg:text-2xl">
       <Link href="/" passHref>
         <h1 className={stillStyle}>still</h1>
       </Link>

@@ -14,7 +14,7 @@ const Page = () => {
 
         {/* Główna zawartość */}
         <div className="flex-grow flex flex-col items-center justify-center text-center text-white">
-          <p className="text-base md:text-1xl lg:text-2xl font-customThin px-12 sm:w-[70%] w-[80%] sm:text-justify md:text-center">
+          <p className="text-base md:text-1xl lg:text-2xl font-customThin px-12 sm:w-[70%] w-[80%]  text-center">
             Hey Love, 
             <span className="inline sm:inline"><br /></span>
             One sentence about me? 
@@ -34,7 +34,7 @@ const Page = () => {
 
         {/* Logo */}
         <div className="absolute bottom-3 left-0 right-0 w-full flex items-center justify-center">
-          <Image src={logo} alt="logo" className="w-[30%] sm:w-[15%] md:w-[8%] lg:w-[15%]" />
+          <Image src={logo} alt="logo" className="w-[8%] sm:w-[8%] md:w-[8%] lg:w-[15%]" />
         </div>
       </div>
     </>

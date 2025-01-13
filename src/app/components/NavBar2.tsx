@@ -44,7 +44,7 @@ const NavBar = ({ stillOrMoving, intro }:{
       )}
 
       {/* Still | Moving section */}
-      <div className={`py-2 w-full mix-blend-difference text-lg sm:text-2xl sm:ml-[1.3rem] bg-transparent transition-opacity duration-300 ${intro === 1 ? 'absolute top-0' : 'sticky top-0'}`} suppressHydrationWarning={true}>
+      <div className={`py-2 w-full mix-blend-difference text-lg sm:text-lg md:text-lg lg:text-2xl sm:ml-[1.3rem] bg-transparent transition-opacity duration-300 ${intro === 1 ? 'absolute top-0' : 'sticky top-0'}`} suppressHydrationWarning={true}>
         <div className="flex items-center justify-center text-white ">
           <Link href="/" passHref>
             <h1 className={stillStyle}>still</h1>

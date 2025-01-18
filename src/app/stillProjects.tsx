@@ -645,7 +645,7 @@ export const stillProjects = [
         src={REST3}
         className="w-full h-full object-cover cursor-custom"
         alt="pic1"
-        loading="lazy"
+        priority
        
       />
     </Link>

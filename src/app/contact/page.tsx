@@ -49,7 +49,7 @@ const Page = () => {
 
       {/* Sticky Logo */}
       <div className="absolute bottom-3 left-0 right-0 w-full flex items-center justify-center">
-        <Image src={logo} alt="logo" className="w-[8%] sm:w-[8%] md:w-[8%] lg:w-[15%]" />
+        <Image src={logo} alt="logo" className="w-[25%] sm:w-[8%] md:w-[8%] lg:w-[10%]" />
       </div>
     </div>
   );

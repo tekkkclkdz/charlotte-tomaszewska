@@ -25,7 +25,9 @@ const Page = () => {
             {` `}with a love and appreciation for bold fashion and personal cinematic voices. 
             <span className=""><br /></span>
 
-            But is it even possible to capture the essence of a person in just one sentence? 
+            But is it even possible to capture the essence of a person in just {` `}
+            <span className="sm:hidden inline"><br /></span>
+             one sentence? 
             <span className=""><br /></span>
 
             For more sentences feel free to reach out.
@@ -34,7 +36,7 @@ const Page = () => {
 
         {/* Logo */}
         <div className="absolute bottom-3 left-0 right-0 w-full flex items-center justify-center">
-          <Image src={logo} alt="logo" className="w-[8%] sm:w-[8%] md:w-[8%] lg:w-[15%]" />
+          <Image src={logo} alt="logo" className="w-[25%] sm:w-[8%] md:w-[8%] lg:w-[10%]" />
         </div>
       </div>
     </>

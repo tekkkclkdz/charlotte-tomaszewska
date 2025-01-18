@@ -202,9 +202,7 @@ export default function ProjectDetail() {
   </div>
 </div>
   {/* Overlay */}
-  <div className="absolute inset-0 flex items-center justify-center">
-    {/* Overlay content can go here if needed */}
-  </div>
+  
 
         </div>
       </div>

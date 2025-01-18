@@ -5,7 +5,7 @@ import { Element } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "./../../../public/logo_top.png"; // Ścieżka do obrazka
-import CustomCursor from './CustomCursor';
+import CustomCursor from './CustomCursor2';
 
 type Project = {
   id: number;

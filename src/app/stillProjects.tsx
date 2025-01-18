@@ -621,6 +621,12 @@ import ana1resize from "./../../public/anastazja1_resize.webp"
 import ana2resize from "./../../public/anastazja2_resize.webp"
 
 
+import ana3 from "./../../public/ana_webp.webp"
+
+import warsz3 from "./../../public/warszawa_gg.webp"
+import warsz4 from "./../../public/warszawa4_gg.webp"
+
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -998,7 +1004,7 @@ export const stillProjects = [
     credits: 'photographed by alberto polo ianez, styled by charlotte tomaszewska'
   },
   {
-    id: 12, title: `NEWONCE WARSZAWA 2020`, content: (
+    id: 12, title: `WARSZAWA W BUDOWIE`, content: (
       <div className="flex flex-wrap">
   {/* Pierwsze zdjęcie - widoczne tylko na większych ekranach */}
   <div className="hidden sm:block sm:w-1/2 h-[100vh]">
@@ -1038,7 +1044,7 @@ export const stillProjects = [
   </div>
 </div>
 
-    ), additionalImages: [  budowa12, budowa6, budowa14, budowa11, budowa8, budowa4, budowa15, warszawa8, budowa9, budowa16, budowa5, budowa3, warszawa13, budowa13, budowa18 ],
+    ), additionalImages: [  budowa12, budowa6, warsz3, warsz4, budowa8, budowa4, budowa15, warszawa8, budowa9, budowa16, budowa5, budowa3, warszawa13, budowa13, budowa18 ],
     credits: ['photographed by yan wasiuchnik, creative concept, art direction & styling by charlotte tomaszewska']
   },
   {
@@ -1204,7 +1210,7 @@ export const stillProjects = [
       <div className="hidden sm:block sm:w-1/2 h-[100vh] ">
         <Link href={`/pages/still/17`} legacyBehavior>
         <Image
-  src={ana1resize}
+  src={ana3}
   className="w-full h-full object-cover cursor-custom"
   alt="en2"
   loading="lazy"

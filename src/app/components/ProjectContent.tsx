@@ -84,12 +84,12 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
 
       <div
         ref={bottomRef}
-        className="relative flex items-center justify-center bg-white mb-16 sm:mb-16"
+        className="relative flex items-center justify-center bg-white mb-14"
       >
         <Image
           src={logo}
           alt="Logo"
-          className="w-28 h-28 sm:w-40 sm:h-40 lg:w-72 lg:h-72"
+          className="w-28 h-28 sm:w-40 sm:h-40 lg:w-40 lg:h-40"
         />
       </div>
 

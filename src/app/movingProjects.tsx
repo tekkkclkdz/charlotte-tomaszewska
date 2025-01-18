@@ -70,6 +70,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -91,6 +92,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -110,6 +112,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -129,6 +132,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -148,6 +152,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -167,6 +172,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -186,6 +192,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -205,6 +212,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -225,6 +233,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -245,6 +254,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -264,6 +274,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -283,6 +294,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -302,6 +314,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -321,6 +334,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>  
@@ -340,6 +354,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -383,6 +398,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -402,6 +418,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -421,6 +438,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -440,6 +458,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -459,6 +478,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -479,6 +499,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -498,6 +519,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>
@@ -518,6 +540,7 @@ export const projects = [
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                     >
                         Twoja przeglądarka nie obsługuje tego wideo.
                     </video>

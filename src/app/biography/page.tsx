@@ -26,7 +26,7 @@ const Page = () => {
             <span className=""><br /></span>
 
             But is it even possible to capture the essence of a person in just {` `}
-            <span className="sm:hidden inline"><br /></span>
+            <span className="sm:hidden inline md:inline lg:hidden"><br /></span>
              one sentence? 
             <span className=""><br /></span>
 

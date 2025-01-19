@@ -17,7 +17,7 @@ import Footer from './components/Footer';
 
 const Page = () => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black w-full'>
       <div className='bg-white h-16 w-full'></div>
 
       <NavBar stillOrMoving={0} intro={0} />

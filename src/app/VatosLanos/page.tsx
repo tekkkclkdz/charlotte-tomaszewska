@@ -27,7 +27,7 @@ export default function ProjectDetail() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const lightboxRef = useRef<LightGallery | null>(null);
 
-  // Always use the 4th element (index 3) of stillProjects
+  // Always use the 18th element (index 17) of stillProjects
   const project = stillProjects[17];
 
   if (!project) {
@@ -37,13 +37,13 @@ export default function ProjectDetail() {
   const isHorizontal = (pic: ImageType) => pic.width > pic.height;
 
   const additionalImages: ImageType[] = (project.additionalImages || [])
-  .filter((pic): pic is StaticImageData => !!pic) // Usuwa undefined
-  .map((pic) => ({
-    src: typeof pic === 'object' && 'src' in pic ? pic.src : '',
-    width: pic?.width || 0,
-    height: pic?.height || 0,
-  }))
-  .filter((img): img is ImageType => img.src !== '');
+    .filter((pic): pic is StaticImageData => !!pic) // Usuwa undefined
+    .map((pic) => ({
+      src: typeof pic === 'object' && 'src' in pic ? pic.src : '',
+      width: pic?.width || 0,
+      height: pic?.height || 0,
+    }))
+    .filter((img): img is ImageType => img.src !== '');
 
   return (
     <div className="text-center bg-white">
@@ -66,43 +66,52 @@ export default function ProjectDetail() {
                 src={pics.src}
                 alt="placeholder"
                 loading="lazy"
-                className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full"
+                className={`transition duration-150 ${
+                  isMobile ? '' : 'hover:opacity-75 cursor-pointer'
+                } border-none w-full`}
                 width={pics.width}
                 height={pics.height}
                 onClick={() => {
-                  lightboxRef.current?.openGallery(idx);
+                  if (!isMobile) {
+                    lightboxRef.current?.openGallery(idx);
+                  }
                 }}
               />
             </div>
           ))}
         </div>
 
-        <LightGalleryComponent
-          onInit={(ref) => {
-            if (ref) {
-              lightboxRef.current = ref.instance;
-            }
-          }}
-          speed={500}
-          dynamic
-          download={false}
-          dynamicEl={additionalImages.map((allImg) => ({
-            src: allImg.src,
-          }))}
-        />
+        {!isMobile && (
+          <LightGalleryComponent
+            onInit={(ref) => {
+              if (ref) {
+                lightboxRef.current = ref.instance;
+              }
+            }}
+            speed={500}
+            dynamic
+            download={false}
+            dynamicEl={additionalImages.map((allImg) => ({
+              src: allImg.src,
+            }))}
+          />
+        )}
       </div>
-      <div className="w-full flex justify-center items-center ">
-    <iframe
-      src="https://player.vimeo.com/video/408333976"
-      className="w-full sm:w-9/12 h-auto sm:h-[calc(100vh-60px)] md:h-[80vh]"
-      frameBorder="0"
-      allow="autoplay; fullscreen"
-      allowFullScreen
-      loading="lazy"
-      style={{ aspectRatio: '16/9' }}
-    ></iframe>
-  </div>
+      
+      {/* Vimeo iframe */}
+      <div className="w-full flex justify-center items-center">
+        <iframe
+          src="https://player.vimeo.com/video/408333976"
+          className="w-full sm:w-9/12 h-auto sm:h-[calc(100vh-60px)] md:h-[80vh]"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          loading="lazy"
+          style={{ aspectRatio: '16/9' }}
+        ></iframe>
+      </div>
 
+      {/* Logo */}
       <div className="flex justify-center">
         <Link href={'/'}>
           <Image src={logo} alt="logo" width={140} height={140} />
@@ -112,7 +121,7 @@ export default function ProjectDetail() {
 
       {/* Display credits at the bottom */}
       {project.credits && (
-        <div className="z-50 fixed  bottom-0 left-0 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+        <div className="z-50 fixed bottom-0 left-0 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
           {project.credits}
         </div>
       )}

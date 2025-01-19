@@ -52,7 +52,7 @@ const CustomCursor = () => {
       }}
     >
       {isHoveringCustom && (
-        <div className="text-[1.25rem] font-customMedium">play...</div>
+        <div className="text-[1.25rem] font-customMedium">play me</div>
       )}
     </div>
   );

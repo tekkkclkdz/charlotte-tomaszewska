@@ -70,63 +70,81 @@ export default function ProjectDetail({ params }: { params: Params }) {
     <div className="text-center bg-white">
       <div className="sticky top-0 mix-blend-difference z-50 h-8 mb-5">
         <NavBar stillOrMoving={2} intro={1} />
-        <ContactBioBar intro={1} underline={0}/>
+        <ContactBioBar intro={1} underline={0} />
       </div>
-
-      <div className="w-full h-full left-0 top-0 border-none shadow-none" suppressHydrationWarning={true}>
-      <div className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto px-2`}>
-  {additionalImages.map((pics, idx) => (
-    <div
-      key={pics.src}
-      className={`px-0 sm:px-0 ${
-        isHorizontal(pics) ? 'sm:col-span-2' : 'sm:col-span-1'
-      }`}
-      style={{
-        gridColumn: isMobile && isHorizontal(pics) ? 'span 1' : undefined, // Na mobilnych zdjęcia zajmują całą szerokość
-      }}
-    >
-      <Image
-        src={pics.src}
-        alt="placeholder"
-        loading="lazy"
-        className={`transition duration-150 hover:opacity-75 cursor-pointer border-none w-full h-auto`}
-        width={pics.width}
-        height={pics.height}
-        onClick={() => {
-          lightboxRef.current?.openGallery(idx);
-        }}
-      />
-    </div>
-  ))}
-</div>
-
-  <LightGalleryComponent
-    onInit={(ref) => {
-      if (ref) {
-        lightboxRef.current = ref.instance;
-      }
-    }}
-    speed={500}
-    dynamic
-    download={false}
-    dynamicEl={additionalImages.map((allImg) => ({
-      src: allImg.src,
-    }))}
-  />
-</div>
-
-      {project.credits && (
-                <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white">
-                    {project.credits}
-                </div>
-            )}
-
-            {/* Logo bezpośrednio pod ostatnim zdjęciem */}
-            <div className="flex justify-center">
-                <Link href={'/'}>
-                    <Image src={logo} alt="logo" width={140} height={140} className='mb-2' />
-                </Link>
+  
+      <div
+        className="w-full h-full left-0 top-0 border-none shadow-none"
+        suppressHydrationWarning={true}
+      >
+        <div
+          className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto px-2`}
+        >
+          {additionalImages.map((pics, idx) => (
+            <div
+              key={pics.src}
+              className={`px-0 sm:px-0 ${
+                isHorizontal(pics) ? 'sm:col-span-2' : 'sm:col-span-1'
+              }`}
+              style={{
+                gridColumn: isMobile && isHorizontal(pics) ? 'span 1' : undefined, // On mobile, images take the full width
+              }}
+            >
+              <Image
+                src={pics.src}
+                alt="placeholder"
+                loading="lazy"
+                className={`transition duration-150 ${
+                  isMobile ? '' : 'hover:opacity-75 cursor-pointer'
+                } border-none w-full h-auto`}
+                width={pics.width}
+                height={pics.height}
+                onClick={() => {
+                  if (!isMobile) {
+                    lightboxRef.current?.openGallery(idx);
+                  }
+                }}
+              />
             </div>
+          ))}
+        </div>
+  
+        {/* Render LightGalleryComponent only on desktops */}
+        {!isMobile && (
+          <LightGalleryComponent
+            onInit={(ref) => {
+              if (ref) {
+                lightboxRef.current = ref.instance;
+              }
+            }}
+            speed={500}
+            dynamic
+            download={false}
+            dynamicEl={additionalImages.map((allImg) => ({
+              src: allImg.src,
+            }))}
+          />
+        )}
+      </div>
+  
+      {project.credits && (
+        <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white">
+          {project.credits}
+        </div>
+      )}
+  
+      {/* Logo below the last image */}
+      <div className="flex justify-center">
+        <Link href={'/'}>
+          <Image
+            src={logo}
+            alt="logo"
+            width={140}
+            height={140}
+            className="mb-2"
+          />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -27,7 +27,7 @@ export default function ProjectDetail() {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const lightboxRef = useRef<LightGallery | null>(null);
 
-    // Always use the 4th element (index 3) of stillProjects
+    // Always use the 7th element (index 6) of stillProjects
     const project = stillProjects[6];
 
     if (!project) {
@@ -66,30 +66,37 @@ export default function ProjectDetail() {
                                 src={pics.src}
                                 alt="placeholder"
                                 loading="lazy"
-                                className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full"
+                                className={`transition duration-150 ${
+                                    isMobile ? '' : 'hover:opacity-75 cursor-pointer'
+                                } border-none w-full`}
                                 width={pics.width}
                                 height={pics.height}
                                 onClick={() => {
-                                    lightboxRef.current?.openGallery(idx);
+                                    if (!isMobile) {
+                                        lightboxRef.current?.openGallery(idx);
+                                    }
                                 }}
                             />
                         </div>
                     ))}
                 </div>
 
-                <LightGalleryComponent
-                    onInit={(ref) => {
-                        if (ref) {
-                            lightboxRef.current = ref.instance;
-                        }
-                    }}
-                    speed={500}
-                    dynamic
-                    download={false}
-                    dynamicEl={additionalImages.map((allImg) => ({
-                        src: allImg.src,
-                    }))}
-                />
+                {/* Render LightGalleryComponent only on desktops */}
+                {!isMobile && (
+                    <LightGalleryComponent
+                        onInit={(ref) => {
+                            if (ref) {
+                                lightboxRef.current = ref.instance;
+                            }
+                        }}
+                        speed={500}
+                        dynamic
+                        download={false}
+                        dynamicEl={additionalImages.map((allImg) => ({
+                            src: allImg.src,
+                        }))}
+                    />
+                )}
             </div>
 
             {project.credits && (
@@ -101,7 +108,7 @@ export default function ProjectDetail() {
             {/* Logo bezpośrednio pod ostatnim zdjęciem */}
             <div className="flex justify-center">
                 <Link href={'/'}>
-                    <Image src={logo} alt="logo" width={140} height={140} className='mb-2' />
+                    <Image src={logo} alt="logo" width={140} height={140} className="mb-2" />
                 </Link>
             </div>
         </div>

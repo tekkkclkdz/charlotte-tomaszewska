@@ -27,7 +27,7 @@ export default function ProjectDetail() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const lightboxRef = useRef<LightGallery | null>(null);
 
-  // Always use the 4th element (index 3) of stillProjects
+  // Always use the 8th element (index 7) of stillProjects
   const project = stillProjects[7];
 
   if (!project) {
@@ -37,13 +37,13 @@ export default function ProjectDetail() {
   const isHorizontal = (pic: ImageType) => pic.width > pic.height;
 
   const additionalImages: ImageType[] = (project.additionalImages || [])
-  .filter((pic): pic is StaticImageData => !!pic) // Usuwa undefined
-  .map((pic) => ({
-    src: typeof pic === 'object' && 'src' in pic ? pic.src : '',
-    width: pic?.width || 0,
-    height: pic?.height || 0,
-  }))
-  .filter((img): img is ImageType => img.src !== '');
+    .filter((pic): pic is StaticImageData => !!pic) // Usuwa undefined
+    .map((pic) => ({
+      src: typeof pic === 'object' && 'src' in pic ? pic.src : '',
+      width: pic?.width || 0,
+      height: pic?.height || 0,
+    }))
+    .filter((img): img is ImageType => img.src !== '');
 
   return (
     <div className="text-center bg-white">
@@ -56,7 +56,7 @@ export default function ProjectDetail() {
         className="w-full h-full left-0 top-0 border-none shadow-none"
         suppressHydrationWarning={true}
       >
-        <div className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto`}>
+        <div className="grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto">
           {additionalImages.map((pics, idx) => (
             <div
               key={pics.src}
@@ -66,53 +66,61 @@ export default function ProjectDetail() {
                 src={pics.src}
                 alt="placeholder"
                 loading="lazy"
-                className="transition duration-150 hover:opacity-75 cursor-pointer border-none w-full"
+                className={`transition duration-150 ${
+                  isMobile ? '' : 'hover:opacity-75 cursor-pointer'
+                } border-none w-full`}
                 width={pics.width}
                 height={pics.height}
                 onClick={() => {
-                  lightboxRef.current?.openGallery(idx);
+                  if (!isMobile) {
+                    lightboxRef.current?.openGallery(idx);
+                  }
                 }}
               />
             </div>
           ))}
         </div>
 
-        <LightGalleryComponent
-          onInit={(ref) => {
-            if (ref) {
-              lightboxRef.current = ref.instance;
-            }
-          }}
-          speed={500}
-          dynamic
-          download={false}
-          dynamicEl={additionalImages.map((allImg) => ({
-            src: allImg.src,
-          }))}
-        />
+        {/* Render LightGalleryComponent only on desktops */}
+        {!isMobile && (
+          <LightGalleryComponent
+            onInit={(ref) => {
+              if (ref) {
+                lightboxRef.current = ref.instance;
+              }
+            }}
+            speed={500}
+            dynamic
+            download={false}
+            dynamicEl={additionalImages.map((allImg) => ({
+              src: allImg.src,
+            }))}
+          />
+        )}
       </div>
-      <div className="w-full flex justify-center items-center ">
-    <iframe
-      src="https://player.vimeo.com/video/1026794518"
-      className="w-full sm:w-9/12 h-auto sm:h-[calc(100vh-60px)] md:h-[80vh]"
-      frameBorder="0"
-      allow="autoplay; fullscreen"
-      allowFullScreen
-      loading="lazy"
-      style={{ aspectRatio: '16/9' }}
-    ></iframe>
-  </div>
 
-  {project.credits && (
-  <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white">
-    {project.credits}
-  </div>
-)}
+      <div className="w-full flex justify-center items-center">
+        <iframe
+          src="https://player.vimeo.com/video/1026794518"
+          className="w-full sm:w-9/12 h-auto sm:h-[calc(100vh-60px)] md:h-[80vh]"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          loading="lazy"
+          style={{ aspectRatio: '16/9' }}
+        ></iframe>
+      </div>
+
+      {project.credits && (
+        <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white">
+          {project.credits}
+        </div>
+      )}
 
       {/* Logo bezpośrednio pod ostatnim zdjęciem */}
       <div className="flex justify-center">
         <Link href={'/'}>
-          <Image src={logo} alt="logo" width={140} height={140} className='mb-2'/>
+          <Image src={logo} alt="logo" width={140} height={140} className="mb-2" />
         </Link>
       </div>
     </div>

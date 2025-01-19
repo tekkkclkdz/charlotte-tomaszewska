@@ -42,6 +42,8 @@ body {
   isolation: isolate; /* Ensure blending works */
   margin: 0;
   padding: 0;
+
+
 }
 
 .custom-cursor {
@@ -70,4 +72,8 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
 }

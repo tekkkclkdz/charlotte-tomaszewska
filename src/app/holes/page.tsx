@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 import LightGalleryComponent from 'lightgallery/react';
@@ -26,6 +26,14 @@ type ImageType = {
 export default function ProjectDetail() {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const lightboxRef = useRef<LightGallery | null>(null);
+
+    const [isInstagram, setIsInstagram] = useState(false);
+
+    // Wykrywanie aplikacji Instagram
+    useEffect(() => {
+        const userAgent = navigator.userAgent || navigator.vendor;
+        setIsInstagram(/Instagram/.test(userAgent));
+    }, []);
 
     // Always use the 7th element (index 6) of stillProjects
     const project = stillProjects[6];
@@ -99,8 +107,9 @@ export default function ProjectDetail() {
                 )}
             </div>
 
+            {/* Kredyty z dynamicznym marginesem */}
             {project.credits && (
-                <div className="z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white">
+                <div className={`z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12  w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white ${isInstagram ? 'mb-[9px]' : 'mb-0'}`}>
                     {project.credits}
                 </div>
             )}

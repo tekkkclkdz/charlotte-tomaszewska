@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 import LightGalleryComponent from 'lightgallery/react';
@@ -9,7 +9,6 @@ import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-
 import { stillProjects } from './../stillProjects';
 import NavBar from '@/app/components/NavBar2'; // Importing NavBar
 import logo from './../../../public/charlotte heart black.png';
@@ -26,6 +25,14 @@ type ImageType = {
 export default function ProjectDetail() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const lightboxRef = useRef<LightGallery | null>(null);
+  
+  const [isInstagram, setIsInstagram] = useState(false);
+
+  // Wykrywanie przeglądarki Instagram
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor;
+    setIsInstagram(/Instagram/.test(userAgent));
+  }, []);
 
   // Always use the 18th element (index 17) of stillProjects
   const project = stillProjects[17];
@@ -52,10 +59,7 @@ export default function ProjectDetail() {
         <ContactBioBar intro={1} underline={0} />
       </div>
 
-      <div
-        className="w-full h-full left-0 top-0 border-none shadow-none"
-        suppressHydrationWarning={true}
-      >
+      <div className="w-full h-full left-0 top-0 border-none shadow-none" suppressHydrationWarning={true}>
         <div className={`grid gap-2 bg-white sm:grid-cols-2 sm:w-9/12 grid-cols-1 mx-auto`}>
           {additionalImages.map((pics, idx) => (
             <div
@@ -121,7 +125,7 @@ export default function ProjectDetail() {
 
       {/* Display credits at the bottom */}
       {project.credits && (
-        <div className="z-50 fixed bottom-0 left-0 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white">
+        <div className={`z-50 fixed bottom-0 left-0 w-full sm:px-0 px-4 text-sm sm:text-2xl mb-0 sm:mb-2 font-light mix-blend-difference text-black dark:text-white ${isInstagram ? 'mb-[9px]' : 'mb-0'}`}>
           {project.credits}
         </div>
       )}

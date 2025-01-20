@@ -127,7 +127,7 @@ export default function ProjectDetail({ params }: { params: Params }) {
       {project.credits && (
         <div
           className={`z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 sm:w-9/12 w-full sm:px-0 px-4 text-sm sm:text-2xl font-customMedium mix-blend-difference text-black dark:text-white ${
-            isInstagram ? 'mb-[7px]' : 'mb-1'
+            isInstagram ? 'mb-[9px]' : 'mb-1'
           }`}
         >
           {project.credits}

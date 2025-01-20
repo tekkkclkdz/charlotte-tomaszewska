@@ -1,10 +1,8 @@
-'use client';
-
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import logo2 from './../../../public/logo_top2.png';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import logo2 from "./../../../public/logo_top2.png";
+import Link from "next/link";
 
 const NavBar = ({
   stillOrMoving,
@@ -14,88 +12,57 @@ const NavBar = ({
   intro: number;
 }) => {
   const [scrollEnabled, setScrollEnabled] = useState(false);
-  const router = useRouter();
 
   const stillStyle =
     stillOrMoving === 0
-      ? 'underline font-customMedium'
+      ? "underline font-customMedium"
       : stillOrMoving === 2
-      ? 'font-customMedium'
-      : 'font-customMedium hover:underline';
+      ? "font-customMedium"
+      : "font-customMedium hover:underline";
 
   const movingStyle =
     stillOrMoving === 1
-      ? 'underline font-customMedium'
+      ? "underline font-customMedium"
       : stillOrMoving === 2
-      ? 'font-customMedium'
-      : 'font-customMedium hover:underline';
+      ? "font-customMedium"
+      : "font-customMedium hover:underline";
 
   useEffect(() => {
-    const isScrollEnabled = localStorage.getItem('scrollEnabled') === 'true';
+    const isScrollEnabled = localStorage.getItem("scrollEnabled") === "true";
 
     if (!isScrollEnabled && stillOrMoving === 0 && intro === 0) {
-      // Disable scrolling for "still" page
-      document.body.style.overflow = 'hidden';
-      document.body.style.height = '100%';
-      document.documentElement.style.overflow = 'hidden';
-      document.documentElement.style.height = '100%';
+      // Zablokuj scrollowanie
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100%";
+      document.documentElement.style.overflow = "hidden";
+      document.documentElement.style.height = "100%";
     } else {
-      // Enable scrolling
-      document.body.style.overflow = '';
-      document.body.style.height = '';
-      document.documentElement.style.overflow = '';
-      document.documentElement.style.height = '';
+      // Włącz scrollowanie, jeśli było wcześniej odblokowane
+      document.body.style.overflow = "";
+      document.body.style.height = "";
+      document.documentElement.style.overflow = "";
+      document.documentElement.style.height = "";
     }
   }, [stillOrMoving, intro]);
 
-  useEffect(() => {
-    // When navigating to "/moving", ensure it's scrolled to the top
-    if (stillOrMoving === 1) {
-      window.scrollTo(0, 0);
-    }
-  }, [stillOrMoving]);
-
-  useEffect(() => {
-    // When on "still" page, scroll to first project
-    if (stillOrMoving === 0) {
-      const firstProject = document.getElementById('project1');
-      if (firstProject) {
-        const isMobile = window.innerWidth <= 768;
-        const projectHeight = firstProject.offsetHeight;
-        const windowHeight = window.innerHeight;
-        const navbarHeight = document.querySelector('nav')?.offsetHeight || 0;
-
-        const projectOffset = firstProject.offsetTop;
-        const adjustedPosition = isMobile
-          ? projectOffset - windowHeight / 2 + projectHeight / 2 + navbarHeight
-          : projectOffset;
-
-        window.scrollTo({
-          top: adjustedPosition,
-          behavior: 'smooth',
-        });
-      }
-    }
-  }, [stillOrMoving]);
-
   const handleLogoClick = () => {
-    // Enable scrolling
-    document.body.style.overflow = '';
-    document.body.style.height = '';
-    document.documentElement.style.overflow = '';
-    document.documentElement.style.height = '';
+    // Włącz scrollowanie
+    document.body.style.overflow = "";
+    document.body.style.height = "";
+    document.documentElement.style.overflow = "";
+    document.documentElement.style.height = "";
 
-    // Save the scroll state
-    localStorage.setItem('scrollEnabled', 'true');
+    // Zapisz stan odblokowania scrollowania
+    localStorage.setItem("scrollEnabled", "true");
     setScrollEnabled(true);
 
-    // Scroll logic for the first project
-    const firstProject = document.getElementById('project1');
+    // Logika przewijania
+    const firstProject = document.getElementById("project1");
     if (firstProject) {
       const isMobile = window.innerWidth <= 768;
       const projectHeight = firstProject.offsetHeight;
       const windowHeight = window.innerHeight;
-      const navbarHeight = document.querySelector('nav')?.offsetHeight || 0;
+      const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
 
       const projectOffset = firstProject.offsetTop;
       const adjustedPosition = isMobile
@@ -104,19 +71,19 @@ const NavBar = ({
 
       window.scrollTo({
         top: adjustedPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
 
   return (
     <>
-      {/* White background */}
-      {intro === 0 && stillOrMoving === 0 && (
+      {/* Białe tło za wszystkim */}
+      {intro === 0 && (
         <div className="w-full bg-white fixed top-0 left-0 h-[calc(100svh)] z-0" />
       )}
 
-      {/* Centered logo */}
+      {/* Logo na środku */}
       {intro === 0 && stillOrMoving === 0 && (
         <div
           className={`relative top-0 w-full h-[calc(100svh)] flex flex-col items-center justify-center bg-white text-black z-10`}
@@ -136,11 +103,10 @@ const NavBar = ({
 
       {/* Sticky "still | moving" */}
       <div
-        className={`sticky top-0 z-50  py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300 ${
-          intro === 1 ? 'opacity-100' : ''
+        className={`sticky top-0 z-50 py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300 ${
+          intro === 1 ? "opacity-100" : ""
         }`}
         suppressHydrationWarning={true}
-
       >
         <div className="flex items-center justify-center text-white">
           <div className="flex items-center gap-2 text-lg sm:text-lg md:text-lg lg:text-2xl">

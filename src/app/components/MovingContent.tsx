@@ -118,7 +118,7 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
         <Image
           src={logo}
           alt="Logo"
-          className="w-28 h-28 sm:w-40 sm:h-40 lg:w-72 lg:h-72"
+          className="w-28 h-28 sm:w-40 sm:h-40 lg:w-40 lg:h-40"
         />
       </div>
 

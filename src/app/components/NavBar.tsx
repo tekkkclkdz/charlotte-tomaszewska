@@ -103,13 +103,13 @@ const NavBar = ({
 
       {/* Sticky "still | moving" */}
       <div
-        className={`sticky top-0 z-50 py-2 ml-[1.3rem] w-full bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300 ${
+        className={`sticky top-0 z-50 py-2 sm:ml-[2.63rem] ml-[2rem] w-auto bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300 ${
           intro === 1 ? "opacity-100" : ""
         }`}
         suppressHydrationWarning={true}
       >
         <div className="flex items-center justify-center text-white">
-          <div className="flex items-center gap-2 text-lg sm:text-lg md:text-lg lg:text-2xl">
+          <div className="sticky flex items-center gap-2 text-lg sm:text-lg md:text-lg lg:text-2xl">
             <Link href="/" passHref>
               <h1 className={stillStyle}>still</h1>
             </Link>

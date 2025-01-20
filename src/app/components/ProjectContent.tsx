@@ -111,7 +111,7 @@ const ProjectContent = ({ projects }: { projects: ProjectsArray }) => {
         <div className="absolute inset-0 opacity-90 -z-10"></div>
         {activeProject !== null && !isAtBottom ? (
           <h2
-            className={`relative text-lg sm:text-2xl mb-0 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white opacity-100 transition-opacity duration-300`}
+            className={`relative text-lg sm:text-2xl mb-1 sm:mb-2 font-customMedium mix-blend-difference text-black dark:text-white opacity-100 transition-opacity duration-300`}
           >
             {projects.find((p) => p.id === activeProject)?.title ||
               projects[projects.length - 1]?.title}

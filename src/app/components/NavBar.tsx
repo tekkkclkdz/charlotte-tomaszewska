@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import logo2 from "./../../../public/logo_top2.png";
 import Link from "next/link";
@@ -28,8 +28,11 @@ const NavBar = ({
       ? "font-customMedium"
       : "font-customMedium hover:underline";
 
-  useLayoutEffect(() => {
-    const isScrollEnabled = sessionStorage.getItem("scrollEnabled") === "true";
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const isScrollEnabled =
+      window.sessionStorage.getItem("scrollEnabled") === "true";
 
     if (!isScrollEnabled && stillOrMoving === 0 && intro === 0) {
       // Zablokuj przewijanie
@@ -38,6 +41,7 @@ const NavBar = ({
       document.documentElement.style.overflow = "hidden";
       document.documentElement.style.height = "100%";
     } else {
+      // Odblokuj przewijanie
       document.body.style.overflow = "";
       document.body.style.height = "";
       document.documentElement.style.overflow = "";
@@ -55,6 +59,8 @@ const NavBar = ({
   }, [stillOrMoving, intro]);
 
   const jumpToFirstProjectImmediate = () => {
+    if (typeof window === "undefined") return;
+
     const firstProject = document.getElementById("project1");
     if (firstProject) {
       const isMobile = window.innerWidth <= 768;
@@ -68,11 +74,15 @@ const NavBar = ({
         : projectOffset;
 
       // Natychmiastowe ustawienie pozycji scrolla
+      document.documentElement.style.scrollBehavior = "auto"; // Wyłącz smooth scroll na chwilę
       window.scrollTo(0, adjustedPosition);
+      document.documentElement.style.scrollBehavior = ""; // Przywróć smooth scroll
     }
   };
 
   const handleLogoClick = () => {
+    if (typeof window === "undefined") return;
+
     // Odblokuj przewijanie
     document.body.style.overflow = "";
     document.body.style.height = "";
@@ -80,7 +90,7 @@ const NavBar = ({
     document.documentElement.style.height = "";
 
     // Zapisz w sessionStorage, że przewijanie jest włączone
-    sessionStorage.setItem("scrollEnabled", "true");
+    window.sessionStorage.setItem("scrollEnabled", "true");
     setScrollEnabled(true);
 
     // Przewiń do pierwszego projektu natychmiast

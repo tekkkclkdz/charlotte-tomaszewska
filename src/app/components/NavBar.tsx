@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React, { useLayoutEffect, useState } from "react";
 import Image from "next/image";
 import logo2 from "./../../../public/logo_top2.png";
 import Link from "next/link";
@@ -27,36 +28,33 @@ const NavBar = ({
       ? "font-customMedium"
       : "font-customMedium hover:underline";
 
-  useEffect(() => {
-    const isScrollEnabled = localStorage.getItem("scrollEnabled") === "true";
+  useLayoutEffect(() => {
+    const isScrollEnabled = sessionStorage.getItem("scrollEnabled") === "true";
 
     if (!isScrollEnabled && stillOrMoving === 0 && intro === 0) {
-      // Zablokuj scrollowanie
+      // Zablokuj przewijanie
       document.body.style.overflow = "hidden";
       document.body.style.height = "100%";
       document.documentElement.style.overflow = "hidden";
       document.documentElement.style.height = "100%";
     } else {
-      // Włącz scrollowanie, jeśli było wcześniej odblokowane
       document.body.style.overflow = "";
       document.body.style.height = "";
       document.documentElement.style.overflow = "";
       document.documentElement.style.height = "";
     }
+
+    // Jeśli stillOrMoving === 1, ustaw scroll na samej górze
+    if (stillOrMoving === 1) {
+      window.scrollTo(0, 0);
+    }
+    // Jeśli scrollEnabled jest true, przewiń do pierwszego projektu
+    else if (isScrollEnabled) {
+      jumpToFirstProjectImmediate();
+    }
   }, [stillOrMoving, intro]);
 
-  const handleLogoClick = () => {
-    // Włącz scrollowanie
-    document.body.style.overflow = "";
-    document.body.style.height = "";
-    document.documentElement.style.overflow = "";
-    document.documentElement.style.height = "";
-
-    // Zapisz stan odblokowania scrollowania
-    localStorage.setItem("scrollEnabled", "true");
-    setScrollEnabled(true);
-
-    // Logika przewijania
+  const jumpToFirstProjectImmediate = () => {
     const firstProject = document.getElementById("project1");
     if (firstProject) {
       const isMobile = window.innerWidth <= 768;
@@ -69,21 +67,32 @@ const NavBar = ({
         ? projectOffset - windowHeight / 2 + projectHeight / 2 + navbarHeight
         : projectOffset;
 
-      window.scrollTo({
-        top: adjustedPosition,
-        behavior: "smooth",
-      });
+      // Natychmiastowe ustawienie pozycji scrolla
+      window.scrollTo(0, adjustedPosition);
     }
+  };
+
+  const handleLogoClick = () => {
+    // Odblokuj przewijanie
+    document.body.style.overflow = "";
+    document.body.style.height = "";
+    document.documentElement.style.overflow = "";
+    document.documentElement.style.height = "";
+
+    // Zapisz w sessionStorage, że przewijanie jest włączone
+    sessionStorage.setItem("scrollEnabled", "true");
+    setScrollEnabled(true);
+
+    // Przewiń do pierwszego projektu natychmiast
+    jumpToFirstProjectImmediate();
   };
 
   return (
     <>
-      {/* Białe tło za wszystkim */}
       {intro === 0 && (
         <div className="w-full bg-white fixed top-0 left-0 h-[calc(100svh)] z-0" />
       )}
 
-      {/* Logo na środku */}
       {intro === 0 && stillOrMoving === 0 && (
         <div
           className={`relative top-0 w-full h-[calc(100svh)] flex flex-col items-center justify-center bg-white text-black z-10`}
@@ -101,7 +110,6 @@ const NavBar = ({
         </div>
       )}
 
-      {/* Sticky "still | moving" */}
       <div
         className={`sticky top-0 z-50 py-2 sm:ml-[2.63rem] ml-[2rem] w-auto bg-transparent mix-blend-difference text-lg sm:text-2xl transition-opacity duration-300 ${
           intro === 1 ? "opacity-100" : ""

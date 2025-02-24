@@ -37,21 +37,28 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="bg-white">
-      {/* Komunikat "Rotate your phone" */}
-      <div
-        className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${
-          showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        } md:hidden`}
-      >
-        <p className="text-4xl text-black font-customMedium">rotate your phone</p>
+    <div className="h-screen bg-gray-100 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-thin text-gray-800 mb-4">website is under construction</h1>
+        
+      
       </div>
-
-      {/* Główna zawartość */}
-      <NavBar stillOrMoving={1} intro={1} />
-      <MovingContent projects={projects} />
-      <ContactBioBar intro={1} underline={0} />
     </div>
+    // <div className="bg-white">
+    //   {/* Komunikat "Rotate your phone" */}
+    //   <div
+    //     className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50 transition-opacity duration-300 ${
+    //       showRotateScreen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+    //     } md:hidden`}
+    //   >
+    //     <p className="text-4xl text-black font-customMedium">rotate your phone</p>
+    //   </div>
+
+    //   {/* Główna zawartość */}
+    //   <NavBar stillOrMoving={1} intro={1} />
+    //   <MovingContent projects={projects} />
+    //   <ContactBioBar intro={1} underline={0} />
+    // </div>
   );
 };
 

@@ -50,7 +50,10 @@ const Page = () => {
 
        {/* Główna zawartość */}
        <NavBar stillOrMoving={1} intro={1} />
-       <MovingContent projects={projects} />
+  
+<MovingContent projects={projects} />
+    
+       
        <ContactBioBar intro={1} underline={0} />
      </div>
   );

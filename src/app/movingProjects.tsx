@@ -55,270 +55,713 @@ import Link from "next/link";
 
 
 
+import adidas from "./../../public/webp_movies/ADIDAS-high-ezgif.com-gif-to-webp-converter.webp";
+import barbarka from "./../../public/webp_movies/BARBARKA-MariaPeszekftOskar83-high1-ezgif.com-gif-to-webp-converter.webp";
+import bassAstral from "./../../public/webp_movies/BASSASTRALXIGOBikini-high1-ezgif.com-gif-to-webp-converter.webp";
+import cap74024 from "./../../public/webp_movies/CAP74024DarkEros-high-ezgif.com-gif-to-webp-converter.webp";
+import cicho from "./../../public/webp_movies/CICHOengnew-ezgif.com-gif-to-webp-converter.webp";
+import home from "./../../public/webp_movies/HOME-high-ezgif.com-gif-to-webp-converter.webp";
+import imHere from "./../../public/webp_movies/I.M.-HEREWITHIN-high-ezgif.com-gif-to-webp-converter.webp";
+import ifolor from "./../../public/webp_movies/IFOLOR-Kindergarten-high-ezgif.com-gif-to-webp-converter.webp";
+import kukonDaria from "./../../public/webp_movies/KUKONDARIAZAWIALOW-Batman-high-ezgif.com-gif-to-webp-converter.webp";
+import aveMaria from "./../../public/webp_movies/MARIAPESZEK-AveMaria-high1-ezgif.com-gif-to-webp-converter.webp";
+import maverickSabre from "./../../public/webp_movies/MAVERICKSABRE-YouDontEvenNeedIt-high-ezgif.com-gif-to-webp-converter.webp";
+import meMyself from "./../../public/webp_movies/MEMYSELFTOUCH-high3-ezgif.com-gif-to-webp-converter.webp";
+import reebok from "./../../public/webp_movies/REEBOKReedefine-high-ezgif.com-gif-to-webp-converter.webp";
+import stoneQueen from "./../../public/webp_movies/STONE-Queen-high1-ezgif.com-gif-to-webp-converter.webp";
+import superpowers from "./../../public/webp_movies/SUPERPOWERS-high-ezgif.com-gif-to-webp-converter.webp";
+import szczylHiphop from "./../../public/webp_movies/SZCZYL-Hiphopkryta-high-ezgif.com-gif-to-webp-converter.webp";
+import szczylMiasta from "./../../public/webp_movies/SZCZYL-WielkieMiasta-high-ezgif.com-gif-to-webp-converter.webp";
+import tymbark from "./../../public/webp_movies/TYMBARK-high-ezgif.com-gif-to-webp-converter.webp";
+import windowsen from "./../../public/webp_movies/WINDOWSEN-high-ezgif.com-gif-to-webp-converter.webp";
+import yes from "./../../public/webp_movies/YES-ezgif.com-gif-to-webp-converter.webp";
+import malasana from "./../../public/webp_movies/hania_rani__dobrawa_czocher_-_malasana1080p_3-ezgif.com-gif-to-webp-converter.webp";
+import ikeaMalm from "./../../public/webp_movies/ikea_-_malm_positive_impact1080p-high-ezgif.com-gif-to-webp-converter.webp";
+import test2 from "./../../public/webp_movies/test2.webp";
+
+
 
 
 export const projects = [
     {
-        id: 1, title: 'BRODKA X IGO', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-             
-                <Image src={BRODKA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-            
-                    
-                </div>
+        id: 1,
+        title: "BRODKA X IGO",
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image
+                src={test2}
+                alt="ll"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+              />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/932867048',
-        credits: `directed by grajper, styled by charlotte tomaszewska`
-    },
-    {
-        id: 2, title: 'ADIDAS', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={ADIDAS} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/BRODKA&IGO.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/887736596',
+          </div>
+        ),
+        videoUrl: "https://player.vimeo.com/video/932867048",
+        credits: `directed by grajper, styled by charlotte tomaszewska`,
+      },
+    
+      {
+        id: 2,
+        title: 'ADIDAS',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={adidas} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/ADIDAS-high.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/887736596',
         credits: `directed by giada bossi, styled by charlotte tomaszewska`,
-    },
-    {
-        id: 3, title: '(.) & (.)', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={MEMYSELF2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+      },
+      {
+        id: 3,
+        title: '(.) & (.)',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={meMyself} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1025377298',
-        credits: 'directed by tala dolgowska, styled by charlotte tomaszewska'
-    },
-    {
-        id: 4, title: 'STONE', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={STONE2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/ME.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/990654176',
-        credits: `directed by grajper, styled by charlotte tomaszewska`
-    },
-    {
-        id: 5, title: 'MARIA PESZEK X OSKAR83', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={BARBARKA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1025377298',
+        credits: 'directed by tala dolgowska, styled by charlotte tomaszewska',
+      },
+      {
+        id: 4,
+        title: 'STONE',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={stoneQueen} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/610083622',
-        credits: `directed by grajper, styled by charlotte tomaszewska`
-    },
-    {
-        id: 6, title: 'MESKIE GRANIE', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={SUPERPOWERS} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/STONE.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/828107491',
-        credits: `directed by grajper, styled by charlotte tomaszewska`
-    },
-    {
-        id: 7, title: 'CAP 74024', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={CAP} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/990654176',
+        credits: `directed by grajper, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 5,
+        title: 'MARIA PESZEK X OSKAR83',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={barbarka} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/450786928',
-        credits: (<div>directed by grajper <br></br> creative concept, art direction & styling by charlotte tomaszewska</div>)
-    },
-    {
-        id: 8, title: 'HOME', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={HOME} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/BARBARKA.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/669378253',
-        credits: `directed by grajper, styled by charlotte tomaszewska
-        `
-    },
-    {
-        id: 9, title: 'YES', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={YES} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/610083622',
+        credits: `directed by grajper, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 6,
+        title: 'MESKIE GRANIE',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={superpowers} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/647758815',
-        credits: `directed by grajper, styled by charlotte tomaszewska
-        `
-    },
-    {
-        id: 10, title: 'WINDOWSEN', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={WINDOWSEN} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/SUPERPOWERS-high.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1016725466',
-        credits: `directed by grajper, art direction by grajper & charlotte tomaszewska`
-    },
-    {
-        id: 11, title: 'CICHO', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={CICHO} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/828107491',
+        credits: `directed by grajper, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 7,
+        title: 'CAP 74024',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={cap74024} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/887730475',
-        credits: `directed by marcin pucyk, styled by charlotte tomaszewska`
-    },
-    {
-        id: 12, title: 'MARIA PESZEK', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={AVEMARIA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/CAP.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1028099351',
-        credits: 'directed by grajper, styled by charlotte tomaszewska'
-    },
-    {
-        id: 13, title: 'I.M.', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={IM} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/450786928',
+        credits: (
+          <div>
+            directed by grajper <br /> creative concept, art direction & styling by charlotte tomaszewska
+          </div>
+        ),
+      },
+      {
+        id: 8,
+        title: 'HOME',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={home} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1015786082',
-        credits: `directed by marta mach, styled by charlotte tomaszewska`
-    },
-    {
-        id: 14, title: 'SZCZYL', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={SZCZYL} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/HOME-high.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1028107804',
-        credits: 'directed by andrzej stepouois, styled by charlotte tomaszewska'
-    },
-    {
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/669378253',
+        credits: `directed by grajper, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 9,
+        title: 'YES',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={yes} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/YES.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/647758815',
+        credits: `directed by grajper, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 10,
+        title: 'WINDOWSEN',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={windowsen} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/WINDOWSEN.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1016725466',
+        credits: `directed by grajper, art direction by grajper & charlotte tomaszewska`,
+      },
+      {
+        id: 11,
+        title: 'CICHO',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={cicho} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/CICHO.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/887730475',
+        credits: `directed by marcin pucyk, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 12,
+        title: 'MARIA PESZEK',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={aveMaria} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/MARIAPESZEK.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1028099351',
+        credits: 'directed by grajper, styled by charlotte tomaszewska',
+      },
+      {
+        id: 13,
+        title: 'I.M.',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={imHere} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/I.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1015786082',
+        credits: `directed by marta mach, styled by charlotte tomaszewska`,
+      },
+      {
+        id: 14,
+        title: 'SZCZYL',
+        content: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <Image src={szczylMiasta} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            </div>
+          </div>
+        ),
+        contentPC: (
+          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+              <video
+                src="/videos/SZCZYL1.webm"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support this video.
+              </video>
+            </div>
+          </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1028107804',
+        credits: 'directed by andrzej stepouois, styled by charlotte tomaszewska',
+      },
+      {
         id: 15, title: 'IKEA', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={IKEA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={ikeaMalm} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1023738021',
+        ), 
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/IKEA.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1023738021',
         credits: 'directed by grajper, styled by charlotte tomaszewska'
     },
-    // {
-    //     id: 15, title: 'TMOBILE - KUKON X HODAK', content: (
-    //         <div className="flex justify-center w-screen">
-    //             <Image
-    //                 src={TMOBILE}
-    //                 className="w-full sm:w-12/12 h-auto object-cover object-center"
-    //                 alt="pic1"
-    //                 loading="lazy"
-    //             />
-    //         </div>
-    //     ), videoUrl: 'https://player.vimeo.com/video/690571350',
-    //     credits: `
-    //     Directed by: Piotrek Matejkowski  
-    //     DOP: Kajetan Plis  
-
-    //     Production House: Papaya  
-    //     Producer: Michał Wojciechowski  
-    //     Production Manager: Ania Schiller  
-    //     1st AD: Michał Guga  
-
-    //     Stylist: Charlotte Tomaszewska  
-    //     Stylist Assistants: Maria Konieczna, Martyna Oryszak
-    //     `
-    // },
     {
         id: 16, title: 'HANIA RANI X DOBRAWA CHOCHER', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={MALASANA2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={malasana} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/647779892',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/MALA.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/647779892',
         credits: `directed by mateusz miszczynski, styled by charlotte tomaszewska`
     },
     {
         id: 17, title: 'BASS ASTRAL X IGO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={BIKINI} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={bassAstral} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/408375473',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/BIKINI.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/408375473',
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
     {
         id: 18, title: 'TYMBARK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={TYMBARK} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={tymbark} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/633844080',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/TYMBARK.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/633844080',
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
     {
         id: 19, title: 'KUKON X DARIA ZAWIALOW', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={KUKON} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={kukonDaria} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1024318254',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/BATMAN.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1024318254',
         credits: 'directed by nikodem marek, styled by charlotte tomaszewska'
     },
     {
         id: 20, title: 'IFOLOR', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={IFOLOR} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={ifolor} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/776615290',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/IFOLOR.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/776615290',
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
-
     {
         id: 21, title: 'MAVERICK SABRE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={MAVERICK2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={maverickSabre} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1023220757',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/MAVERICK.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1023220757',
         credits: `directed by grajper, fans styled by charlotte tomaszewska`
     },
     {
         id: 22, title: 'REEBOK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <Image src={REEBOK2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+                    <Image src={reebok} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/408333769',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/REEBOK.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/408333769',
         credits: `directed by tatiana & karol, styled by charlotte tomaszewska`
     },
     {
         id: 23, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                
-                <Image src={HIPHOPKRYTA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-            
-                
+                    <Image src={szczylHiphop} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
-        ), videoUrl: 'https://player.vimeo.com/video/1026792192',
+        ),
+        contentPC: (
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                    <video
+                        src="/videos/HIPHOPKRYTA.webm"
+                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                    >
+                        Twoja przeglądarka nie obsługuje tego wideo.
+                    </video>
+                </div>
+            </div>
+        ),
+        videoUrl: 'https://player.vimeo.com/video/1026792192',
         credits: 'directed by grajper, styled by charlotte tomaszewska'
     },
     // {
@@ -450,7 +893,30 @@ export const projects = [
     // },
 ];
 
+// {
+    //     id: 15, title: 'TMOBILE - KUKON X HODAK', content: (
+    //         <div className="flex justify-center w-screen">
+    //             <Image
+    //                 src={TMOBILE}
+    //                 className="w-full sm:w-12/12 h-auto object-cover object-center"
+    //                 alt="pic1"
+    //                 loading="lazy"
+    //             />
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/690571350',
+    //     credits: `
+    //     Directed by: Piotrek Matejkowski  
+    //     DOP: Kajetan Plis  
 
+    //     Production House: Papaya  
+    //     Producer: Michał Wojciechowski  
+    //     Production Manager: Ania Schiller  
+    //     1st AD: Michał Guga  
+
+    //     Stylist: Charlotte Tomaszewska  
+    //     Stylist Assistants: Maria Konieczna, Martyna Oryszak
+    //     `
+    // },
 
 
 // CAŁY KOD JAKI DZIALAL WCZESNIEJ Z GIFAMI I POPRAWNYMI IMPORTAMI 

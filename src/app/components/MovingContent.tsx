@@ -43,7 +43,7 @@ const MovingContent = ({ projects }: { projects: ProjectsArray }) => {
           return newLoaded;
         });
       },
-      { rootMargin: "100px", threshold: 0.1 }
+      { rootMargin: "300px", threshold: 0.1 }
     );
 
     projectRefs.current.forEach((el) => el && observer.current?.observe(el));

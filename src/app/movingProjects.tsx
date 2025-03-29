@@ -87,13 +87,19 @@ export const projects = [
         id: 1,
         title: "BRODKA X IGO",
         content: (
-          <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image
-                src={test2}
-                alt="ll"
+              <video
+                src="/page-mp4/brodkaigo.mp4"
                 className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-              />
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -124,7 +130,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={adidas} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/adidas.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -154,8 +170,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={meMyself} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-            </div>
+            <video
+                src="/page-mp4/me.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>            </div>
           </div>
         ),
         contentPC: (
@@ -184,7 +209,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={stoneQueen} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/stone.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -214,7 +249,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={barbarka} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/barbarka.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -244,7 +289,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={superpowers} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/superpowers.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -274,7 +329,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={cap74024} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/cap.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -308,7 +373,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={home} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/home.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -338,7 +413,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={yes} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/yes.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -368,7 +453,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={windowsen} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/windowsen.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -398,7 +493,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={cicho} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/cicho.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -428,7 +533,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={aveMaria} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/avemaria.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -458,7 +573,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={imHere} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/im.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -488,7 +613,17 @@ export const projects = [
         content: (
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-              <Image src={szczylMiasta} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
+            <video
+                src="/page-mp4/wielkiemiasta.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>
             </div>
           </div>
         ),
@@ -516,8 +651,17 @@ export const projects = [
         id: 15, title: 'IKEA', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={ikeaMalm} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/ikea.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ), 
         contentPC: (
@@ -544,8 +688,17 @@ export const projects = [
         id: 16, title: 'HANIA RANI X DOBRAWA CHOCHER', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={malasana} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/malasana.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -572,8 +725,17 @@ export const projects = [
         id: 17, title: 'BASS ASTRAL X IGO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={bassAstral} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/bikini.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -600,8 +762,17 @@ export const projects = [
         id: 18, title: 'TYMBARK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={tymbark} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/tymbark.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -628,8 +799,17 @@ export const projects = [
         id: 19, title: 'KUKON X DARIA ZAWIALOW', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={kukonDaria} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/batman.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -656,8 +836,17 @@ export const projects = [
         id: 20, title: 'IFOLOR', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={ifolor} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/ifolor.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -684,8 +873,17 @@ export const projects = [
         id: 21, title: 'MAVERICK SABRE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={maverickSabre} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/mavericks.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -712,8 +910,17 @@ export const projects = [
         id: 22, title: 'REEBOK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={reebok} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/reebok.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (
@@ -740,8 +947,17 @@ export const projects = [
         id: 23, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <Image src={szczylHiphop} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
-                </div>
+                <video
+                src="/page-mp4/hiphopkryta.mp4"
+                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              >
+                Twoja przeglądarka nie obsługuje tego wideo.
+              </video>                </div>
             </div>
         ),
         contentPC: (

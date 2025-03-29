@@ -63,17 +63,7 @@ export const projects = [
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
              
-                <video
-                        src="/videos/BRODKA&IGO.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={BRODKA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             
                     
                 </div>
@@ -85,17 +75,7 @@ export const projects = [
         id: 2, title: 'ADIDAS', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/ADIDAS-high.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={ADIDAS} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/887736596',
@@ -105,17 +85,7 @@ export const projects = [
         id: 3, title: '(.) & (.)', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/ME.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={MEMYSELF2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1025377298',
@@ -125,17 +95,7 @@ export const projects = [
         id: 4, title: 'STONE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/STONE.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={STONE2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/990654176',
@@ -145,17 +105,7 @@ export const projects = [
         id: 5, title: 'MARIA PESZEK X OSKAR83', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/BARBARKA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={BARBARKA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/610083622',
@@ -165,17 +115,7 @@ export const projects = [
         id: 6, title: 'MESKIE GRANIE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/SUPERPOWERS-high.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={SUPERPOWERS} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/828107491',
@@ -185,17 +125,7 @@ export const projects = [
         id: 7, title: 'CAP 74024', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/CAP.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={CAP} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/450786928',
@@ -205,17 +135,7 @@ export const projects = [
         id: 8, title: 'HOME', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/HOME-high.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={HOME} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/669378253',
@@ -226,17 +146,7 @@ export const projects = [
         id: 9, title: 'YES', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/YES.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={YES} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/647758815',
@@ -247,17 +157,7 @@ export const projects = [
         id: 10, title: 'WINDOWSEN', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/WINDOWSEN.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={WINDOWSEN} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1016725466',
@@ -267,17 +167,7 @@ export const projects = [
         id: 11, title: 'CICHO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/CICHO.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={CICHO} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/887730475',
@@ -287,17 +177,7 @@ export const projects = [
         id: 12, title: 'MARIA PESZEK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/MARIAPESZEK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={AVEMARIA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1028099351',
@@ -307,17 +187,7 @@ export const projects = [
         id: 13, title: 'I.M.', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/I.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={IM} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1015786082',
@@ -327,17 +197,7 @@ export const projects = [
         id: 14, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/SZCZYL1.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>  
+                <Image src={SZCZYL} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1028107804',
@@ -347,17 +207,7 @@ export const projects = [
         id: 15, title: 'IKEA', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/IKEA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={IKEA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1023738021',
@@ -391,17 +241,7 @@ export const projects = [
         id: 16, title: 'HANIA RANI X DOBRAWA CHOCHER', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/MALA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={MALASANA2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/647779892',
@@ -411,17 +251,7 @@ export const projects = [
         id: 17, title: 'BASS ASTRAL X IGO', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/BIKINI.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={BIKINI} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/408375473',
@@ -431,17 +261,7 @@ export const projects = [
         id: 18, title: 'TYMBARK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/TYMBARK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={TYMBARK} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/633844080',
@@ -451,17 +271,7 @@ export const projects = [
         id: 19, title: 'KUKON X DARIA ZAWIALOW', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/BATMAN.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={KUKON} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1024318254',
@@ -471,17 +281,7 @@ export const projects = [
         id: 20, title: 'IFOLOR', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/IFOLOR.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={IFOLOR} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/776615290',
@@ -492,17 +292,7 @@ export const projects = [
         id: 21, title: 'MAVERICK SABRE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/MAVERICK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={MAVERICK2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/1023220757',
@@ -512,17 +302,7 @@ export const projects = [
         id: 22, title: 'REEBOK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                        src="/videos/REEBOK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={REEBOK2} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
                 </div>
             </div>
         ), videoUrl: 'https://player.vimeo.com/video/408333769',
@@ -533,17 +313,7 @@ export const projects = [
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 
-                <video
-                        src="/videos/HIPHOPKRYTA.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
+                <Image src={HIPHOPKRYTA} alt="ll" className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto" />
             
                 
                 </div>
@@ -551,6 +321,110 @@ export const projects = [
         ), videoUrl: 'https://player.vimeo.com/video/1026792192',
         credits: 'directed by grajper, styled by charlotte tomaszewska'
     },
+    // {
+    //     id: 19, title: 'KUKON X DARIA ZAWIALOW', content: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    //             <video
+    //                     src="/videos/BATMAN.webm"
+    //                     className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //                     autoPlay
+    //                     loop
+    //                     muted
+    //                     playsInline
+    //                     preload="metadata"
+    //                 >
+    //                     Twoja przeglądarka nie obsługuje tego wideo.
+    //                 </video>
+    //             </div>
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/1024318254',
+    //     credits: 'directed by nikodem marek, styled by charlotte tomaszewska'
+    // },
+    // {
+    //     id: 20, title: 'IFOLOR', content: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    //             <video
+    //                     src="/videos/IFOLOR.webm"
+    //                     className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //                     autoPlay
+    //                     loop
+    //                     muted
+    //                     playsInline
+    //                     preload="metadata"
+    //                 >
+    //                     Twoja przeglądarka nie obsługuje tego wideo.
+    //                 </video>
+    //             </div>
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/776615290',
+    //     credits: `directed by grajper, styled by charlotte tomaszewska`
+    // },
+
+    // {
+    //     id: 21, title: 'MAVERICK SABRE', content: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    //             <video
+    //                     src="/videos/MAVERICK.webm"
+    //                     className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //                     autoPlay
+    //                     loop
+    //                     muted
+    //                     playsInline
+    //                     preload="metadata"
+    //                 >
+    //                     Twoja przeglądarka nie obsługuje tego wideo.
+    //                 </video>
+    //             </div>
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/1023220757',
+    //     credits: `directed by grajper, fans styled by charlotte tomaszewska`
+    // },
+    // {
+    //     id: 22, title: 'REEBOK', content: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    //             <video
+    //                     src="/videos/REEBOK.webm"
+    //                     className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //                     autoPlay
+    //                     loop
+    //                     muted
+    //                     playsInline
+    //                     preload="metadata"
+    //                 >
+    //                     Twoja przeglądarka nie obsługuje tego wideo.
+    //                 </video>
+    //             </div>
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/408333769',
+    //     credits: `directed by tatiana & karol, styled by charlotte tomaszewska`
+    // },
+    // {
+    //     id: 23, title: 'SZCZYL', content: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+                
+    //             <video
+    //                     src="/videos/HIPHOPKRYTA.webm"
+    //                     className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //                     autoPlay
+    //                     loop
+    //                     muted
+    //                     playsInline
+    //                     preload="metadata"
+    //                 >
+    //                     Twoja przeglądarka nie obsługuje tego wideo.
+    //                 </video>
+            
+                
+    //             </div>
+    //         </div>
+    //     ), videoUrl: 'https://player.vimeo.com/video/1026792192',
+    //     credits: 'directed by grajper, styled by charlotte tomaszewska'
+    // },
     // {
     //     id: 24, title: 'REVS - VATOS LANOS', content: (
     //         <div className="flex justify-center w-screen">

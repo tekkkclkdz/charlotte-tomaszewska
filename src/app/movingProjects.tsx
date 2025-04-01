@@ -171,7 +171,7 @@ export const projects = [
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
             <video
-                src="/page-mp4/me.mp4"
+                src="/page-mp4/megood.mp4"
                 className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                 autoPlay
                 loop
@@ -210,7 +210,7 @@ export const projects = [
           <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
             <video
-                src="/page-mp4/stone.mp4"
+                src="/page-mp4/stonegood.mp4"
                 className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                 autoPlay
                 loop
@@ -758,49 +758,49 @@ export const projects = [
         videoUrl: 'https://player.vimeo.com/video/408375473',
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
+    // {
+    //     id: 18, title: 'TYMBARK', content: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    //             <video
+    //             src="/page-mp4/tymbark.mp4"
+    //             className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //             autoPlay
+    //             loop
+    //             muted
+    //             playsInline
+    //             preload="metadata"
+    //           >
+    //             Twoja przeglądarka nie obsługuje tego wideo.
+    //           </video>                </div>
+    //         </div>
+    //     ),
+    //     contentPC: (
+    //         <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
+    //             <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
+    //                 <video
+    //                     src="/videos/TYMBARK.webm"
+    //                     className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
+    //                     autoPlay
+    //                     loop
+    //                     muted
+    //                     playsInline
+    //                     preload="metadata"
+    //                 >
+    //                     Twoja przeglądarka nie obsługuje tego wideo.
+    //                 </video>
+    //             </div>
+    //         </div>
+    //     ),
+    //     videoUrl: 'https://player.vimeo.com/video/633844080',
+    //     credits: `directed by grajper, styled by charlotte tomaszewska`
+    // },
     {
-        id: 18, title: 'TYMBARK', content: (
+        id: 18, title: 'KUKON X DARIA ZAWIALOW', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
-                src="/page-mp4/tymbark.mp4"
-                className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
-              >
-                Twoja przeglądarka nie obsługuje tego wideo.
-              </video>                </div>
-            </div>
-        ),
-        contentPC: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                    <video
-                        src="/videos/TYMBARK.webm"
-                        className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                    >
-                        Twoja przeglądarka nie obsługuje tego wideo.
-                    </video>
-                </div>
-            </div>
-        ),
-        videoUrl: 'https://player.vimeo.com/video/633844080',
-        credits: `directed by grajper, styled by charlotte tomaszewska`
-    },
-    {
-        id: 19, title: 'KUKON X DARIA ZAWIALOW', content: (
-            <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
-                <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
-                <video
-                src="/page-mp4/batman.mp4"
+                src="/page-mp4/batmangood.mp4"
                 className="w-full h-auto max-w-full object-cover object-center cursor-custom sm:h-full sm:w-auto"
                 autoPlay
                 loop
@@ -833,7 +833,7 @@ export const projects = [
         credits: 'directed by nikodem marek, styled by charlotte tomaszewska'
     },
     {
-        id: 20, title: 'IFOLOR', content: (
+        id: 19, title: 'IFOLOR', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
@@ -870,7 +870,7 @@ export const projects = [
         credits: `directed by grajper, styled by charlotte tomaszewska`
     },
     {
-        id: 21, title: 'MAVERICK SABRE', content: (
+        id: 20, title: 'MAVERICK SABRE', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
@@ -907,7 +907,7 @@ export const projects = [
         credits: `directed by grajper, fans styled by charlotte tomaszewska`
     },
     {
-        id: 22, title: 'REEBOK', content: (
+        id: 21, title: 'REEBOK', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
@@ -944,7 +944,7 @@ export const projects = [
         credits: `directed by tatiana & karol, styled by charlotte tomaszewska`
     },
     {
-        id: 23, title: 'SZCZYL', content: (
+        id: 22, title: 'SZCZYL', content: (
             <div className="flex justify-center items-center w-screen h-auto sm:h-screen">
                 <div className="w-full sm:w-[100%] h-full flex justify-center items-center">
                 <video
